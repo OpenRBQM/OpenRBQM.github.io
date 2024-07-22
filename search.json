@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OpenRBQM",
+    "section": "",
+    "text": "OpenRBQM Homepage"
+  },
+  {
+    "objectID": "slides/tech_team-202407.html#jon-harmon",
+    "href": "slides/tech_team-202407.html#jon-harmon",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Jon Harmon",
+    "text": "Jon Harmon\n\nJoined Gilead (via Atorus Research) w/ open-source focus\nRuns the Data Science Learning Community / TidyTuesday\nCreated dozens of packages\n\n\n\nI have a lot of experience with:\n\nSoftware dev\n\nFormerly ran a product team at an educational startup\nLots of experience with Agile & OSS\nR packages = my happy place\n\nCommunity building\nEducational materials\n\nI’ll need help with:\n\nDeciding what to build\nUser feedback\nPrioritization\n\nCan everyone else do a quick intro for me?\n\nFocus on ideas and review, or writing code?\n\nPackage-creation experiences?\nOSS experience?"
+  },
+  {
+    "objectID": "slides/tech_team-202407.html#anyone-else",
+    "href": "slides/tech_team-202407.html#anyone-else",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Anyone else?",
+    "text": "Anyone else?"
+  },
+  {
+    "objectID": "slides/tech_team-202407.html#csm-brainstorm",
+    "href": "slides/tech_team-202407.html#csm-brainstorm",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "CSM Brainstorm",
+    "text": "CSM Brainstorm\n\nWe need to pick the first CSM module for the team to work on. Please drop ideas/screenshots/links in this chat and we will review at our next team meeting and select our first project!\n\n\nGitHub\nAny other ideas?\nWhat should we do first?\n\n\n\nJeremy, do you want to talk through your responses?\nAny other ideas?\nShould we start with this?\nWhat problem can we solve first?\n\nIs there a particular function that would be helpful?\n\nWhat role does everyone plan to take?\n\nI’ll set up repository and get basic package skeleton (including GHA) set up.\nIdeally I’d love for everyone to submit & reply to issues.\nI can create the whole thing if people want, but I’ll need reviews!"
+  },
+  {
+    "objectID": "tech_team-meetings.html",
+    "href": "tech_team-meetings.html",
+    "title": "Tech Team Meetings",
+    "section": "",
+    "text": "2024-07\n2024-08\n2024-09\n2024-10\n2024-11\n2024-12"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "slides/tech_team-template.html#anyone-new",
+    "href": "slides/tech_team-template.html#anyone-new",
+    "title": "Tech Team Meeting: TEMPLATE",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team-template.html#discussion-title",
+    "href": "slides/tech_team-template.html#discussion-title",
+    "title": "Tech Team Meeting: TEMPLATE",
+    "section": "DISCUSSION TITLE",
+    "text": "DISCUSSION TITLE\n\nGitHub\nAny other ideas?"
+  }
+]
