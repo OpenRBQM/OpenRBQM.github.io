@@ -1,0 +1,12 @@
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+
+# Ignore things during render.
+*.html
+*.rmarkdown
+/.quarto/
+/_site/
+/site_libs/
