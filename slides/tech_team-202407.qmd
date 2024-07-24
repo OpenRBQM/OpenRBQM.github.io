@@ -36,14 +36,17 @@ title: "Tech Team Meeting: 2024-07"
     -   Deciding what to build
     -   User feedback
     -   Prioritization
--   Can everyone else do a quick intro for me?
-    -   Focus on ideas and review, or writing code?
-        -   Package-creation experiences?
-        -   OSS experience?
 :::
 
 ## Anyone else?
 
+::: notes
+-   Can everyone else do a quick intro for me?
+    -   Focus on ideas and review, or writing code?
+        -   Package-creation experiences?
+        -   OSS experience? 
+        -   GitHub?
+:::
 
 # GitHub Discussions
 
@@ -53,9 +56,11 @@ title: "Tech Team Meeting: 2024-07"
 
 -   [GitHub](https://github.com/orgs/OpenRBQM/discussions/1)
 -   Any other ideas?
--   What should we do first?
+-   What problem should we solve first?
+-   Roles?
 
 ::: notes
+-   Get everyone to join the org.
 -   Jeremy, do you want to talk through your responses?
 -   Any other ideas?
 -   Should we start with this?
