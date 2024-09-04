@@ -1,0 +1,41 @@
+---
+title: "Tech Team Meeting: 2024-09"
+---
+
+# Agenda
+
+::: nonincremental
+-   New Members (~5 min)
+-   GitHub Discussions (30 min)
+-   New Ideas (10 min)
+-   Next Steps (5 min)
+:::
+
+# New Members
+
+## Anyone new?
+
+# GitHub Discussions
+
+## Digit Preferences Module
+
+-   [GitHub Discussion](https://github.com/orgs/OpenRBQM/discussions/4)
+-   [{gsm.digitpref}](https://github.com/OpenRBQM/gsm.digitpref) repo
+-   (discuss)
+    -   Who wants to contribute?
+
+## CSM Brainstorm
+
+-   [GitHub Discussion](https://github.com/orgs/OpenRBQM/discussions/1)
+    -   [New comment by Lawrence!](https://github.com/orgs/OpenRBQM/discussions/1#discussioncomment-10542522)
+-   (discuss clustering or push to October)
+
+# New Ideas
+
+Anything else?
+
+# Next Steps
+
+-   Tasks?
+-   Next meeting: 2024-10-02, 11am EDT
+    -   Any issues with date/time?
