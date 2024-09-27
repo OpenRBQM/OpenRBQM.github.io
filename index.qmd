@@ -2,4 +2,8 @@
 title: "OpenRBQM"
 ---
 
-OpenRBQM Homepage
+[OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/26811224/OpenRBQM+Pre-Competitive+Collaboration+on+Open-Source+Software+for+RBQM)
+
+## Problem Statement
+
+Risk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation. 
