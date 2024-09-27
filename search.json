@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OpenRBQM",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "OpenRBQM Homepage"
+    "text": "About this site"
   },
   {
     "objectID": "slides/tech_team-202409.html#anyone-new",
@@ -42,11 +42,18 @@
     "text": "DISCUSSION TITLE\n\nGitHub\nAny other ideas?"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OpenRBQM",
     "section": "",
-    "text": "About this site"
+    "text": "OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM"
+  },
+  {
+    "objectID": "index.html#problem-statement",
+    "href": "index.html#problem-statement",
+    "title": "OpenRBQM",
+    "section": "Problem Statement",
+    "text": "Problem Statement\nRisk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation."
   },
   {
     "objectID": "slides/tech_team-202407.html#jon-harmon",
