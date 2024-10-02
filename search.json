@@ -28,34 +28,6 @@
     "text": "CSM Brainstorm\n\nGitHub Discussion\n\nNew comment by Lawrence!\n\n(discuss clustering or push to October)"
   },
   {
-    "objectID": "slides/tech_team-template.html#anyone-new",
-    "href": "slides/tech_team-template.html#anyone-new",
-    "title": "Tech Team Meeting: TEMPLATE",
-    "section": "Anyone new?",
-    "text": "Anyone new?"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#discussion-title",
-    "href": "slides/tech_team-template.html#discussion-title",
-    "title": "Tech Team Meeting: TEMPLATE",
-    "section": "DISCUSSION TITLE",
-    "text": "DISCUSSION TITLE\n\nGitHub\nAny other ideas?"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OpenRBQM",
-    "section": "",
-    "text": "OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM"
-  },
-  {
-    "objectID": "index.html#problem-statement",
-    "href": "index.html#problem-statement",
-    "title": "OpenRBQM",
-    "section": "Problem Statement",
-    "text": "Problem Statement\nRisk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation."
-  },
-  {
     "objectID": "slides/tech_team-202407.html#jon-harmon",
     "href": "slides/tech_team-202407.html#jon-harmon",
     "title": "Tech Team Meeting: 2024-07",
@@ -75,6 +47,55 @@
     "title": "Tech Team Meeting: 2024-07",
     "section": "CSM Brainstorm",
     "text": "CSM Brainstorm\n\nWe need to pick the first CSM module for the team to work on. Please drop ideas/screenshots/links in this chat and we will review at our next team meeting and select our first project!\n\n\nGitHub\nAny other ideas?\nWhat problem should we solve first?\nRoles?\n\n\n\nGet everyone to join the org.\nJeremy, do you want to talk through your responses?\nAny other ideas?\nShould we start with this?\nWhat problem can we solve first?\n\nIs there a particular function that would be helpful?\n\nWhat role does everyone plan to take?\n\nI’ll set up repository and get basic package skeleton (including GHA) set up.\nIdeally I’d love for everyone to submit & reply to issues.\nI can create the whole thing if people want, but I’ll need reviews!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OpenRBQM",
+    "section": "",
+    "text": "OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM"
+  },
+  {
+    "objectID": "index.html#problem-statement",
+    "href": "index.html#problem-statement",
+    "title": "OpenRBQM",
+    "section": "Problem Statement",
+    "text": "Problem Statement\nRisk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation."
+  },
+  {
+    "objectID": "slides/tech_team-template.html#anyone-new",
+    "href": "slides/tech_team-template.html#anyone-new",
+    "title": "Tech Team Meeting: TEMPLATE",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team-template.html#discussion-title",
+    "href": "slides/tech_team-template.html#discussion-title",
+    "title": "Tech Team Meeting: TEMPLATE",
+    "section": "DISCUSSION TITLE",
+    "text": "DISCUSSION TITLE\n\nGitHub\nAny other ideas?"
+  },
+  {
+    "objectID": "slides/tech_team-202410.html#anyone-new",
+    "href": "slides/tech_team-202410.html#anyone-new",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team-202410.html#digit-preferences-module",
+    "href": "slides/tech_team-202410.html#digit-preferences-module",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Digit Preferences Module",
+    "text": "Digit Preferences Module\n\n{gsm.digitpref} has 2 functions!\n\nsplitByPlace(): Split a vector into a table of place values\nstackedDigitChart(): Plot digit distribution by group\nNext: The bridge between those two.\nLater: Shiny module."
+  },
+  {
+    "objectID": "slides/tech_team-202410.html#clustering",
+    "href": "slides/tech_team-202410.html#clustering",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Clustering",
+    "text": "Clustering\nAny progress?"
   },
   {
     "objectID": "tech_team-meetings.html",
