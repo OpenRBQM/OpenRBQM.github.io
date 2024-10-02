@@ -1,0 +1,41 @@
+---
+title: "Tech Team Meeting: 2024-10"
+---
+
+# Agenda
+
+::: nonincremental
+-   New Members (~5 min)
+-   Package Updates (30 min)
+-   New Ideas (10 min)
+-   Next Steps (5 min)
+:::
+
+# New Members
+
+## Anyone new?
+
+# Package Updates
+
+## Digit Preferences Module
+
+- [{gsm.digitpref}](https://openrbqm.github.io/gsm.digitpref/) has 2 functions!
+    - [`splitByPlace()`](https://openrbqm.github.io/gsm.digitpref/reference/splitByPlace.html): Split a vector into a table of place values
+    - [`stackedDigitChart()`](https://openrbqm.github.io/gsm.digitpref/reference/stackedDigitChart.html): Plot digit distribution by group
+    - Next: The bridge between those two.
+    - Later: Shiny module.
+
+## Clustering
+
+Any progress?
+
+# New Ideas
+
+Anything else?
+
+# Next Steps
+
+-   Issues/discussions in package repos
+-   Next meeting: 2024-11-06, 11am EDT
+    -   Any issues with date/time?
+        -   Jon may not be available
