@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://OpenRBQM.github.io/about.html</loc>
-    <lastmod>2024-10-02T14:22:03.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-202409.html</loc>
-    <lastmod>2024-10-02T14:22:03.408Z</lastmod>
-  </url>
-  <url>
     <loc>https://OpenRBQM.github.io/slides/tech_team-202407.html</loc>
-    <lastmod>2024-10-02T14:22:03.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OpenRBQM.github.io/index.html</loc>
-    <lastmod>2024-10-02T14:22:03.408Z</lastmod>
-  </url>
-  <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-template.html</loc>
-    <lastmod>2024-10-02T14:22:03.408Z</lastmod>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
   </url>
   <url>
     <loc>https://OpenRBQM.github.io/slides/tech_team-202410.html</loc>
-    <lastmod>2024-10-02T14:22:03.408Z</lastmod>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/slides/tech_team-202411.html</loc>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/index.html</loc>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/about.html</loc>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
   </url>
   <url>
     <loc>https://OpenRBQM.github.io/tech_team-meetings.html</loc>
-    <lastmod>2024-10-02T14:22:03.408Z</lastmod>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/slides/tech_team-template.html</loc>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/slides/tech_team-202409.html</loc>
+    <lastmod>2024-11-06T15:56:39.564Z</lastmod>
   </url>
 </urlset>
