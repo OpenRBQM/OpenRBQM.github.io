@@ -1,0 +1,42 @@
+---
+title: "Tech Team Meeting: 2024-11"
+---
+
+# Agenda
+
+::: nonincremental
+-   New Members (~5 min)
+-   Package Updates (30 min)
+-   New Ideas (10 min)
+-   Next Steps (5 min)
+:::
+
+# New Members
+
+## Anyone new?
+
+# Package Updates
+
+## Digit Preferences Module
+
+[{gsm.digitpref}](https://openrbqm.github.io/gsm.digitpref/)
+
+- No new functionality since last month.
+- Welcome aboard, Lukasz! 
+- Next: 
+ - [Shiny module](https://github.com/OpenRBQM/gsm.digitpref/issues/13)
+ - [Statistical tests](https://github.com/OpenRBQM/gsm.digitpref/issues/12)
+
+## Clustering
+
+Any progress?
+
+# New Ideas
+
+Anything else?
+
+# Next Steps
+
+-   Issues/discussions in package repos
+-   Next meeting: 2024-12-04, 11am EDT
+    -   Any issues with date/time?
