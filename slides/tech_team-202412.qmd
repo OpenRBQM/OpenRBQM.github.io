@@ -1,0 +1,48 @@
+---
+title: "Tech Team Meeting: 2024-12"
+---
+
+# Agenda
+
+::: nonincremental
+-   New Members (5 min)
+-   Package Updates (15 min)
+-   New Ideas & Next Steps (5 min)
+:::
+
+# New Members
+
+## Anyone new?
+
+# Package Updates
+
+## gsm.app
+
+Implemented plugin prototype in {[gsm.app](https://github.com/Gilead-BioStats/gsm.app)}!
+
+-   [Sample app](https://openrbqm.shinyapps.io/gsm-app-dev/)
+
+## Digit Preferences Module
+
+[{gsm.digitpref}](https://openrbqm.github.io/gsm.digitpref/)
+
+- Lukasz is working on [Statistical tests](https://github.com/OpenRBQM/gsm.digitpref/issues/12):
+    -   "I am still working with statistical part for digit preference, at this moment I have cod for calculating chi-square test by test and site (two categories)."
+    -   "Probably, at the end of December I will be ready to share with you my results (and ready to upload my code on github)."
+- I'll work on the [Shiny module](https://github.com/OpenRBQM/gsm.digitpref/issues/13) this week!
+
+## Clustering
+
+Any progress?
+
+# New Ideas
+
+Anything else?
+
+# Next Steps
+
+-   Issues/discussions in package repos
+-   Next meeting: 
+    -   January meeting: "virtual" (post in GitHub discussions!)
+    -   February meeting: 2025-02-05, 11am EDT
+    -   Any issues with date/time?
