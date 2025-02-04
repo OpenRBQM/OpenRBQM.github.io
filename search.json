@@ -1,26 +1,5 @@
 [
   {
-    "objectID": "slides/tech_team-202407.html#jon-harmon",
-    "href": "slides/tech_team-202407.html#jon-harmon",
-    "title": "Tech Team Meeting: 2024-07",
-    "section": "Jon Harmon",
-    "text": "Jon Harmon\n\nJoined Gilead (via Atorus Research) w/ open-source focus\nRuns the Data Science Learning Community / TidyTuesday\nCreated dozens of packages\n\n\n\nI have a lot of experience with:\n\nSoftware dev\n\nFormerly ran a product team at an educational startup\nLots of experience with Agile & OSS\nR packages = my happy place\n\nCommunity building\nEducational materials\n\nI’ll need help with:\n\nDeciding what to build\nUser feedback\nPrioritization"
-  },
-  {
-    "objectID": "slides/tech_team-202407.html#anyone-else",
-    "href": "slides/tech_team-202407.html#anyone-else",
-    "title": "Tech Team Meeting: 2024-07",
-    "section": "Anyone else?",
-    "text": "Anyone else?\n\n\nCan everyone else do a quick intro for me?\n\nFocus on ideas and review, or writing code?\n\nPackage-creation experiences?\nOSS experience?\nGitHub?"
-  },
-  {
-    "objectID": "slides/tech_team-202407.html#csm-brainstorm",
-    "href": "slides/tech_team-202407.html#csm-brainstorm",
-    "title": "Tech Team Meeting: 2024-07",
-    "section": "CSM Brainstorm",
-    "text": "CSM Brainstorm\n\nWe need to pick the first CSM module for the team to work on. Please drop ideas/screenshots/links in this chat and we will review at our next team meeting and select our first project!\n\n\nGitHub\nAny other ideas?\nWhat problem should we solve first?\nRoles?\n\n\n\nGet everyone to join the org.\nJeremy, do you want to talk through your responses?\nAny other ideas?\nShould we start with this?\nWhat problem can we solve first?\n\nIs there a particular function that would be helpful?\n\nWhat role does everyone plan to take?\n\nI’ll set up repository and get basic package skeleton (including GHA) set up.\nIdeally I’d love for everyone to submit & reply to issues.\nI can create the whole thing if people want, but I’ll need reviews!"
-  },
-  {
     "objectID": "slides/tech_team-202409.html#anyone-new",
     "href": "slides/tech_team-202409.html#anyone-new",
     "title": "Tech Team Meeting: 2024-09",
@@ -42,46 +21,74 @@
     "text": "CSM Brainstorm\n\nGitHub Discussion\n\nNew comment by Lawrence!\n\n(discuss clustering or push to October)"
   },
   {
+    "objectID": "slides/tech_team-202407.html#jon-harmon",
+    "href": "slides/tech_team-202407.html#jon-harmon",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Jon Harmon",
+    "text": "Jon Harmon\n\nJoined Gilead (via Atorus Research) w/ open-source focus\nRuns the Data Science Learning Community / TidyTuesday\nCreated dozens of packages\n\n\n\nI have a lot of experience with:\n\nSoftware dev\n\nFormerly ran a product team at an educational startup\nLots of experience with Agile & OSS\nR packages = my happy place\n\nCommunity building\nEducational materials\n\nI’ll need help with:\n\nDeciding what to build\nUser feedback\nPrioritization"
+  },
+  {
+    "objectID": "slides/tech_team-202407.html#anyone-else",
+    "href": "slides/tech_team-202407.html#anyone-else",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Anyone else?",
+    "text": "Anyone else?\n\n\nCan everyone else do a quick intro for me?\n\nFocus on ideas and review, or writing code?\n\nPackage-creation experiences?\nOSS experience?\nGitHub?"
+  },
+  {
+    "objectID": "slides/tech_team-202407.html#csm-brainstorm",
+    "href": "slides/tech_team-202407.html#csm-brainstorm",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "CSM Brainstorm",
+    "text": "CSM Brainstorm\n\nWe need to pick the first CSM module for the team to work on. Please drop ideas/screenshots/links in this chat and we will review at our next team meeting and select our first project!\n\n\nGitHub\nAny other ideas?\nWhat problem should we solve first?\nRoles?\n\n\n\nGet everyone to join the org.\nJeremy, do you want to talk through your responses?\nAny other ideas?\nShould we start with this?\nWhat problem can we solve first?\n\nIs there a particular function that would be helpful?\n\nWhat role does everyone plan to take?\n\nI’ll set up repository and get basic package skeleton (including GHA) set up.\nIdeally I’d love for everyone to submit & reply to issues.\nI can create the whole thing if people want, but I’ll need reviews!"
+  },
+  {
     "objectID": "slides/tech_team-template.html#anyone-new",
     "href": "slides/tech_team-template.html#anyone-new",
-    "title": "Tech Team Meeting: TEMPLATE",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "Anyone new?",
     "text": "Anyone new?"
   },
   {
-    "objectID": "slides/tech_team-template.html#discussion-title",
-    "href": "slides/tech_team-template.html#discussion-title",
-    "title": "Tech Team Meeting: TEMPLATE",
-    "section": "DISCUSSION TITLE",
-    "text": "DISCUSSION TITLE\n\nGitHub\nAny other ideas?"
+    "objectID": "slides/tech_team-template.html#gsm",
+    "href": "slides/tech_team-template.html#gsm",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm",
+    "text": "gsm\nGilead-BioStats/gsm\n\nWhat’s new?"
   },
   {
-    "objectID": "tech_team-meetings.html",
-    "href": "tech_team-meetings.html",
-    "title": "Tech Team Meetings",
-    "section": "",
-    "text": "2024-07\n2024-09\n2024-10\n2024-11\n2024-12"
+    "objectID": "slides/tech_team-template.html#openrbqm",
+    "href": "slides/tech_team-template.html#openrbqm",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "openrbqm",
+    "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
+    "objectID": "slides/tech_team-template.html#gsm.app",
+    "href": "slides/tech_team-template.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nWhat’s new?"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "OpenRBQM",
-    "section": "",
-    "text": "OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM"
+    "objectID": "slides/tech_team-template.html#gsm.digitpref",
+    "href": "slides/tech_team-template.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref\n\nWhat’s new?"
   },
   {
-    "objectID": "index.html#problem-statement",
-    "href": "index.html#problem-statement",
-    "title": "OpenRBQM",
-    "section": "Problem Statement",
-    "text": "Problem Statement\nRisk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation."
+    "objectID": "slides/tech_team-template.html#gsm.ae",
+    "href": "slides/tech_team-template.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team-template.html#gsm.query",
+    "href": "slides/tech_team-template.html#gsm.query",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.query",
+    "text": "gsm.query\nOpenRBQM/gsm.query\n\nWhat’s new?"
   },
   {
     "objectID": "slides/tech_team-202411.html#anyone-new",
@@ -103,6 +110,34 @@
     "title": "Tech Team Meeting: 2024-11",
     "section": "Clustering",
     "text": "Clustering\nAny progress?"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "tech_team-meetings.html",
+    "href": "tech_team-meetings.html",
+    "title": "Tech Team Meetings",
+    "section": "",
+    "text": "2024-07\n2024-09\n2024-10\n2024-11\n2024-12\n2025-02"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OpenRBQM",
+    "section": "",
+    "text": "OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM"
+  },
+  {
+    "objectID": "index.html#problem-statement",
+    "href": "index.html#problem-statement",
+    "title": "OpenRBQM",
+    "section": "Problem Statement",
+    "text": "Problem Statement\nRisk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation."
   },
   {
     "objectID": "slides/tech_team-202410.html#anyone-new",
@@ -152,5 +187,68 @@
     "title": "Tech Team Meeting: 2024-12",
     "section": "Clustering",
     "text": "Clustering\nAny progress?"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#anyone-new",
+    "href": "slides/tech_team-202502.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#gsm",
+    "href": "slides/tech_team-202502.html#gsm",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm",
+    "text": "gsm\nGilead-BioStats/gsm\n\nSplitting into multiple packages.\nSee {openrbqm} on next slide."
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#openrbqm",
+    "href": "slides/tech_team-202502.html#openrbqm",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "openrbqm",
+    "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#gsm.simaerep",
+    "href": "slides/tech_team-202502.html#gsm.simaerep",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.simaerep",
+    "text": "gsm.simaerep\nIMPALA-Consortium/gsm.simaerep\n\nBjörn Koneswarakantha @ Roche"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#gsm.app",
+    "href": "slides/tech_team-202502.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nSample app\nSplitting plugins off into packages\n\nSee upcoming slides"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#gsm.digitpref",
+    "href": "slides/tech_team-202502.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#gsm.digitpref-cont",
+    "href": "slides/tech_team-202502.html#gsm.digitpref-cont",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.digitpref (cont)",
+    "text": "gsm.digitpref (cont)\nOpenRBQM/gsm.digitpref\n\nStatistical analysis coming soon via Łukasz Pietrych"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#gsm.ae",
+    "href": "slides/tech_team-202502.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nSplitting off Adverse Events module from {gsm.app}"
+  },
+  {
+    "objectID": "slides/tech_team-202502.html#gsm.query",
+    "href": "slides/tech_team-202502.html#gsm.query",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.query",
+    "text": "gsm.query\nOpenRBQM/gsm.query\n\nPlaceholder for shiny modules/plugin for query data."
   }
 ]

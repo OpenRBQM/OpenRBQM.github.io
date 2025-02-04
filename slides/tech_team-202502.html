@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.40">
 
-  <title>OpenRBQM – Tech Team Meeting: 2024-09</title>
+  <title>OpenRBQM – Tech Team Meeting: 2025-02</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -126,7 +126,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Tech Team Meeting: 2024-09</h1>
+  <h1 class="title">Tech Team Meeting: 2025-02</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -136,10 +136,11 @@
 <h1>Agenda</h1>
 <div>
 <ul>
-<li>New Members (~5 min)</li>
-<li>GitHub Discussions (30 min)</li>
-<li>New Ideas (10 min)</li>
-<li>Next Steps (5 min)</li>
+<li>New Members (5 min)</li>
+<li>Package Updates (25 min)</li>
+<li>New Ideas (5 min)</li>
+<li>Conferences, Workshops, Etc (5 min)</li>
+<li>Next Steps (10 min)</li>
 </ul>
 </div>
 </section>
@@ -153,41 +154,94 @@
 <h2>Anyone new?</h2>
 </section></section>
 <section>
-<section id="github-discussions" class="title-slide slide level1 center">
-<h1>GitHub Discussions</h1>
+<section id="package-updates" class="title-slide slide level1 center">
+<h1>Package Updates</h1>
 
 </section>
-<section id="digit-preferences-module" class="slide level2">
-<h2>Digit Preferences Module</h2>
+<section id="gsm" class="slide level2">
+<h2>gsm</h2>
+<p><a href="https://github.com/Gilead-BioStats/gsm">Gilead-BioStats/gsm</a></p>
 <ul>
-<li><a href="https://github.com/orgs/OpenRBQM/discussions/4">GitHub Discussion</a></li>
-<li><a href="https://github.com/OpenRBQM/gsm.digitpref">{gsm.digitpref}</a> repo</li>
-<li>(discuss)
+<li>Splitting into multiple packages.</li>
+<li>See {openrbqm} on next slide.</li>
+</ul>
+</section>
+<section id="openrbqm" class="slide level2">
+<h2>openrbqm</h2>
+<p><a href="https://github.com/OpenRBQM/openrbqm">OpenRBQM/openrbqm</a></p>
 <ul>
-<li>Who wants to contribute?</li>
+<li>What’s new?</li>
+</ul>
+</section>
+<section id="gsm.simaerep" class="slide level2">
+<h2>gsm.simaerep</h2>
+<p><a href="https://impala-consortium.github.io/gsm.simaerep/">IMPALA-Consortium/gsm.simaerep</a></p>
+<ul>
+<li>Björn Koneswarakantha @ Roche</li>
+<li></li>
+</ul>
+</section>
+<section id="gsm.app" class="slide level2">
+<h2>gsm.app</h2>
+<p><a href="https://github.com/Gilead-BioStats/gsm.app">Gilead-BioStats/gsm.app</a></p>
+<ul>
+<li><a href="https://openrbqm.shinyapps.io/gsm-app-dev/">Sample app</a></li>
+<li>Splitting plugins off into packages
+<ul>
+<li>See upcoming slides</li>
 </ul></li>
 </ul>
 </section>
-<section id="csm-brainstorm" class="slide level2">
-<h2>CSM Brainstorm</h2>
+<section id="gsm.digitpref" class="slide level2">
+<h2>gsm.digitpref</h2>
+<p><a href="https://github.com/OpenRBQM/gsm.digitpref">OpenRBQM/gsm.digitpref</a></p>
+
+<img data-src="tech_team-202502_files/figure-revealjs/plotPlaceDigits-1.png" width="960" class="r-stretch"></section>
+<section id="gsm.digitpref-cont" class="slide level2">
+<h2>gsm.digitpref (cont)</h2>
+<p><a href="https://github.com/OpenRBQM/gsm.digitpref">OpenRBQM/gsm.digitpref</a></p>
 <ul>
-<li><a href="https://github.com/orgs/OpenRBQM/discussions/1">GitHub Discussion</a>
+<li>Statistical analysis coming soon via Łukasz Pietrych</li>
+</ul>
+</section>
+<section id="gsm.ae" class="slide level2">
+<h2>gsm.ae</h2>
+<p><a href="https://github.com/OpenRBQM/gsm.ae">OpenRBQM/gsm.ae</a></p>
 <ul>
-<li><a href="https://github.com/orgs/OpenRBQM/discussions/1#discussioncomment-10542522">New comment by Lawrence!</a></li>
-</ul></li>
-<li>(discuss clustering or push to October)</li>
+<li>Splitting off Adverse Events module from {gsm.app}</li>
+</ul>
+</section>
+<section id="gsm.query" class="slide level2">
+<h2>gsm.query</h2>
+<p><a href="https://github.com/OpenRBQM/gsm.query">OpenRBQM/gsm.query</a></p>
+<ul>
+<li>Placeholder for shiny modules/plugin for query data.</li>
 </ul>
 </section></section>
 <section id="new-ideas" class="title-slide slide level1 center">
 <h1>New Ideas</h1>
-<p>Anything else?</p>
+<ul>
+<li>Anything else?</li>
+</ul>
+</section>
+
+<section id="conferences-workshops-etc" class="title-slide slide level1 center">
+<h1>Conferences, Workshops, Etc</h1>
+<ul>
+<li>March 16-19: <a href="https://www.phuse-events.org/attend/frontend/reg/thome.csp?pageID=38599&amp;ef_sel_menu=2971&amp;eventID=61">phuse US connect</a> (Orlando, Florida)</li>
+<li>April 4-9: <a href="https://www.shinyconf.com/">ShinyConf2025</a> (Online, 2025-04-09 to 11)</li>
+<li>May 19-21: <a href="https://advance.hub.phuse.global/wiki/spaces/WEL/pages/38993921/PHUSE+FDA+CSS+2025">phuse/FDA CSS</a> (Silver Spring, Maryland + Utrecht, the Netherlands)</li>
+<li>August 2-7: <a href="https://ww2.amstat.org/meetings/jsm/2025/">JSM</a> (Nashville, Tennessee)</li>
+<li>August 8-10: <a href="https://user2025.r-project.org/">useR!2025</a> (Durham, North Carolina)</li>
+<li>September 16-19: <a href="https://reg.conf.posit.co/flow/posit/positconf25/reg/login">posit::conf(2025)</a> (Atlanta, Georgia)</li>
+</ul>
 </section>
 
 <section id="next-steps" class="title-slide slide level1 center">
 <h1>Next Steps</h1>
 <ul>
-<li>Tasks?</li>
-<li>Next meeting: 2024-10-02, 11am EDT
+<li>Everyone submit an issue! (or something)</li>
+<li>Next meeting: 2025-03-05, 11am EDT
 <ul>
 <li>Any issues with date/time?</li>
 </ul></li>
@@ -410,6 +464,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
