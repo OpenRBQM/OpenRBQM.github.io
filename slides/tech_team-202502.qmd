@@ -1,0 +1,102 @@
+---
+title: "Tech Team Meeting: 2025-02"
+engine: knitr
+---
+
+# Agenda
+
+::: nonincremental
+- New Members (5 min)
+- Package Updates (25 min)
+- New Ideas (5 min)
+- Conferences, Workshops, Etc (5 min)
+- Next Steps (10 min)
+:::
+
+
+# New Members
+
+## Anyone new?
+
+
+# Package Updates
+
+## gsm
+
+[Gilead-BioStats/gsm](https://github.com/Gilead-BioStats/gsm)
+
+- Splitting into multiple packages.
+- See {openrbqm} on next slide.
+
+## openrbqm
+
+[OpenRBQM/openrbqm](https://github.com/OpenRBQM/openrbqm)
+
+- What's new?
+
+## gsm.simaerep
+
+[IMPALA-Consortium/gsm.simaerep](https://impala-consortium.github.io/gsm.simaerep/)
+
+- Björn Koneswarakantha @ Roche
+- 
+
+## gsm.app
+
+[Gilead-BioStats/gsm.app](https://github.com/Gilead-BioStats/gsm.app)
+
+- [Sample app](https://openrbqm.shinyapps.io/gsm-app-dev/)
+- Splitting plugins off into packages
+  - See upcoming slides
+
+## gsm.digitpref
+
+[OpenRBQM/gsm.digitpref](https://github.com/OpenRBQM/gsm.digitpref)
+
+```{r plotPlaceDigits}
+library(gsm.digitpref)
+sample_data <- data.frame(
+ siteID = sample(c("siteA", "siteB", "siteC"), 1000, replace = TRUE),
+ labResults = runif(1000)*10
+)
+plotPlaceDigits(sample_data, "labResults", "siteID", -2)
+```
+
+## gsm.digitpref (cont)
+
+[OpenRBQM/gsm.digitpref](https://github.com/OpenRBQM/gsm.digitpref)
+
+- Statistical analysis coming soon via Łukasz Pietrych
+
+## gsm.ae
+
+[OpenRBQM/gsm.ae](https://github.com/OpenRBQM/gsm.ae)
+
+- Splitting off Adverse Events module from {gsm.app}
+
+## gsm.query
+
+[OpenRBQM/gsm.query](https://github.com/OpenRBQM/gsm.query)
+
+- Placeholder for shiny modules/plugin for query data.
+
+
+# New Ideas
+
+- Anything else?
+
+
+# Conferences, Workshops, Etc
+
+- March 16-19: [phuse US connect](https://www.phuse-events.org/attend/frontend/reg/thome.csp?pageID=38599&ef_sel_menu=2971&eventID=61) (Orlando, Florida)
+- April 4-9: [ShinyConf2025](https://www.shinyconf.com/) (Online, 2025-04-09 to 11)
+- May 19-21: [phuse/FDA CSS](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/38993921/PHUSE+FDA+CSS+2025) (Silver Spring, Maryland + Utrecht, the Netherlands)
+- August 2-7: [JSM](https://ww2.amstat.org/meetings/jsm/2025/) (Nashville, Tennessee)
+- August 8-10: [useR!2025](https://user2025.r-project.org/) (Durham, North Carolina)
+- September 16-19: [posit::conf(2025)](https://reg.conf.posit.co/flow/posit/positconf25/reg/login) (Atlanta, Georgia)
+
+# Next Steps
+
+- Everyone submit an issue! (or something)
+- Next meeting: 2025-03-05, 11am EDT
+  - Any issues with date/time?

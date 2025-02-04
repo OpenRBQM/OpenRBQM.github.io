@@ -7,3 +7,4 @@ title: "Tech Team Meetings"
 -   [2024-10](slides/tech_team-202410.qmd)
 -   [2024-11](slides/tech_team-202411.qmd)
 -   [2024-12](slides/tech_team-202412.qmd)
+-   [2025-02](slides/tech_team-202502.qmd)
