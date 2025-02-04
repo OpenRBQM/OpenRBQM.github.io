@@ -88,13 +88,12 @@ plotPlaceDigits(sample_data, "labResults", "siteID", -2)
 
 # Conferences, Workshops, Etc
 
-- [phuse US connect](https://www.phuse-events.org/attend/frontend/reg/thome.csp?pageID=38599&ef_sel_menu=2971&eventID=61) (Orlando, Florida, 2025-03-16 to 19)
-  - Tuesday: Gilead hands-on RBQM (gsm) workshop
-- [ShinyConf2025](https://www.shinyconf.com/) (Online, 2025-04-09 to 11)
-  - Schedule TBD 
-  - [Submit a talk](https://sessionize.com/shiny-conf-2025/) (by 2025-02-09)!
-- [useR!2025](https://user2025.r-project.org/) (Durham, North Carolina, 2025-08-08 to 10)
-- [posit::conf(2025)](https://reg.conf.posit.co/flow/posit/positconf25/reg/login) (Atlanta, Georgia, 2025-09-16 to 19)
+- March 16-19: [phuse US connect](https://www.phuse-events.org/attend/frontend/reg/thome.csp?pageID=38599&ef_sel_menu=2971&eventID=61) (Orlando, Florida)
+- April 4-9: [ShinyConf2025](https://www.shinyconf.com/) (Online, 2025-04-09 to 11)
+- May 19-21: [phuse/FDA CSS](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/38993921/PHUSE+FDA+CSS+2025) (Silver Spring, Maryland + Utrecht, the Netherlands)
+- August 2-7: [JSM](https://ww2.amstat.org/meetings/jsm/2025/) (Nashville, Tennessee)
+- August 8-10: [useR!2025](https://user2025.r-project.org/) (Durham, North Carolina)
+- September 16-19: [posit::conf(2025)](https://reg.conf.posit.co/flow/posit/positconf25/reg/login) (Atlanta, Georgia)
 
 # Next Steps
 
