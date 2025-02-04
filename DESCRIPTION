@@ -1,0 +1,17 @@
+Type: Book
+Package: openrbqm-team
+Title: OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM
+Version: 0.0.1
+Authors@R: 
+    person("OpenRBQM Tech Team", , , "jonthegeek@gmail.com", role = c("aut", "cre"))
+Description: This is only here for GHA dependencies.
+URL: https://openrbqm.github.io/,
+    https://github.com/OpenRBQM/OpenRBQM.github.io
+Depends:
+    R (>= 4.1.0)
+Imports: 
+    gsm.digitpref,
+    rmarkdown
+Remotes:
+    OpenRBQM/gsm.digitpref
+Encoding: UTF-8

@@ -4,7 +4,7 @@ format:
     footer: <a href="/" target="OpenRBQM-index">OpenRBQM</a>
     link-external-newwindow: true
     transition: slide
-    incremental: true
+    incremental: false
 knitr:
   opts_chunk: 
     comment: "#>"

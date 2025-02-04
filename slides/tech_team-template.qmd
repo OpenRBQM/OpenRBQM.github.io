@@ -1,35 +1,74 @@
 ---
-title: "Tech Team Meeting: TEMPLATE"
+title: "Tech Team Meeting: 2025-MM"
 ---
 
 # Agenda
 
 ::: nonincremental
--   New Members (5 min)
--   GitHub Discussions (15 min)
--   New Ideas (15 min)
--   Next Steps (15 min)
+- New Members (5 min)
+- Package Updates (25 min)
+- New Ideas (5 min)
+- Conferences, Workshops, Etc (5 min)
+- Next Steps (10 min)
 :::
+
 
 # New Members
 
 ## Anyone new?
 
-# GitHub Discussions
 
-## DISCUSSION TITLE
+# Package Updates
 
--   [GitHub](https://github.com/orgs/OpenRBQM/discussions/##)
--   Any other ideas?
+## gsm
+
+[Gilead-BioStats/gsm](https://github.com/Gilead-BioStats/gsm)
+
+- What's new?
+
+## openrbqm
+
+[OpenRBQM/openrbqm](https://github.com/OpenRBQM/openrbqm)
+
+- What's new?
+
+## gsm.app
+
+[Gilead-BioStats/gsm.app](https://github.com/Gilead-BioStats/gsm.app)
+
+- What's new?
+
+## gsm.digitpref
+
+[OpenRBQM/gsm.digitpref](https://github.com/OpenRBQM/gsm.digitpref)
+
+- What's new?
+
+## gsm.ae
+
+[OpenRBQM/gsm.ae](https://github.com/OpenRBQM/gsm.ae)
+
+- What's new?
+
+## gsm.query
+
+[OpenRBQM/gsm.query](https://github.com/OpenRBQM/gsm.query)
+
+- What's new?
 
 
 # New Ideas
 
-Anything else?
+- Anything else?
+
+
+# Conferences, Workshops, Etc
+
+- MEETING (LOCATION, DATE)
 
 
 # Next Steps
 
--   Tasks?
--   Next meeting: 2024-XX-XX, 11am EDT
-    -   Any issues with date/time?
+- Tasks?
+- Next meeting: 2025-XX-XX, 11am EDT
+  - Any issues with date/time?
