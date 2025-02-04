@@ -11,7 +11,7 @@ URL: https://openrbqm.github.io/,
 Depends:
     R (>= 4.1.0)
 Imports: 
-    english
+    english,
     gsm.digitpref,
     rmarkdown,
     stringr
