@@ -34,6 +34,13 @@ engine: knitr
 
 - What's new?
 
+## gsm.simaerep
+
+[IMPALA-Consortium/gsm.simaerep](https://impala-consortium.github.io/gsm.simaerep/)
+
+- Björn Koneswarakantha @ Roche
+- 
+
 ## gsm.app
 
 [Gilead-BioStats/gsm.app](https://github.com/Gilead-BioStats/gsm.app)
@@ -54,6 +61,12 @@ sample_data <- data.frame(
 )
 plotPlaceDigits(sample_data, "labResults", "siteID", -2)
 ```
+
+## gsm.digitpref (cont)
+
+[OpenRBQM/gsm.digitpref](https://github.com/OpenRBQM/gsm.digitpref)
+
+- Statistical analysis coming soon via Łukasz Pietrych
 
 ## gsm.ae
 
