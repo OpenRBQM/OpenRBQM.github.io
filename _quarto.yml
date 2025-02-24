@@ -1,15 +1,19 @@
 project:
   type: website
-
 website:
   title: "OpenRBQM"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      # - about.qmd
-      - tech_team-meetings.qmd
-
+      - href: packages.qmd
+        text: Packages
+      - href: data.qmd
+        text: Data
+      - href: news.qmd
+        text: News
+      - href: help.qmd
+        text: Help
 format:
   html:
     theme: 

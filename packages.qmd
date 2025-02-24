@@ -1,0 +1,56 @@
+---
+title: "Packages"
+---
+
+```{r load_packages}
+#| echo: FALSE
+#| include: FALSE
+
+# Load necessary libraries
+library(httr)
+library(jsonlite)
+library(dplyr)
+library(purrr)
+library(glue)
+```
+
+# Overview
+
+The OpenRBQM framework is designed to provide a robust and flexible solution for risk-based quality management. It includes a variety of packages that help streamline processes and ensure compliance with industry standards.
+
+# Packages 
+```{r get_packages, echo=FALSE, results = "asis"}
+#| echo: false
+#| warnings: false 
+
+# Function to get package names from a GitHub repository
+get_packages <- function(org) {
+    url <- paste0("https://api.github.com/orgs/", org, "/repos")
+    response <- GET(url)
+    content <- content(response, as = "text")
+    json <- fromJSON(content)
+    return(json)
+}
+
+# Repositories to pull packages from
+orgs <- c("openrbqm", "gilead-biostats")
+
+# Get packages from each repository
+packages <- orgs %>% map(get_packages) %>% bind_rows
+   
+packages %>% glue_data('- [{full_name}]({html_url}) {description}', close='\n')
+
+```
+
+# Articles
+
+## OpenRBQM
+
+- Intro to OpenRBQM
+- Data Model Overview
+
+## gsm.core 
+
+- 
+
+# Examples
