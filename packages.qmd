@@ -45,8 +45,8 @@ packages %>% glue_data('- [{full_name}]({html_url}) {description}', close='\n')
 # Articles
 
 ```{r define article functions, echo=FALSE, results = "asis"}
-get_articles <- function(pkg) {
-    url <- paste0("https://api.github.com/repos/Gilead-BioStats/",pkg,"/contents/vignettes")
+get_articles <- function(repo, pkg) {
+    url <- paste0("https://api.github.com/repos/",repo,"/",pkg,"/contents/vignettes")
     response <- GET(url)
     content <- content(response, as = "text")
     json <- fromJSON(content) %>%
@@ -68,14 +68,31 @@ get_meta <- function(article, field) {
 
 ## OpenRBQM
 
-- Intro to OpenRBQM
-- Data Model Overview
+```{r get_openrbqm_articles, echo=FALSE, results = "asis"}
+
+openrbqm_articles <- get_articles("OpenRBQM","openrbqm")
+
+#get article text
+articles <- purrr::map(gsm_articles$download_url, \(.x) readLines(.x))
+names(articles) <- gsm_articles$name
+
+#add title and description to data
+purrr::map(names(articles), \(.x) {
+  gsm_articles$description[gsm_articles$name == .x] <<- get_meta(articles[[.x]], 
+                                                                        "description")
+  gsm_articles$title[gsm_articles$name == .x] <<- get_meta(articles[[.x]],
+                                                                  "title")
+})
+
+##output names, descriptions and links
+gsm_articles %>% glue_data('- [{title}](https://openrbqm.github.io/openrbqm/articles/{name}) {description}', close='\n')
+```
 
 ## gsm.core 
 
 ```{r get_gsm_articles, echo=FALSE, results = "asis"}
 
-gsm_articles <- get_articles("gsm")
+gsm_articles <- get_articles("Gilead-BioStats","gsm")
 
 #get article text
 articles <- purrr::map(gsm_articles$download_url, \(.x) readLines(.x))
