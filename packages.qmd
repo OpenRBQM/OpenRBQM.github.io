@@ -51,6 +51,39 @@ packages %>% glue_data('- [{full_name}]({html_url}) {description}', close='\n')
 
 ## gsm.core 
 
-- 
+```{r get_gsm_articles, echo=FALSE, results = "asis"}
+get_articles <- function(pkg) {
+    url <- paste0("https://api.github.com/repos/Gilead-BioStats/",pkg,"/contents/vignettes")
+    response <- GET(url)
+    content <- content(response, as = "text")
+    json <- fromJSON(content) %>%
+      dplyr::filter(grepl("Rmd", name))
+    return(json)
+}
+gsm_articles <- get_articles("gsm")
+articles <- purrr::map(gsm_articles$download_url, \(.x) readLines(.x))
+names(articles) <- gsm_articles$name
+
+##grab names, descriptions and links into a table
+get_meta <- function(article, field) {
+  field_line <- article[grep(paste0(field,": "), article)[1]]
+  if(length(field_line) > 0) {
+    clean_field <- gsub(paste0(field,": "), "", field_line)
+    clean_field <- gsub('\"', "", clean_field)
+  } else {
+    clean_field <- NA
+  }
+  return(clean_field)
+}
+
+purrr::map(names(articles), \(.x) {
+  gsm_articles$description[gsm_articles$name == .x] <<- get_meta(articles[[.x]], 
+                                                                        "description")
+  gsm_articles$title[gsm_articles$name == .x] <<- get_meta(articles[[.x]],
+                                                                  "title")
+})
+
+gsm_articles %>% glue_data('- [{title}](https://gilead-biostats.github.io/gsm/articles/{name}) {description}', close='\n')
+```
 
 # Examples
