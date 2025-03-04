@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>OpenRBQM</title>
+<title>Packages – OpenRBQM</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -91,11 +91,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./packages.html"> 
+    <a class="nav-link active" href="./packages.html" aria-current="page"> 
 <span class="menu-text">Packages</span></a>
   </li>  
   <li class="nav-item">
@@ -127,7 +127,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link active" data-scroll-target="#problem-statement">Problem Statement</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#packages" id="toc-packages" class="nav-link" data-scroll-target="#packages">Packages</a></li>
+  <li><a href="#articles" id="toc-articles" class="nav-link" data-scroll-target="#articles">Articles</a>
+  <ul class="collapse">
+  <li><a href="#openrbqm" id="toc-openrbqm" class="nav-link" data-scroll-target="#openrbqm">OpenRBQM</a></li>
+  <li><a href="#gsm.core" id="toc-gsm.core" class="nav-link" data-scroll-target="#gsm.core">gsm.core</a></li>
+  </ul></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples">Examples</a></li>
   </ul>
 </nav>
     </div>
@@ -136,7 +143,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">OpenRBQM</h1>
+<h1 class="title">Packages</h1>
 </div>
 
 
@@ -153,10 +160,54 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="https://advance.hub.phuse.global/wiki/spaces/WEL/pages/26811224/OpenRBQM+Pre-Competitive+Collaboration+on+Open-Source+Software+for+RBQM">OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM</a></p>
-<section id="problem-statement" class="level2">
-<h2 class="anchored" data-anchor-id="problem-statement">Problem Statement</h2>
-<p>Risk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation.</p>
+<section id="overview" class="level1">
+<h1>Overview</h1>
+<p>The OpenRBQM framework is designed to provide a robust and flexible solution for risk-based quality management. It includes a variety of packages that help streamline processes and ensure compliance with industry standards.</p>
+</section>
+<section id="packages" class="level1">
+<h1>Packages</h1>
+<div class="cell" data-warnings="false">
+<ul>
+<li><a href="https://github.com/OpenRBQM/OpenRBQM.github.io">OpenRBQM/OpenRBQM.github.io</a> OpenRBQM Homepage</li>
+<li><a href="https://github.com/OpenRBQM/gsm.digitpref">OpenRBQM/gsm.digitpref</a> NA</li>
+<li><a href="https://github.com/OpenRBQM/cluster">OpenRBQM/cluster</a> NA</li>
+<li><a href="https://github.com/OpenRBQM/gsm.ae">OpenRBQM/gsm.ae</a> Adverse Events Plugin</li>
+<li><a href="https://github.com/OpenRBQM/gsm.query">OpenRBQM/gsm.query</a> Query Data Plugin</li>
+<li><a href="https://github.com/OpenRBQM/openrbqm">OpenRBQM/openrbqm</a> Collection of R Packages designed for Risk Based Quality Management</li>
+<li><a href="https://github.com/OpenRBQM/PhuseConnect25">OpenRBQM/PhuseConnect25</a> Materials for OpenRBQM Workshop</li>
+<li><a href="https://github.com/OpenRBQM/gsm.pd">OpenRBQM/gsm.pd</a> Protocol Deviations gsm Plugin</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm">Gilead-BioStats/gsm</a> Good Statistical Monitoring R Package</li>
+<li><a href="https://github.com/Gilead-BioStats/clindata">Gilead-BioStats/clindata</a> Synthetic Data for testing and development</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.app">Gilead-BioStats/gsm.app</a> NA</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.viz">Gilead-BioStats/gsm.viz</a> web-based data viz for risk-based monitoring</li>
+<li><a href="https://github.com/Gilead-BioStats/qcthat">Gilead-BioStats/qcthat</a> A quality control framework for R packages used in Clinical Trials</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.datasim">Gilead-BioStats/gsm.datasim</a> NA</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.mapping">Gilead-BioStats/gsm.mapping</a> Data mapping framework for {gsm}</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.dash">Gilead-BioStats/gsm.dash</a> NA</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.kri">Gilead-BioStats/gsm.kri</a> NA</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.reporting">Gilead-BioStats/gsm.reporting</a> NA</li>
+<li><a href="https://github.com/Gilead-BioStats/gsm.qc">Gilead-BioStats/gsm.qc</a> Quality Control Tests and documentation for the {gsm} suite of R packages</li>
+</ul>
+</div>
+</section>
+<section id="articles" class="level1">
+<h1>Articles</h1>
+<section id="openrbqm" class="level2">
+<h2 class="anchored" data-anchor-id="openrbqm">OpenRBQM</h2>
+<ul>
+<li>Intro to OpenRBQM</li>
+<li>Data Model Overview</li>
+</ul>
+</section>
+<section id="gsm.core" class="level2">
+<h2 class="anchored" data-anchor-id="gsm.core">gsm.core</h2>
+<ul>
+<li></li>
+</ul>
+</section>
+</section>
+<section id="examples" class="level1">
+<h1>Examples</h1>
 
 
 </section>

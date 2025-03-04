@@ -1,43 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-202409.html</loc>
-    <lastmod>2025-02-04T20:53:10.912Z</lastmod>
+    <loc>https://OpenRBQM.github.io/packages.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-202407.html</loc>
-    <lastmod>2025-02-04T20:53:10.912Z</lastmod>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-202502.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-template.html</loc>
-    <lastmod>2025-02-04T20:53:10.913Z</lastmod>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-202410.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-202411.html</loc>
-    <lastmod>2025-02-04T20:53:10.912Z</lastmod>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-202409.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/about.html</loc>
-    <lastmod>2025-02-04T20:53:10.912Z</lastmod>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-202411.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/tech_team-meetings.html</loc>
-    <lastmod>2025-02-04T20:53:10.913Z</lastmod>
+    <loc>https://OpenRBQM.github.io/help.html</loc>
+    <lastmod>2025-03-04T22:59:09.980Z</lastmod>
   </url>
   <url>
     <loc>https://OpenRBQM.github.io/index.html</loc>
-    <lastmod>2025-02-04T20:53:10.912Z</lastmod>
+    <lastmod>2025-03-04T22:59:09.980Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-202410.html</loc>
-    <lastmod>2025-02-04T20:53:10.912Z</lastmod>
+    <loc>https://OpenRBQM.github.io/data.html</loc>
+    <lastmod>2025-03-04T22:59:09.980Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-202412.html</loc>
-    <lastmod>2025-02-04T20:53:10.913Z</lastmod>
+    <loc>https://OpenRBQM.github.io/tech_team-meetings.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
   </url>
   <url>
-    <loc>https://OpenRBQM.github.io/slides/tech_team-202502.html</loc>
-    <lastmod>2025-02-04T20:53:10.913Z</lastmod>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-202503.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-202412.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-202407.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/slides/tech_team/tech_team-template.html</loc>
+    <lastmod>2025-03-04T22:59:09.981Z</lastmod>
+  </url>
+  <url>
+    <loc>https://OpenRBQM.github.io/news.html</loc>
+    <lastmod>2025-03-04T22:59:09.980Z</lastmod>
   </url>
 </urlset>

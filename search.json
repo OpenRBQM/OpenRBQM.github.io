@@ -1,129 +1,150 @@
 [
   {
-    "objectID": "slides/tech_team-202409.html#anyone-new",
-    "href": "slides/tech_team-202409.html#anyone-new",
+    "objectID": "packages.html",
+    "href": "packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "The OpenRBQM framework is designed to provide a robust and flexible solution for risk-based quality management. It includes a variety of packages that help streamline processes and ensure compliance with industry standards."
+  },
+  {
+    "objectID": "packages.html#openrbqm",
+    "href": "packages.html#openrbqm",
+    "title": "Packages",
+    "section": "OpenRBQM",
+    "text": "OpenRBQM\n\nIntro to OpenRBQM\nData Model Overview"
+  },
+  {
+    "objectID": "packages.html#gsm.core",
+    "href": "packages.html#gsm.core",
+    "title": "Packages",
+    "section": "gsm.core",
+    "text": "gsm.core"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202502.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm",
+    "href": "slides/tech_team/tech_team-202502.html#gsm",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm",
+    "text": "gsm\nGilead-BioStats/gsm\n\nSplitting into multiple packages.\nSee {openrbqm} on next slide."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#openrbqm",
+    "href": "slides/tech_team/tech_team-202502.html#openrbqm",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "openrbqm",
+    "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.simaerep",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.simaerep",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.simaerep",
+    "text": "gsm.simaerep\nIMPALA-Consortium/gsm.simaerep\n\nBjörn Koneswarakantha @ Roche"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.app",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nSample app\nSplitting plugins off into packages\n\nSee upcoming slides"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.digitpref",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.digitpref-cont",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.digitpref-cont",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.digitpref (cont)",
+    "text": "gsm.digitpref (cont)\nOpenRBQM/gsm.digitpref\n\nStatistical analysis coming soon via Łukasz Pietrych"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.ae",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nSplitting off Adverse Events module from {gsm.app}"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.query",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.query",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.query",
+    "text": "gsm.query\nOpenRBQM/gsm.query\n\nPlaceholder for shiny modules/plugin for query data."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202410.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202410.html#anyone-new",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202410.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202410.html#digit-preferences-module",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Digit Preferences Module",
+    "text": "Digit Preferences Module\n\n{gsm.digitpref} has 2 functions!\n\nsplitByPlace(): Split a vector into a table of place values\nstackedDigitChart(): Plot digit distribution by group\nNext: The bridge between those two.\nLater: Shiny module."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202410.html#clustering",
+    "href": "slides/tech_team/tech_team-202410.html#clustering",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Clustering",
+    "text": "Clustering\nAny progress?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202409.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202409.html#anyone-new",
     "title": "Tech Team Meeting: 2024-09",
     "section": "Anyone new?",
     "text": "Anyone new?"
   },
   {
-    "objectID": "slides/tech_team-202409.html#digit-preferences-module",
-    "href": "slides/tech_team-202409.html#digit-preferences-module",
+    "objectID": "slides/tech_team/tech_team-202409.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202409.html#digit-preferences-module",
     "title": "Tech Team Meeting: 2024-09",
     "section": "Digit Preferences Module",
     "text": "Digit Preferences Module\n\nGitHub Discussion\n{gsm.digitpref} repo\n(discuss)\n\nWho wants to contribute?"
   },
   {
-    "objectID": "slides/tech_team-202409.html#csm-brainstorm",
-    "href": "slides/tech_team-202409.html#csm-brainstorm",
+    "objectID": "slides/tech_team/tech_team-202409.html#csm-brainstorm",
+    "href": "slides/tech_team/tech_team-202409.html#csm-brainstorm",
     "title": "Tech Team Meeting: 2024-09",
     "section": "CSM Brainstorm",
     "text": "CSM Brainstorm\n\nGitHub Discussion\n\nNew comment by Lawrence!\n\n(discuss clustering or push to October)"
   },
   {
-    "objectID": "slides/tech_team-202407.html#jon-harmon",
-    "href": "slides/tech_team-202407.html#jon-harmon",
-    "title": "Tech Team Meeting: 2024-07",
-    "section": "Jon Harmon",
-    "text": "Jon Harmon\n\nJoined Gilead (via Atorus Research) w/ open-source focus\nRuns the Data Science Learning Community / TidyTuesday\nCreated dozens of packages\n\n\n\nI have a lot of experience with:\n\nSoftware dev\n\nFormerly ran a product team at an educational startup\nLots of experience with Agile & OSS\nR packages = my happy place\n\nCommunity building\nEducational materials\n\nI’ll need help with:\n\nDeciding what to build\nUser feedback\nPrioritization"
-  },
-  {
-    "objectID": "slides/tech_team-202407.html#anyone-else",
-    "href": "slides/tech_team-202407.html#anyone-else",
-    "title": "Tech Team Meeting: 2024-07",
-    "section": "Anyone else?",
-    "text": "Anyone else?\n\n\nCan everyone else do a quick intro for me?\n\nFocus on ideas and review, or writing code?\n\nPackage-creation experiences?\nOSS experience?\nGitHub?"
-  },
-  {
-    "objectID": "slides/tech_team-202407.html#csm-brainstorm",
-    "href": "slides/tech_team-202407.html#csm-brainstorm",
-    "title": "Tech Team Meeting: 2024-07",
-    "section": "CSM Brainstorm",
-    "text": "CSM Brainstorm\n\nWe need to pick the first CSM module for the team to work on. Please drop ideas/screenshots/links in this chat and we will review at our next team meeting and select our first project!\n\n\nGitHub\nAny other ideas?\nWhat problem should we solve first?\nRoles?\n\n\n\nGet everyone to join the org.\nJeremy, do you want to talk through your responses?\nAny other ideas?\nShould we start with this?\nWhat problem can we solve first?\n\nIs there a particular function that would be helpful?\n\nWhat role does everyone plan to take?\n\nI’ll set up repository and get basic package skeleton (including GHA) set up.\nIdeally I’d love for everyone to submit & reply to issues.\nI can create the whole thing if people want, but I’ll need reviews!"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#anyone-new",
-    "href": "slides/tech_team-template.html#anyone-new",
-    "title": "Tech Team Meeting: 2025-MM",
-    "section": "Anyone new?",
-    "text": "Anyone new?"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#gsm",
-    "href": "slides/tech_team-template.html#gsm",
-    "title": "Tech Team Meeting: 2025-MM",
-    "section": "gsm",
-    "text": "gsm\nGilead-BioStats/gsm\n\nWhat’s new?"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#openrbqm",
-    "href": "slides/tech_team-template.html#openrbqm",
-    "title": "Tech Team Meeting: 2025-MM",
-    "section": "openrbqm",
-    "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#gsm.app",
-    "href": "slides/tech_team-template.html#gsm.app",
-    "title": "Tech Team Meeting: 2025-MM",
-    "section": "gsm.app",
-    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nWhat’s new?"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#gsm.digitpref",
-    "href": "slides/tech_team-template.html#gsm.digitpref",
-    "title": "Tech Team Meeting: 2025-MM",
-    "section": "gsm.digitpref",
-    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref\n\nWhat’s new?"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#gsm.ae",
-    "href": "slides/tech_team-template.html#gsm.ae",
-    "title": "Tech Team Meeting: 2025-MM",
-    "section": "gsm.ae",
-    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nWhat’s new?"
-  },
-  {
-    "objectID": "slides/tech_team-template.html#gsm.query",
-    "href": "slides/tech_team-template.html#gsm.query",
-    "title": "Tech Team Meeting: 2025-MM",
-    "section": "gsm.query",
-    "text": "gsm.query\nOpenRBQM/gsm.query\n\nWhat’s new?"
-  },
-  {
-    "objectID": "slides/tech_team-202411.html#anyone-new",
-    "href": "slides/tech_team-202411.html#anyone-new",
+    "objectID": "slides/tech_team/tech_team-202411.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202411.html#anyone-new",
     "title": "Tech Team Meeting: 2024-11",
     "section": "Anyone new?",
     "text": "Anyone new?"
   },
   {
-    "objectID": "slides/tech_team-202411.html#digit-preferences-module",
-    "href": "slides/tech_team-202411.html#digit-preferences-module",
+    "objectID": "slides/tech_team/tech_team-202411.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202411.html#digit-preferences-module",
     "title": "Tech Team Meeting: 2024-11",
     "section": "Digit Preferences Module",
     "text": "Digit Preferences Module\n{gsm.digitpref}\n\nNo new functionality since last month.\nWelcome aboard, Lukasz!\nNext:\nShiny module\nStatistical tests"
   },
   {
-    "objectID": "slides/tech_team-202411.html#clustering",
-    "href": "slides/tech_team-202411.html#clustering",
+    "objectID": "slides/tech_team/tech_team-202411.html#clustering",
+    "href": "slides/tech_team/tech_team-202411.html#clustering",
     "title": "Tech Team Meeting: 2024-11",
     "section": "Clustering",
     "text": "Clustering\nAny progress?"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "tech_team-meetings.html",
-    "href": "tech_team-meetings.html",
-    "title": "Tech Team Meetings",
-    "section": "",
-    "text": "2024-07\n2024-09\n2024-10\n2024-11\n2024-12\n2025-02"
   },
   {
     "objectID": "index.html",
@@ -140,115 +161,178 @@
     "text": "Problem Statement\nRisk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation."
   },
   {
-    "objectID": "slides/tech_team-202410.html#anyone-new",
-    "href": "slides/tech_team-202410.html#anyone-new",
-    "title": "Tech Team Meeting: 2024-10",
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "Data Model Overview\n\n\nData Specifications"
+  },
+  {
+    "objectID": "tech_team-meetings.html",
+    "href": "tech_team-meetings.html",
+    "title": "Tech Team Meetings",
+    "section": "",
+    "text": "2024-07\n2024-09\n2024-10\n2024-11\n2024-12\n2025-02"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202503.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202503.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-03",
     "section": "Anyone new?",
     "text": "Anyone new?"
   },
   {
-    "objectID": "slides/tech_team-202410.html#digit-preferences-module",
-    "href": "slides/tech_team-202410.html#digit-preferences-module",
-    "title": "Tech Team Meeting: 2024-10",
-    "section": "Digit Preferences Module",
-    "text": "Digit Preferences Module\n\n{gsm.digitpref} has 2 functions!\n\nsplitByPlace(): Split a vector into a table of place values\nstackedDigitChart(): Plot digit distribution by group\nNext: The bridge between those two.\nLater: Shiny module."
+    "objectID": "slides/tech_team/tech_team-202503.html#gsmverse",
+    "href": "slides/tech_team/tech_team-202503.html#gsmverse",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm(verse)",
+    "text": "gsm(verse)\nGilead-BioStats/gsm\n\nRelease to split packages coming soon!\nWorkshop at PHUSE US Connect 2025 Orlando March 18!"
   },
   {
-    "objectID": "slides/tech_team-202410.html#clustering",
-    "href": "slides/tech_team-202410.html#clustering",
-    "title": "Tech Team Meeting: 2024-10",
-    "section": "Clustering",
-    "text": "Clustering\nAny progress?"
+    "objectID": "slides/tech_team/tech_team-202503.html#gsm.app",
+    "href": "slides/tech_team/tech_team-202503.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\nComing soon: - New vignette about fnFetchData(). - Slides for workshop"
   },
   {
-    "objectID": "slides/tech_team-202412.html#anyone-new",
-    "href": "slides/tech_team-202412.html#anyone-new",
+    "objectID": "slides/tech_team/tech_team-202503.html#gsm.digitpref",
+    "href": "slides/tech_team/tech_team-202503.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref\n\nIn progress: Statistical part for digit preference"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202503.html#gsm.ae",
+    "href": "slides/tech_team/tech_team-202503.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nNow with issues!"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202412.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202412.html#anyone-new",
     "title": "Tech Team Meeting: 2024-12",
     "section": "Anyone new?",
     "text": "Anyone new?"
   },
   {
-    "objectID": "slides/tech_team-202412.html#gsm.app",
-    "href": "slides/tech_team-202412.html#gsm.app",
+    "objectID": "slides/tech_team/tech_team-202412.html#gsm.app",
+    "href": "slides/tech_team/tech_team-202412.html#gsm.app",
     "title": "Tech Team Meeting: 2024-12",
     "section": "gsm.app",
     "text": "gsm.app\nImplemented plugin prototype in {gsm.app}!\n\nSample app"
   },
   {
-    "objectID": "slides/tech_team-202412.html#digit-preferences-module",
-    "href": "slides/tech_team-202412.html#digit-preferences-module",
+    "objectID": "slides/tech_team/tech_team-202412.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202412.html#digit-preferences-module",
     "title": "Tech Team Meeting: 2024-12",
     "section": "Digit Preferences Module",
     "text": "Digit Preferences Module\n{gsm.digitpref}\n\nLukasz is working on Statistical tests:\n\n“I am still working with statistical part for digit preference, at this moment I have cod for calculating chi-square test by test and site (two categories).”\n“Probably, at the end of December I will be ready to share with you my results (and ready to upload my code on github).”\n\nI’ll work on the Shiny module this week!"
   },
   {
-    "objectID": "slides/tech_team-202412.html#clustering",
-    "href": "slides/tech_team-202412.html#clustering",
+    "objectID": "slides/tech_team/tech_team-202412.html#clustering",
+    "href": "slides/tech_team/tech_team-202412.html#clustering",
     "title": "Tech Team Meeting: 2024-12",
     "section": "Clustering",
     "text": "Clustering\nAny progress?"
   },
   {
-    "objectID": "slides/tech_team-202502.html#anyone-new",
-    "href": "slides/tech_team-202502.html#anyone-new",
-    "title": "Tech Team Meeting: 2025-02",
+    "objectID": "slides/tech_team/tech_team-202407.html#jon-harmon",
+    "href": "slides/tech_team/tech_team-202407.html#jon-harmon",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Jon Harmon",
+    "text": "Jon Harmon\n\nJoined Gilead (via Atorus Research) w/ open-source focus\nRuns the Data Science Learning Community / TidyTuesday\nCreated dozens of packages\n\n\n\nI have a lot of experience with:\n\nSoftware dev\n\nFormerly ran a product team at an educational startup\nLots of experience with Agile & OSS\nR packages = my happy place\n\nCommunity building\nEducational materials\n\nI’ll need help with:\n\nDeciding what to build\nUser feedback\nPrioritization"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202407.html#anyone-else",
+    "href": "slides/tech_team/tech_team-202407.html#anyone-else",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Anyone else?",
+    "text": "Anyone else?\n\n\nCan everyone else do a quick intro for me?\n\nFocus on ideas and review, or writing code?\n\nPackage-creation experiences?\nOSS experience?\nGitHub?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202407.html#csm-brainstorm",
+    "href": "slides/tech_team/tech_team-202407.html#csm-brainstorm",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "CSM Brainstorm",
+    "text": "CSM Brainstorm\n\nWe need to pick the first CSM module for the team to work on. Please drop ideas/screenshots/links in this chat and we will review at our next team meeting and select our first project!\n\n\nGitHub\nAny other ideas?\nWhat problem should we solve first?\nRoles?\n\n\n\nGet everyone to join the org.\nJeremy, do you want to talk through your responses?\nAny other ideas?\nShould we start with this?\nWhat problem can we solve first?\n\nIs there a particular function that would be helpful?\n\nWhat role does everyone plan to take?\n\nI’ll set up repository and get basic package skeleton (including GHA) set up.\nIdeally I’d love for everyone to submit & reply to issues.\nI can create the whole thing if people want, but I’ll need reviews!"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#anyone-new",
+    "href": "slides/tech_team/tech_team-template.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "Anyone new?",
     "text": "Anyone new?"
   },
   {
-    "objectID": "slides/tech_team-202502.html#gsm",
-    "href": "slides/tech_team-202502.html#gsm",
-    "title": "Tech Team Meeting: 2025-02",
+    "objectID": "slides/tech_team/tech_team-template.html#gsm",
+    "href": "slides/tech_team/tech_team-template.html#gsm",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "gsm",
-    "text": "gsm\nGilead-BioStats/gsm\n\nSplitting into multiple packages.\nSee {openrbqm} on next slide."
+    "text": "gsm\nGilead-BioStats/gsm\n\nWhat’s new?"
   },
   {
-    "objectID": "slides/tech_team-202502.html#openrbqm",
-    "href": "slides/tech_team-202502.html#openrbqm",
-    "title": "Tech Team Meeting: 2025-02",
+    "objectID": "slides/tech_team/tech_team-template.html#openrbqm",
+    "href": "slides/tech_team/tech_team-template.html#openrbqm",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "openrbqm",
     "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
   },
   {
-    "objectID": "slides/tech_team-202502.html#gsm.simaerep",
-    "href": "slides/tech_team-202502.html#gsm.simaerep",
-    "title": "Tech Team Meeting: 2025-02",
-    "section": "gsm.simaerep",
-    "text": "gsm.simaerep\nIMPALA-Consortium/gsm.simaerep\n\nBjörn Koneswarakantha @ Roche"
-  },
-  {
-    "objectID": "slides/tech_team-202502.html#gsm.app",
-    "href": "slides/tech_team-202502.html#gsm.app",
-    "title": "Tech Team Meeting: 2025-02",
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.app",
+    "href": "slides/tech_team/tech_team-template.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "gsm.app",
-    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nSample app\nSplitting plugins off into packages\n\nSee upcoming slides"
+    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nWhat’s new?"
   },
   {
-    "objectID": "slides/tech_team-202502.html#gsm.digitpref",
-    "href": "slides/tech_team-202502.html#gsm.digitpref",
-    "title": "Tech Team Meeting: 2025-02",
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.digitpref",
+    "href": "slides/tech_team/tech_team-template.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "gsm.digitpref",
-    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref"
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref\n\nWhat’s new?"
   },
   {
-    "objectID": "slides/tech_team-202502.html#gsm.digitpref-cont",
-    "href": "slides/tech_team-202502.html#gsm.digitpref-cont",
-    "title": "Tech Team Meeting: 2025-02",
-    "section": "gsm.digitpref (cont)",
-    "text": "gsm.digitpref (cont)\nOpenRBQM/gsm.digitpref\n\nStatistical analysis coming soon via Łukasz Pietrych"
-  },
-  {
-    "objectID": "slides/tech_team-202502.html#gsm.ae",
-    "href": "slides/tech_team-202502.html#gsm.ae",
-    "title": "Tech Team Meeting: 2025-02",
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.ae",
+    "href": "slides/tech_team/tech_team-template.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "gsm.ae",
-    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nSplitting off Adverse Events module from {gsm.app}"
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nWhat’s new?"
   },
   {
-    "objectID": "slides/tech_team-202502.html#gsm.query",
-    "href": "slides/tech_team-202502.html#gsm.query",
-    "title": "Tech Team Meeting: 2025-02",
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.query",
+    "href": "slides/tech_team/tech_team-template.html#gsm.query",
+    "title": "Tech Team Meeting: 2025-MM",
     "section": "gsm.query",
-    "text": "gsm.query\nOpenRBQM/gsm.query\n\nPlaceholder for shiny modules/plugin for query data."
+    "text": "gsm.query\nOpenRBQM/gsm.query\n\nWhat’s new?"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "Good Statistical Monitoring: A Flexible Open-Source Tool to Detect Risks in Clinical Trials. - Wu, G., Childress, S., Wang, Z., Roumaya, M., Stern, C. M., Dickens, C., & Wildfire, J. (2024). Therapeutic Innovation & Regulatory Science, 1-7.\nAssessing the performance of methods for central statistical monitoring of a binary or continuous outcome in multi-center trials: A simulation study. Ge, L., Wang, Z., Liu, C. C., Childress, S., Wildfire, J., & Wu, G. (2024). Contemporary Clinical Trials, 107580."
+  },
+  {
+    "objectID": "news.html#section",
+    "href": "news.html#section",
+    "title": "News",
+    "section": "2023",
+    "text": "2023\n\n30k Secrets to Pre-Competitive Collaboration: Accelerating Open-source in Clinical Trials. Benedict, J. Wildfire, J. Presented at Fierce Clinical Summin, Philadelphia, PA. Sept, 2023."
+  },
+  {
+    "objectID": "news.html#section-1",
+    "href": "news.html#section-1",
+    "title": "News",
+    "section": "2024",
+    "text": "2024\n\nGood Statistical Monitoring {gsm}: An R Package for Risk-Based Moniotring and Clinical Trial Analytics. Wildfire, J. Roumaya, M. Presented at Phuse Connect in Washington DC. March, 2024.\nLeveraging GitHub Actions and Continuous Integration in R Package Qualification. Roumaya, M. Stackhouse, M. Wildfire J. Presented at Phuse Connect in Washington DC. March, 2024.\nOpen-Source RBQM Software Development. Wildfire, J. Wu, G. Presented at BBSW, San Francisco, Ca. October 2024."
+  },
+  {
+    "objectID": "news.html#section-2",
+    "href": "news.html#section-2",
+    "title": "News",
+    "section": "2025",
+    "text": "2025\n\nOpenRBQM Extended: Endpoint Monitoring, Root-cause Analysis, and Workflows. Childress, S. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025. Slides. Paper\nRBQM Workshop - Building Open-Source Tools paired with Central Monitoring Best Practice. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025. Website\n{gsm.app}: Extensible Clinical Trial Monitoring Apps. Harmon, J. Wildfire J. Submitted for presentation at Shiny Conf, Virtual. April 2025. Abstract. Slides\nIntro to {gsm.aesimrep} (title TBD). Koneswarakantha, B. Submitted for presentation at SCDM EMEA, Brussels, Belgium. April 2025.\nCollaborative Industry Open Source Solutions for Clinical Trial Quality Management. Koneswarakantha, B. Submitted for presentation at Phuse CSS, Utrecht, the Netherlands. May 2025. Abstract. Slides.\nIntroducing {grail} an OpenRBQM R package for actioning RBQM Risk Signals. Maxwell, L. Submitted for presentation at UseR in Durham, NC. May 2025.\nTitle: Enhancing Risk Signal and Action Management with ML Prediction and AI-Driven Generation in Risk-Based Monitoring of Clinical Trial Data. Wang, Z. Submitted for presentation at JSM in Nashville, Tennessess. August 2025."
   }
 ]
