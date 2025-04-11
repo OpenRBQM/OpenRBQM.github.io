@@ -4,6 +4,9 @@ website:
   title: "OpenRBQM"
   repo-url: https://github.com/OpenRBQM/OpenRBQM.github.io
   navbar:
+    tools:
+      - icon: github
+        href: https://github.com/OpenRBQM/OpenRBQM.github.io
     left:
       - href: index.qmd
         text: Home
