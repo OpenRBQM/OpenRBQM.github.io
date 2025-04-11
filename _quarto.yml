@@ -2,6 +2,7 @@ project:
   type: website
 website:
   title: "OpenRBQM"
+  repo-url: https://github.com/OpenRBQM/OpenRBQM.github.io
   navbar:
     left:
       - href: index.qmd
@@ -16,6 +17,9 @@ website:
         text: Help
       - href: tech_team-meetings.qmd
         text: Tech Team Meetings
+    # right:
+    #   - text: "{{< fa brands github >}}"
+    #   - href: https://github.com/openrbqm
 format:
   html:
     theme: 
