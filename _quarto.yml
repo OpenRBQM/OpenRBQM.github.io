@@ -17,9 +17,9 @@ website:
         text: Help
       - href: tech_team-meetings.qmd
         text: Tech Team Meetings
-    right:
-      - text: "{{< fa brands github >}}"
-      - href: https://github.com/openrbqm
+    # right:
+    #   - text: "{{< fa brands github >}}"
+    #   - href: https://github.com/openrbqm
 format:
   html:
     theme: 
