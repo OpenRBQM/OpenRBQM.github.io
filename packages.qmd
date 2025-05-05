@@ -25,8 +25,9 @@ The OpenRBQM framework is designed to provide a robust and flexible solution for
 
 # Function to get package names from a GitHub repository
 get_packages <- function(org) {
-    url <- paste0("https://api.github.com/orgs/", org, "/repos")
-    response <- GET(url)
+    url <- paste0("https://api.github.com/orgs/", org, "/repos?type=public")
+    response <- GET(url,
+                    httr::authenticate("lauramaxwell", Sys.getenv("GITHUB_PAT")))
     content <- content(response, as = "text")
     json <- fromJSON(content)
     return(json)
@@ -42,16 +43,23 @@ packages %>% glue_data('- [{full_name}]({html_url}) {description}', close='\n')
 
 ```
 
-# Articles
+# Package Documentation
 
 ```{r define article functions, echo=FALSE, results = "asis"}
-get_articles <- function(repo, pkg) {
-    url <- paste0("https://api.github.com/repos/",repo,"/",pkg,"/contents/vignettes")
-    response <- GET(url)
+get_articles <- function(org, repo) {
+    url <- paste0("https://api.github.com/repos/",org,"/",repo,"/contents/vignettes")
+    response <- GET(url,
+                    httr::authenticate("lauramaxwell", Sys.getenv("GITHUB_PAT")))
+    if (response$status_code == 200) {
     content <- content(response, as = "text")
     json <- fromJSON(content) %>%
-      dplyr::filter(grepl("Rmd", name))
+      dplyr::filter(grepl("Rmd", name)) %>%
+      dplyr::mutate(name_html = gsub("Rmd", "html", name))
     return(json)
+    }
+    else{
+      return("No articles to display for this repository\n\n")
+    }
 }
 
 get_meta <- function(article, field) {
@@ -64,50 +72,49 @@ get_meta <- function(article, field) {
   }
   return(clean_field)
 }
+
+get_pkgdown_url <- function(org, repo) {
+  url <- paste0("https://api.github.com/repos/",org,"/",repo)
+    response <- GET(url,
+                    httr::authenticate("lauramaxwell", Sys.getenv("GITHUB_PAT")))
+    content <- content(response, as = "text")
+    json <- fromJSON(content)
+    return(json$homepage)
+}
 ```
 
-## OpenRBQM
 
-```{r get_openrbqm_articles, echo=FALSE, results = "asis"}
 
-openrbqm_articles <- get_articles("OpenRBQM","openrbqm")
+```{r get_articles, echo=FALSE, results = "asis"}
+for(i in 1:nrow(packages)) {
+  org <- strsplit(packages$full_name[i], split = "/")[[1]][1]
+  repo <- strsplit(packages$full_name[i], split = "/")[[1]][2]
+  
+  homepage_link <- get_pkgdown_url(org,repo)
+  cat(glue::glue("\n\n## {packages$full_name[i]} \n\n [{repo} Website]({homepage_link})\n\n"))
+  
+  articles_meta <- get_articles(org, repo)
+  
+  if(is.data.frame(articles_meta)) {
+    #get article text
+    articles <- purrr::map(articles_meta$download_url, \(.x) readLines(.x))
+    names(articles) <- articles_meta$name
+    
+    #add title and description to data
+    header_info <- purrr::map(names(articles), \(.x) {
+      articles_meta$description[articles_meta$name == .x] <<- get_meta(articles[[.x]], 
+                                                                       "description")
+      articles_meta$title[articles_meta$name == .x] <<- get_meta(articles[[.x]],
+                                                                 "title")
+      articles_meta$homepage_link <- homepage_link
+    })
+    
+    ##output names, descriptions and links
+    articles_meta %>% glue_data('- [{title}]({homepage_link}}/articles/{name_html}) {description}\n\n') %>% cat()
+  }
+  else{
+    cat(articles_meta)
+  }
+  }
 
-#get article text
-articles <- purrr::map(gsm_articles$download_url, \(.x) readLines(.x))
-names(articles) <- gsm_articles$name
-
-#add title and description to data
-purrr::map(names(articles), \(.x) {
-  gsm_articles$description[gsm_articles$name == .x] <<- get_meta(articles[[.x]], 
-                                                                        "description")
-  gsm_articles$title[gsm_articles$name == .x] <<- get_meta(articles[[.x]],
-                                                                  "title")
-})
-
-##output names, descriptions and links
-gsm_articles %>% glue_data('- [{title}](https://openrbqm.github.io/openrbqm/articles/{name}) {description}', close='\n')
 ```
-
-## gsm.core 
-
-```{r get_gsm_articles, echo=FALSE, results = "asis"}
-
-gsm_articles <- get_articles("Gilead-BioStats","gsm")
-
-#get article text
-articles <- purrr::map(gsm_articles$download_url, \(.x) readLines(.x))
-names(articles) <- gsm_articles$name
-
-#add title and description to data
-purrr::map(names(articles), \(.x) {
-  gsm_articles$description[gsm_articles$name == .x] <<- get_meta(articles[[.x]], 
-                                                                        "description")
-  gsm_articles$title[gsm_articles$name == .x] <<- get_meta(articles[[.x]],
-                                                                  "title")
-})
-
-##output names, descriptions and links
-gsm_articles %>% glue_data('- [{title}](https://gilead-biostats.github.io/gsm/articles/{name}) {description}', close='\n')
-```
-
-# Examples
