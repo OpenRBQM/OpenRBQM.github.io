@@ -38,8 +38,9 @@ orgs <- c("openrbqm", "gilead-biostats")
 
 # Get packages from each repository
 packages <- orgs %>% map(get_packages) %>% bind_rows
+packages$description[is.na(packages$description)] <- "No Description Provided"
    
-packages %>% glue_data('- [{full_name}]({html_url}) {description}', close='\n')
+packages %>% glue_data('- [{full_name}]({html_url}): *{description}*', close='\n')
 
 ```
 
@@ -86,35 +87,49 @@ get_pkgdown_url <- function(org, repo) {
 
 
 ```{r get_articles, echo=FALSE, results = "asis"}
-for(i in 1:nrow(packages)) {
-  org <- strsplit(packages$full_name[i], split = "/")[[1]][1]
-  repo <- strsplit(packages$full_name[i], split = "/")[[1]][2]
-  
-  homepage_link <- get_pkgdown_url(org,repo)
-  cat(glue::glue("\n\n## {packages$full_name[i]} \n\n [{repo} Website]({homepage_link})\n\n"))
+packages_clean <- packages %>%
+  filter(grepl("/", full_name)) %>%  # remove malformed full_name entries
+  mutate(
+    org = map_chr(full_name, ~ strsplit(.x, "/")[[1]][1]),
+    repo = map_chr(full_name, ~ strsplit(.x, "/")[[1]][2])
+  ) %>% 
+  select(full_name, org, repo)
+
+# Iterate using pwalk
+pwalk(packages_clean, function(full_name, org, repo, ...) {
+  # Print header with appropriate spacing
+  homepage_link <- get_pkgdown_url(org, repo)
+  cat(glue("\n\n## {full_name} \n\n [{repo} Website]({homepage_link})\n\n"))
+  cat("\n\n")
   
   articles_meta <- get_articles(org, repo)
-  
-  if(is.data.frame(articles_meta)) {
-    #get article text
-    articles <- purrr::map(articles_meta$download_url, \(.x) readLines(.x))
+
+  if (is.data.frame(articles_meta)) {
+    articles <- map(articles_meta$download_url, readLines)
     names(articles) <- articles_meta$name
-    
-    #add title and description to data
-    header_info <- purrr::map(names(articles), \(.x) {
-      articles_meta$description[articles_meta$name == .x] <<- get_meta(articles[[.x]], 
-                                                                       "description")
-      articles_meta$title[articles_meta$name == .x] <<- get_meta(articles[[.x]],
-                                                                 "title")
-      articles_meta$homepage_link <- homepage_link
-    })
-    
-    ##output names, descriptions and links
-    articles_meta %>% glue_data('- [{title}]({homepage_link}}/articles/{name_html}) {description}\n\n') %>% cat()
+
+    # Add metadata
+    articles_meta$title <- map2_chr(articles_meta$name, articles, ~ get_meta(.y, "title"))
+    articles_meta$description <- map2_chr(articles_meta$name, articles, ~ get_meta(.y, "description"))
+    articles_meta$homepage_link <- homepage_link
+
+    # Derive name_html if needed
+    if (!"name_html" %in% colnames(articles_meta)) {
+      articles_meta$name_html <- articles_meta$name
+    }
+
+    # Output
+    glue_data(
+      articles_meta,
+      '- [{title}]({homepage_link}articles/{name_html}) {description}'
+    ) %>% cat(sep = "\n\n")
+  } else {
+    cat(articles_meta, sep = "\n")
   }
-  else{
-    cat(articles_meta)
-  }
-  }
+})
 
 ```
+
+# Examples
+
+Under Construction
