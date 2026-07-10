@@ -1,0 +1,21 @@
+{
+  "hash": "91ded665b6737e1bf4bb3eefeba4c267",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Tech Team Meeting: 2025-02\"\nengine: knitr\n---\n\n# Agenda\n\n::: nonincremental\n- New Members (5 min)\n- Package Updates (25 min)\n- New Ideas (5 min)\n- Conferences, Workshops, Etc (5 min)\n- Next Steps (10 min)\n:::\n\n\n# New Members\n\n## Anyone new?\n\n\n# Package Updates\n\n## gsm\n\n[Gilead-BioStats/gsm](https://github.com/Gilead-BioStats/gsm)\n\n- Splitting into multiple packages.\n- See {openrbqm} on next slide.\n\n## openrbqm\n\n[OpenRBQM/openrbqm](https://github.com/OpenRBQM/openrbqm)\n\n- What's new?\n\n## gsm.simaerep\n\n[IMPALA-Consortium/gsm.simaerep](https://impala-consortium.github.io/gsm.simaerep/)\n\n- Björn Koneswarakantha @ Roche\n- \n\n## gsm.app\n\n[Gilead-BioStats/gsm.app](https://github.com/Gilead-BioStats/gsm.app)\n\n- [Sample app](https://openrbqm.shinyapps.io/gsm-app-dev/)\n- Splitting plugins off into packages\n  - See upcoming slides\n\n## gsm.digitpref\n\n[OpenRBQM/gsm.digitpref](https://github.com/OpenRBQM/gsm.digitpref)\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](tech_team-202502_files/figure-revealjs/plotPlaceDigits-1.png){width=960}\n:::\n:::\n\n\n## gsm.digitpref (cont)\n\n[OpenRBQM/gsm.digitpref](https://github.com/OpenRBQM/gsm.digitpref)\n\n- Statistical analysis coming soon via Łukasz Pietrych\n\n## gsm.ae\n\n[OpenRBQM/gsm.ae](https://github.com/OpenRBQM/gsm.ae)\n\n- Splitting off Adverse Events module from {gsm.app}\n\n## gsm.query\n\n[OpenRBQM/gsm.query](https://github.com/OpenRBQM/gsm.query)\n\n- Placeholder for shiny modules/plugin for query data.\n\n\n# New Ideas\n\n- Anything else?\n\n\n# Conferences, Workshops, Etc\n\n- March 16-19: [phuse US connect](https://www.phuse-events.org/attend/frontend/reg/thome.csp?pageID=38599&ef_sel_menu=2971&eventID=61) (Orlando, Florida)\n- April 4-9: [ShinyConf2025](https://www.shinyconf.com/) (Online, 2025-04-09 to 11)\n- May 19-21: [phuse/FDA CSS](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/38993921/PHUSE+FDA+CSS+2025) (Silver Spring, Maryland + Utrecht, the Netherlands)\n- August 2-7: [JSM](https://ww2.amstat.org/meetings/jsm/2025/) (Nashville, Tennessee)\n- August 8-10: [useR!2025](https://user2025.r-project.org/) (Durham, North Carolina)\n- September 16-19: [posit::conf(2025)](https://reg.conf.posit.co/flow/posit/positconf25/reg/login) (Atlanta, Georgia)\n\n# Next Steps\n\n- Everyone submit an issue! (or something)\n- Next meeting: 2025-03-05, 11am EDT\n  - Any issues with date/time?\n",
+    "supporting": [
+      "tech_team-202502_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

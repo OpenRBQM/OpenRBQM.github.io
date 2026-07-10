@@ -1,5 +1,6 @@
 ---
 title: "Packages"
+description: "Explore the OpenRBQM ecosystem of open-source R packages for RBQM."
 ---
 
 ```{r load_packages}
@@ -12,22 +13,82 @@ library(jsonlite)
 library(dplyr)
 library(purrr)
 library(glue)
+
+# Authenticated GET against the GitHub API.
+# Uses GITHUB_PAT as a bearer token when set (higher rate limits); otherwise
+# falls back to unauthenticated requests so local renders still work.
+gh_get <- function(url) {
+  pat <- Sys.getenv("GITHUB_PAT")
+  if (nzchar(pat)) {
+    GET(url, add_headers(Authorization = paste("Bearer", pat)))
+  } else {
+    GET(url)
+  }
+}
 ```
 
 # Overview
 
 The OpenRBQM framework is designed to provide a robust and flexible solution for risk-based quality management. It includes a variety of packages that help streamline processes and ensure compliance with industry standards.
 
-# Packages 
-```{r get_packages, echo=FALSE, results = "asis"}
+# The {gsm} Ecosystem
+
+The `{gsm.core}` package is a successor to `{gsm}`, which was **deprecated in March 2025**. The contents of `{gsm}` were split into a family of focused packages, each owning one part of the risk-based monitoring workflow.
+
+## Package lineage
+
+```{mermaid}
+flowchart TD
+    gsm["<b>gsm</b><br/><i>deprecated Mar 2025</i>"]:::deprecated
+    gsm --> core["<b>gsm.core</b><br/>analytics engine"]
+    gsm --> workr["<b>workr</b><br/>workflow runtime"]
+    gsm --> mapping["<b>gsm.mapping</b><br/>data transformation"]
+    gsm --> kri["<b>gsm.kri</b><br/>metrics &amp; visualization"]
+    gsm --> reporting["<b>gsm.reporting</b><br/>reporting data model"]
+
+    classDef deprecated fill:#dc3545,stroke:#a71d2a,color:#fff;
+```
+
+## How the packages fit together
+
+Together the successor packages form a pipeline that turns raw clinical data into monitoring reports. `{workr}` executes the YAML-defined workflows that drive each step, and `{gsm.core}` provides the analytics used to construct and evaluate the metrics.
+
+```{mermaid}
+flowchart LR
+    raw[("Raw / source<br/>datasets")] --> mapping["gsm.mapping<br/><i>map to domains</i>"]
+    mapping --> kri["gsm.kri<br/><i>generate & visualize metrics</i>"]
+    kri --> reporting["gsm.reporting<br/><i>reporting data model</i>"]
+    reporting --> reports[["Reports"]]
+
+    core["gsm.core<br/><i>analytics engine</i>"] -. "metric analytics" .-> kri
+    workr["workr<br/><i>workflow runtime</i>"] -. "executes workflows" .-> mapping
+    workr -.-> kri
+    workr -.-> reporting
+
+    classDef runtime fill:#0d6efd,stroke:#0a58ca,color:#fff;
+    class workr,core runtime;
+```
+
+## Package roles
+
+| Package | Role |
+|---|---|
+| **`{gsm.core}`** | Analytics functionality used to construct and evaluate metrics. |
+| **`{workr}`** | Workflow runtime that executes YAML-defined steps and workflows. |
+| **`{gsm.mapping}`** | Workflows that transform raw/source datasets into the appropriate domains. |
+| **`{gsm.kri}`** | Workflows to generate metrics, plus functionality to visualize and report on them. |
+| **`{gsm.reporting}`** | Workflows to build the reporting data model needed to generate reports. |
+
+# Packages
+```{r get_packages}
 #| echo: false
-#| warnings: false 
+#| results: asis
+#| warning: false
 
 # Function to get package names from a GitHub repository
 get_packages <- function(org) {
     url <- paste0("https://api.github.com/orgs/", org, "/repos?type=public")
-    response <- GET(url,
-                    httr::authenticate("lauramaxwell", Sys.getenv("GITHUB_PAT")))
+    response <- gh_get(url)
     content <- content(response, as = "text")
     json <- fromJSON(content)
     return(json)
@@ -39,8 +100,66 @@ orgs <- c("openrbqm", "gilead-biostats")
 # Get packages from each repository
 packages <- orgs %>% map(get_packages) %>% bind_rows
 packages$description[is.na(packages$description)] <- "No Description Provided"
-   
-packages %>% glue_data('- [{full_name}]({html_url}): *{description}*', close='\n')
+
+# Repositories that are not packages / should not be listed here.
+# (Workshop repos are surfaced on the Outreach page instead.)
+exclude_pkgs <- c(
+  "openrbqm.github.io", "cluster", "openrbqm",
+  "openrbqm-workshop", "openrbqm-workshop-eu25"
+)
+packages <- packages %>% filter(!tolower(name) %in% exclude_pkgs)
+
+# Render a subset of packages as a responsive grid of cards (same style as the
+# home page). The link text is the package name only (org prefix removed).
+render_cards <- function(df) {
+  cat("\n::: {.grid}\n\n")
+  df %>%
+    glue_data(
+      "::: {{.g-col-12 .g-col-md-6 .g-col-lg-4}}\n",
+      "::: {{.card .h-100 .nav-card}}\n",
+      "::: {{.card-body}}\n",
+      "#### [{name}]({html_url})\n\n",
+      "{description}\n\n",
+      ":::\n:::\n:::\n"
+    ) %>%
+    cat(sep = "\n")
+  cat("\n:::\n\n")
+}
+
+# Render a curated section: cards for `pkg_names` (in that order) under `heading`.
+render_section <- function(heading, pkg_names) {
+  sub <- packages %>%
+    filter(tolower(name) %in% pkg_names) %>%
+    arrange(match(tolower(name), pkg_names))
+  if (nrow(sub) > 0) {
+    cat(glue("\n## {heading}\n\n"))
+    render_cards(sub)
+  }
+}
+
+# Curated sections, shown first in the order defined here.
+core_pkgs       <- c("gsm.core", "workr", "gsm.mapping", "gsm.kri", "gsm.reporting")
+ext_pkgs        <- c("gsm.qtl", "gsm.viz", "clindata", "gsm.datasim")
+apps_pkgs       <- c("gsm.app", "gsm.digitpref", "gsm.ae", "gsm.query", "gsm.pd")
+qual_pkgs       <- c("qcthat", "gsm.qc", "gsm.utils")
+deprecated_pkgs <- c("gsm")
+
+render_section("Core Packages", core_pkgs)
+render_section("Extensions and Data", ext_pkgs)
+render_section("Apps and Plugins", apps_pkgs)
+render_section("Quality", qual_pkgs)
+
+# All remaining (non-curated, non-deprecated) packages.
+curated <- c(core_pkgs, ext_pkgs, apps_pkgs, qual_pkgs, deprecated_pkgs)
+rest <- packages %>% filter(!tolower(name) %in% curated)
+
+if (nrow(rest) > 0) {
+  cat("\n## Additional Packages\n\n")
+  render_cards(rest)
+}
+
+# Deprecated packages, shown last.
+render_section("Deprecated", deprecated_pkgs)
 
 ```
 
@@ -49,8 +168,7 @@ packages %>% glue_data('- [{full_name}]({html_url}): *{description}*', close='\n
 ```{r define article functions, echo=FALSE, results = "asis"}
 get_articles <- function(org, repo) {
     url <- paste0("https://api.github.com/repos/",org,"/",repo,"/contents/vignettes")
-    response <- GET(url,
-                    httr::authenticate("lauramaxwell", Sys.getenv("GITHUB_PAT")))
+    response <- gh_get(url)
     if (response$status_code == 200) {
     content <- content(response, as = "text")
     json <- fromJSON(content) %>%
@@ -76,8 +194,7 @@ get_meta <- function(article, field) {
 
 get_pkgdown_url <- function(org, repo) {
   url <- paste0("https://api.github.com/repos/",org,"/",repo)
-    response <- GET(url,
-                    httr::authenticate("lauramaxwell", Sys.getenv("GITHUB_PAT")))
+    response <- gh_get(url)
     content <- content(response, as = "text")
     json <- fromJSON(content)
     return(json$homepage)

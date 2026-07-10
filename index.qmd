@@ -1,9 +1,71 @@
 ---
 title: "OpenRBQM"
+description: "Open-source software for risk-based quality management (RBQM) in clinical trials — a PHUSE pre-competitive collaboration."
 ---
 
 [OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/26811224/OpenRBQM+Pre-Competitive+Collaboration+on+Open-Source+Software+for+RBQM)
 
+## Explore
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100 .nav-card}
+::: {.card-body}
+#### 📦 Packages
+The OpenRBQM ecosystem of open-source R packages.
+
+[Explore →](packages.qmd)
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100 .nav-card}
+::: {.card-body}
+#### 🗂️ Data
+The RBQM data model and specifications.
+
+[View →](data.qmd)
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100 .nav-card}
+::: {.card-body}
+#### 📰 Outreach
+Publications, presentations, and project updates.
+
+[Read →](outreach.qmd)
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100 .nav-card}
+::: {.card-body}
+#### 💬 Help
+Get started, find answers, and learn how to contribute.
+
+[Get help →](help.qmd)
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100 .nav-card}
+::: {.card-body}
+#### 👥 Tech Team Meetings
+Slides and notes from OpenRBQM tech team meetings.
+
+[Browse →](tech_team-meetings.qmd)
+:::
+:::
+:::
+
+:::
+
 ## Problem Statement
 
-Risk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation. 
+Risk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation.

@@ -1,5 +1,6 @@
 ---
 title: "Tech Team Meetings"
+description: "Slides and notes from OpenRBQM tech team meetings."
 ---
 
 -   [2024-07](slides/tech_team/tech_team-202407.qmd)

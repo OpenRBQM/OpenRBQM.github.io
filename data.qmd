@@ -1,5 +1,6 @@
 ---
 title: "Data"
+description: "The OpenRBQM data model and specifications for RBQM."
 ---
 
 # Data Model Overview

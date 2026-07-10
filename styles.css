@@ -1,1 +1,36 @@
 /* css styles */
+
+/* Navigation cards (home page + package list).
+   Colors are intentionally left to the active Bootswatch theme (flatly/darkly)
+   so cards stay legible in both light and dark modes. */
+.nav-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.nav-card:hover,
+.nav-card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Card links: no underline until hover, inherit theme link color. */
+.nav-card a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-card a:hover {
+  text-decoration: underline;
+}
+
+/* Tidy up spacing of card headings. */
+.nav-card .card-body h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Slightly bolder site title (text-only brand treatment). */
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
