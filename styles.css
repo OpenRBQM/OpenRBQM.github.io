@@ -34,3 +34,6 @@
   font-weight: 700;
   letter-spacing: 0.01em;
 }
+
+/* Note: link colors are set per-theme in theme-light.scss / theme-dark.scss
+   (Quarto swaps whole stylesheets for dark mode, so CSS alone can't target it). */

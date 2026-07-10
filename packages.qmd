@@ -110,8 +110,17 @@ exclude_pkgs <- c(
 packages <- packages %>% filter(!tolower(name) %in% exclude_pkgs)
 
 # Render a subset of packages as a responsive grid of cards (same style as the
-# home page). The link text is the package name only (org prefix removed).
+# home page). Each card's heading links to the GitHub source; when the repo has
+# a homepage (pkgdown website), a "Website" link is added below the description.
 render_cards <- function(df) {
+  df <- df %>%
+    mutate(
+      website_link = ifelse(
+        !is.na(homepage) & nzchar(homepage),
+        glue("[Website]({homepage})"),
+        ""
+      )
+    )
   cat("\n::: {.grid}\n\n")
   df %>%
     glue_data(
@@ -120,6 +129,7 @@ render_cards <- function(df) {
       "::: {{.card-body}}\n",
       "#### [{name}]({html_url})\n\n",
       "{description}\n\n",
+      "{website_link}\n\n",
       ":::\n:::\n:::\n"
     ) %>%
     cat(sep = "\n")
@@ -197,7 +207,12 @@ get_pkgdown_url <- function(org, repo) {
     response <- gh_get(url)
     content <- content(response, as = "text")
     json <- fromJSON(content)
-    return(json$homepage)
+    homepage <- json$homepage
+    # Normalize to a trailing slash so "<homepage>articles/..." links are valid.
+    if (!is.null(homepage) && nzchar(homepage) && !grepl("/$", homepage)) {
+      homepage <- paste0(homepage, "/")
+    }
+    return(homepage)
 }
 ```
 
@@ -247,6 +262,14 @@ pwalk(packages_clean, function(full_name, org, repo, ...) {
 
 ```
 
-# Examples
+# Examples[^gsmkri-examples]
 
-Under Construction
+- [Site KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_SiteReport.html)
+- [Country KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_CountryReport.html)
+- [Eligibility Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_Eligibility.html)
+- [Cross-Study KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_CrossStudySRS.html)
+- [Cookbook - Adverse Event KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Cookbook_AdverseEventKRI.html)
+- [Cookbook - Adverse Event Workflow Examples](https://gilead-biostats.github.io/gsm.kri/examples/Cookbook_AdverseEventWorkflow.html)
+- [Cookbook - Reporting Workflow Examples](https://gilead-biostats.github.io/gsm.kri/examples/Cookbook_ReportingWorkflow.html)
+
+[^gsmkri-examples]: Examples from the [{gsm.kri}](https://gilead-biostats.github.io/gsm.kri/) package documentation.

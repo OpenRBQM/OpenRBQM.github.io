@@ -41,8 +41,8 @@ website:
 format:
   html:
     theme:
-      dark: darkly
-      light: flatly
+      dark: [darkly, theme-dark.scss]
+      light: [flatly, theme-light.scss]
     css: styles.css
     toc: true
     link-external-newwindow: true

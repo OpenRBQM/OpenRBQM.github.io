@@ -5,5 +5,12 @@ description: "The OpenRBQM data model and specifications for RBQM."
 
 # Data Model Overview
 
-# Data Specifications
+- [Data Model](https://gilead-biostats.github.io/gsm.core/articles/DataModel.html) — A vignette detailing the data model used in the gsm pipeline.
 
+# Articles[^gsmcore]
+
+- [Step-by-Step Analysis Workflow](https://gilead-biostats.github.io/gsm.core/articles/DataAnalysis.html) — This vignette walks users through the mechanics of the functions that produce all of the Analysis workflow output within the {gsm.core} package.
+- [gsm Extensions](https://gilead-biostats.github.io/gsm.core/articles/gsmExtensions.html) — This vignette describes how to extend {gsm.core} by creating new 'modules', including metrics, reports and shiny apps that can be run using the standard gsm pipeline.
+- [KRI Method](https://gilead-biostats.github.io/gsm.core/articles/KRIMethod.html) — This vignette outlines the statistical methods used to evaluate Key Risk Indicators (KRIs) in {gsm}.
+
+[^gsmcore]: Documentation from the [{gsm.core}](https://gilead-biostats.github.io/gsm.core/) package.
