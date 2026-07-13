@@ -50,6 +50,7 @@ jobs:
             --base main \
             --head "$branch" \
             --title "chore: update News tab with new package releases" \
-            --body "Automated update: ${{ steps.update.outputs.added }} new release(s) added to \`news.qmd\` by the release-check workflow."
+            --body "Automated update: ${{ steps.update.outputs.added }} new release(s) added to \`news.qmd\` by the release-check workflow." \
+            --assignee nandriychuk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

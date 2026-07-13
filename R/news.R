@@ -32,7 +32,13 @@ fetch_releases <- function(org, pkg) {
     lines <- lines[nzchar(trimws(lines))]
     if (length(lines) == 0) return(NA_character_)
     s <- trimws(lines[1])
-    if (nchar(s) > 120) s <- paste0(substr(s, 1, 117), "...")
+    # Cut at first sentence boundary; fall back to word boundary at 160 chars
+    m <- regexpr("[.!?][^.!?]*$", substr(s, 1, 200))
+    if (m > 0) {
+      s <- trimws(substr(s, 1, m))
+    } else if (nchar(s) > 160) {
+      s <- paste0(sub("\\s+\\S+$", "", substr(s, 1, 160)), "...")
+    }
     s
   }, USE.NAMES = FALSE)
   data.frame(pkg = pkg, tag = rels$tag_name, url = rels$html_url,
