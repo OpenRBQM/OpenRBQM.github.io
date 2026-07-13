@@ -27,6 +27,8 @@ website:
         text: Vignettes
       - href: outreach.qmd
         text: Outreach
+      - href: news.qmd
+        text: News
       - href: help.qmd
         text: Help
       - href: tech_team-meetings.qmd
