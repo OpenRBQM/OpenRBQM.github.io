@@ -33,16 +33,26 @@ jobs:
       - name: Set up DESCRIPTION dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
 
-      - name: Clear the dynamic-page cache
-        run: rm -rf _freeze/packages _freeze/vignettes
+      - name: Stash and clear the dynamic-page cache
+        run: |
+          cp -r _freeze _freeze.bak 2>/dev/null || true
+          rm -rf _freeze/packages _freeze/vignettes
 
       - name: Render & Publish
+        id: render
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Restore cache on render failure
+        if: failure()
+        run: |
+          rm -rf _freeze/packages _freeze/vignettes
+          cp -r _freeze.bak/packages _freeze/ 2>/dev/null || true
+          cp -r _freeze.bak/vignettes _freeze/ 2>/dev/null || true
 
       - name: Commit refreshed cache to main
         run: |
