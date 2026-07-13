@@ -77,7 +77,6 @@ cat(render_section(packages, "Core Packages", core_pkgs))
 cat(render_section(packages, "Extensions and Data", ext_pkgs))
 cat(render_section(packages, "Apps and Plugins", apps_pkgs))
 cat(render_section(packages, "Quality", qual_pkgs))
-cat(render_section(packages, "Additional Packages",
-                   remaining_packages(packages, c(core_pkgs, ext_pkgs, apps_pkgs, qual_pkgs, deprecated_pkgs))))
+cat(render_section(packages, "Additional Packages", additional_pkgs))
 cat(render_section(packages, "Deprecated", deprecated_pkgs))
 ```
