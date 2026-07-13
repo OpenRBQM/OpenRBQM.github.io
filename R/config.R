@@ -20,7 +20,7 @@ deprecated_pkgs <- c("gsm")
 additional_pkgs <- c("gh.dash", "open.gismo", "gsm.guide")
 
 # Flat package order for the Vignettes tab (mirrors the Packages tab order).
-curated_order <- c(core_pkgs, ext_pkgs, apps_pkgs, qual_pkgs)
+curated_order <- c(core_pkgs, ext_pkgs, apps_pkgs, qual_pkgs, additional_pkgs)
 
 # The Vignettes tab additionally drops the deprecated gsm package and gsm.qc.
 vignette_exclude <- c(non_package_repos, "gsm", "gsm.qc")
