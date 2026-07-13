@@ -1,0 +1,57 @@
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+name: Refresh package data cache
+
+# Re-fetches packages/vignettes/examples from GitHub, refreshes the committed
+# _freeze cache for the dynamic pages, and deploys. This is what keeps the
+# "dynamic" content current in production without hitting the API on every build.
+#
+# NOTE: we publish to gh-pages *directly here* rather than committing _freeze and
+# relying on build_site.yml — a push made with the default GITHUB_TOKEN does not
+# trigger other workflows, so build_site.yml would never run.
+jobs:
+  refresh:
+    if: startsWith(github.repository, 'OpenRBQM/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Set up DESCRIPTION dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+      - name: Clear the dynamic-page cache
+        run: rm -rf _freeze/packages _freeze/vignettes
+
+      - name: Render & Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit refreshed cache to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _freeze
+          if git diff --cached --quiet; then
+            echo "No cache changes."
+          else
+            git commit -m "chore: refresh package/vignette data cache"
+            git push
+          fi

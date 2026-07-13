@@ -34,3 +34,6 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Authenticate the R GitHub API calls so any cache miss re-renders at
+          # the 5,000/hr limit instead of the 60/hr anonymous limit.
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
