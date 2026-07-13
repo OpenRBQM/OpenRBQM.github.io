@@ -3,28 +3,12 @@ title: "Packages"
 description: "Explore the OpenRBQM ecosystem of open-source R packages for RBQM."
 ---
 
-```{r load_packages}
+```{r setup}
 #| echo: FALSE
 #| include: FALSE
 
-# Load necessary libraries
-library(httr)
-library(jsonlite)
-library(dplyr)
-library(purrr)
-library(glue)
-
-# Authenticated GET against the GitHub API.
-# Uses GITHUB_PAT as a bearer token when set (higher rate limits); otherwise
-# falls back to unauthenticated requests so local renders still work.
-gh_get <- function(url) {
-  pat <- Sys.getenv("GITHUB_PAT")
-  if (nzchar(pat)) {
-    GET(url, add_headers(Authorization = paste("Bearer", pat)))
-  } else {
-    GET(url)
-  }
-}
+# Reusable logic lives in R/ (see R/github.R, R/packages.R).
+invisible(lapply(list.files("R", pattern = "\\.R$", full.names = TRUE), source))
 ```
 
 # Overview
@@ -85,191 +69,15 @@ flowchart LR
 #| results: asis
 #| warning: false
 
-# Function to get package names from a GitHub repository
-get_packages <- function(org) {
-    url <- paste0("https://api.github.com/orgs/", org, "/repos?type=public")
-    response <- gh_get(url)
-    content <- content(response, as = "text")
-    json <- fromJSON(content)
-    return(json)
-}
+# orgs, non_package_repos, and the curated package vectors come from R/config.R
+# (sourced above) so the Packages and Vignettes tabs stay in sync.
+packages <- get_package_table(orgs, non_package_repos)
 
-# Repositories to pull packages from
-orgs <- c("openrbqm", "gilead-biostats")
-
-# Get packages from each repository
-packages <- orgs %>% map(get_packages) %>% bind_rows
-packages$description[is.na(packages$description)] <- "No Description Provided"
-
-# Repositories that are not packages / should not be listed here.
-# (Workshop repos are surfaced on the Outreach page instead.)
-exclude_pkgs <- c(
-  "openrbqm.github.io", "cluster", "openrbqm",
-  "openrbqm-workshop", "openrbqm-workshop-eu25"
-)
-packages <- packages %>% filter(!tolower(name) %in% exclude_pkgs)
-
-# Render a subset of packages as a responsive grid of cards (same style as the
-# home page). Each card's heading links to the GitHub source; when the repo has
-# a homepage (pkgdown website), a "Website" link is added below the description.
-render_cards <- function(df) {
-  df <- df %>%
-    mutate(
-      website_link = ifelse(
-        !is.na(homepage) & nzchar(homepage),
-        glue("[Website]({homepage})"),
-        ""
-      )
-    )
-  cat("\n::: {.grid}\n\n")
-  df %>%
-    glue_data(
-      "::: {{.g-col-12 .g-col-md-6 .g-col-lg-4}}\n",
-      "::: {{.card .h-100 .nav-card}}\n",
-      "::: {{.card-body}}\n",
-      "#### [{name}]({html_url})\n\n",
-      "{description}\n\n",
-      "{website_link}\n\n",
-      ":::\n:::\n:::\n"
-    ) %>%
-    cat(sep = "\n")
-  cat("\n:::\n\n")
-}
-
-# Render a curated section: cards for `pkg_names` (in that order) under `heading`.
-render_section <- function(heading, pkg_names) {
-  sub <- packages %>%
-    filter(tolower(name) %in% pkg_names) %>%
-    arrange(match(tolower(name), pkg_names))
-  if (nrow(sub) > 0) {
-    cat(glue("\n## {heading}\n\n"))
-    render_cards(sub)
-  }
-}
-
-# Curated sections, shown first in the order defined here.
-core_pkgs       <- c("gsm.core", "workr", "gsm.mapping", "gsm.kri", "gsm.reporting")
-ext_pkgs        <- c("gsm.qtl", "gsm.viz", "clindata", "gsm.datasim")
-apps_pkgs       <- c("gsm.app", "gsm.digitpref", "gsm.ae", "gsm.query", "gsm.pd")
-qual_pkgs       <- c("qcthat", "gsm.qc", "gsm.utils")
-deprecated_pkgs <- c("gsm")
-
-render_section("Core Packages", core_pkgs)
-render_section("Extensions and Data", ext_pkgs)
-render_section("Apps and Plugins", apps_pkgs)
-render_section("Quality", qual_pkgs)
-
-# All remaining (non-curated, non-deprecated) packages.
-curated <- c(core_pkgs, ext_pkgs, apps_pkgs, qual_pkgs, deprecated_pkgs)
-rest <- packages %>% filter(!tolower(name) %in% curated)
-
-if (nrow(rest) > 0) {
-  cat("\n## Additional Packages\n\n")
-  render_cards(rest)
-}
-
-# Deprecated packages, shown last.
-render_section("Deprecated", deprecated_pkgs)
-
+cat(render_section(packages, "Core Packages", core_pkgs))
+cat(render_section(packages, "Extensions and Data", ext_pkgs))
+cat(render_section(packages, "Apps and Plugins", apps_pkgs))
+cat(render_section(packages, "Quality", qual_pkgs))
+cat(render_section(packages, "Additional Packages",
+                   remaining_packages(packages, c(core_pkgs, ext_pkgs, apps_pkgs, qual_pkgs, deprecated_pkgs))))
+cat(render_section(packages, "Deprecated", deprecated_pkgs))
 ```
-
-# Package Documentation
-
-```{r define article functions, echo=FALSE, results = "asis"}
-get_articles <- function(org, repo) {
-    url <- paste0("https://api.github.com/repos/",org,"/",repo,"/contents/vignettes")
-    response <- gh_get(url)
-    if (response$status_code == 200) {
-    content <- content(response, as = "text")
-    json <- fromJSON(content) %>%
-      dplyr::filter(grepl("Rmd", name)) %>%
-      dplyr::mutate(name_html = gsub("Rmd", "html", name))
-    return(json)
-    }
-    else{
-      return("No articles to display for this repository\n\n")
-    }
-}
-
-get_meta <- function(article, field) {
-  field_line <- article[grep(paste0(field,": "), article)[1]]
-  if(length(field_line) > 0) {
-    clean_field <- gsub(paste0(field,": "), "", field_line)
-    clean_field <- gsub('\"', "", clean_field)
-  } else {
-    clean_field <- NA
-  }
-  return(clean_field)
-}
-
-get_pkgdown_url <- function(org, repo) {
-  url <- paste0("https://api.github.com/repos/",org,"/",repo)
-    response <- gh_get(url)
-    content <- content(response, as = "text")
-    json <- fromJSON(content)
-    homepage <- json$homepage
-    # Normalize to a trailing slash so "<homepage>articles/..." links are valid.
-    if (!is.null(homepage) && nzchar(homepage) && !grepl("/$", homepage)) {
-      homepage <- paste0(homepage, "/")
-    }
-    return(homepage)
-}
-```
-
-
-
-```{r get_articles, echo=FALSE, results = "asis"}
-packages_clean <- packages %>%
-  filter(grepl("/", full_name)) %>%  # remove malformed full_name entries
-  mutate(
-    org = map_chr(full_name, ~ strsplit(.x, "/")[[1]][1]),
-    repo = map_chr(full_name, ~ strsplit(.x, "/")[[1]][2])
-  ) %>% 
-  select(full_name, org, repo)
-
-# Iterate using pwalk
-pwalk(packages_clean, function(full_name, org, repo, ...) {
-  # Print header with appropriate spacing
-  homepage_link <- get_pkgdown_url(org, repo)
-  cat(glue("\n\n## {full_name} \n\n [{repo} Website]({homepage_link})\n\n"))
-  cat("\n\n")
-  
-  articles_meta <- get_articles(org, repo)
-
-  if (is.data.frame(articles_meta)) {
-    articles <- map(articles_meta$download_url, readLines)
-    names(articles) <- articles_meta$name
-
-    # Add metadata
-    articles_meta$title <- map2_chr(articles_meta$name, articles, ~ get_meta(.y, "title"))
-    articles_meta$description <- map2_chr(articles_meta$name, articles, ~ get_meta(.y, "description"))
-    articles_meta$homepage_link <- homepage_link
-
-    # Derive name_html if needed
-    if (!"name_html" %in% colnames(articles_meta)) {
-      articles_meta$name_html <- articles_meta$name
-    }
-
-    # Output
-    glue_data(
-      articles_meta,
-      '- [{title}]({homepage_link}articles/{name_html}) {description}'
-    ) %>% cat(sep = "\n\n")
-  } else {
-    cat(articles_meta, sep = "\n")
-  }
-})
-
-```
-
-# Examples[^gsmkri-examples]
-
-- [Site KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_SiteReport.html)
-- [Country KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_CountryReport.html)
-- [Eligibility Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_Eligibility.html)
-- [Cross-Study KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Example_CrossStudySRS.html)
-- [Cookbook - Adverse Event KRI Report](https://gilead-biostats.github.io/gsm.kri/examples/Cookbook_AdverseEventKRI.html)
-- [Cookbook - Adverse Event Workflow Examples](https://gilead-biostats.github.io/gsm.kri/examples/Cookbook_AdverseEventWorkflow.html)
-- [Cookbook - Reporting Workflow Examples](https://gilead-biostats.github.io/gsm.kri/examples/Cookbook_ReportingWorkflow.html)
-
-[^gsmkri-examples]: Examples from the [{gsm.kri}](https://gilead-biostats.github.io/gsm.kri/) package documentation.

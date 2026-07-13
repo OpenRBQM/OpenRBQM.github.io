@@ -23,8 +23,8 @@ website:
         text: Home
       - href: packages.qmd
         text: Packages
-      - href: data.qmd
-        text: Data
+      - href: vignettes.qmd
+        text: Vignettes
       - href: outreach.qmd
         text: Outreach
       - href: help.qmd

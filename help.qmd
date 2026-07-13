@@ -24,9 +24,10 @@ The {gsm} workflow process allows creation of reusable pipelines for study (or e
 
 ## How do I customize my study?
 
-The {gsm} framework is designed to be highly modular and customizable. The sections above show examples of customized metrics and workflows. It's also straightforward to add entire custom modules that add new mappings, metrics and reports. See the vignette below for details.
+The {gsm} framework is designed to be highly modular and customizable. The sections above show examples of customized metrics and workflows. It's also straightforward to add entire custom modules that add new mappings, metrics and reports. See the vignettes below for details.
 
 -   [gsm Extensions Vignette](https://gilead-biostats.github.io/gsm.core/articles/gsmExtensions.html) describes how to extend {gsm.core} by creating new 'modules', including metrics, reports and shiny apps that can be run using the standard gsm pipeline.
+-   [Step-by-Step Guide to add a new KRI](https://gilead-biostats.github.io/gsm.kri/articles/AddingKRIs.html) outlines the necessary analytics tasks required before a new Key Risk Indicator (KRI), Quality Tolerance Limit (QTL), or similar metric can be put into production.
 
 ## What reports are available for my study?
 

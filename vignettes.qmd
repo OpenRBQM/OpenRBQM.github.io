@@ -1,0 +1,26 @@
+---
+title: "Vignettes"
+description: "OpenRBQM package vignettes and documentation."
+---
+
+Vignettes and articles fetched from each OpenRBQM package, listed by package in
+the same order as the [Packages](packages.qmd) tab.
+
+```{r setup}
+#| echo: false
+#| include: false
+
+# Reusable logic lives in R/ (see R/github.R, R/vignettes.R).
+invisible(lapply(list.files("R", pattern = "\\.R$", full.names = TRUE), source))
+```
+
+```{r vignette-listing}
+#| echo: false
+#| results: asis
+#| warning: false
+#| message: false
+
+# orgs, vignette_exclude, and curated_order come from R/config.R (sourced above),
+# so ordering/exclusions stay in sync with the Packages tab.
+cat(render_vignettes(orgs, exclude = vignette_exclude, curated = curated_order))
+```

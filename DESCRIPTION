@@ -10,7 +10,7 @@ URL: https://openrbqm.github.io/,
     https://github.com/OpenRBQM/OpenRBQM.github.io
 Depends:
     R (>= 4.1.0)
-Imports: 
+Imports:
     dplyr,
     english,
     glue,
@@ -20,6 +20,8 @@ Imports:
     purrr,
     rmarkdown,
     stringr
+Suggests:
+    testthat (>= 3.0.0)
 Remotes:
     OpenRBQM/gsm.digitpref
 Encoding: UTF-8

@@ -23,10 +23,10 @@ The OpenRBQM ecosystem of open-source R packages.
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.card .h-100 .nav-card}
 ::: {.card-body}
-#### 🗂️ Data
-The RBQM data model and specifications.
+#### 🗂️ Vignettes
+Package vignettes and documentation.
 
-[View →](data.qmd)
+[View →](vignettes.qmd)
 :::
 :::
 :::
