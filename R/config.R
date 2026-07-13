@@ -2,7 +2,7 @@
 # two pages can never drift out of sync.
 
 # GitHub orgs to pull packages from.
-orgs <- c("openrbqm", "gilead-biostats")
+orgs <- c("openrbqm", "gilead-biostats", "gilead-public")
 
 # Repos that are not packages and should never be listed.
 # (Workshop repos are surfaced on the Outreach page instead.)
