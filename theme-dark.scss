@@ -4,3 +4,12 @@
 // contrast on the dark background.
 $link-color: #8ec7f2;
 $link-hover-color: #dcefff;
+
+/*-- scss:rules --*/
+
+// Quarto sets --mermaid-label-fg-color to the theme's primary blue (#375a7f)
+// which is unreadable on a dark background. Override to white.
+:root {
+  --mermaid-label-fg-color: #fff;
+  --mermaid-edge-color: #adb5bd;
+}
