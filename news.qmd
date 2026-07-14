@@ -26,7 +26,7 @@ description: "Release notes for OpenRBQM packages."
 - [qcthat v1.1.2](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.2) — 2026-03-20 — This patch release focuses on introducing the world to qcthat.
 - [gh.dash v1.0.0](https://github.com/Gilead-BioStats/gh.dash/releases/tag/v1.0.0) — 2026-03-17 — Initial release of {gh.dash}, an R package that generates an HTML dashboard for tracking the development status of a portfolio of GitHub repositories.
 - [gsm.core v1.1.8](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.8) — 2026-03-06 — This patch release adds the `db_lock_dt` to `Raw_STUDY` in the `lSource` dataset, implementing updates from gsm.datasim v1.1.3 and gsm.mapping v1.1.2
-- [gsm.datasim v1.1.3](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.3) — 2026-03-06 — This patch release makes the follwoing updates:
+- [gsm.datasim v1.1.3](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.3) — 2026-03-06 — This patch release makes the following updates:
 - [qcthat v1.1.1](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.1) — 2026-03-06 — This patch release contains improvements and bug fixes discovered while applying the experimental AI agent features released in qcthat v1.1.0.
 - [qcthat v1.1.0](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.0) — 2026-02-24 — New features and tools to help you track user acceptance testing, and to help you use AI agents to get started with `qcthat`.
 - [gsm.mapping v1.1.2](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.2) — 2026-01-30 — This patch release adds `db_lock_dt` to spec of `STUDY.yaml` and makes wording/phrasing changes for `EXCLUSION.yaml`.
@@ -57,7 +57,7 @@ description: "Release notes for OpenRBQM packages."
 - [gsm.reporting v1.1.3](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.3) — 2025-09-18 — Patch release to update issue templates and contributor guidelines and resolve a small [bug](https://github.com/Gilead-BioStats/gsm.reporting/issues/25).
 - [gsm.qtl v1.0.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.0.0) — 2025-09-18 — We are excited to announce the first major production ready release of the `gsm.qtl` package.
 - [gsm.qc v1.1.1](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.1.1) — 2025-09-18 — This patch release adds new contributor guidelines and standardized issue templates and a new test for site risk score.
-- [gsm.utils v0.1.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.1.0) — 2025-09-18 — Initial release of `gsm.utils` includes helper functions for creating new pacakges compatible with the `gsm` framework including default issue templates and...
+- [gsm.utils v0.1.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.1.0) — 2025-09-18 — Initial release of `gsm.utils` includes helper functions for creating new packages compatible with the `gsm` framework including default issue templates and...
 - [gsm.core v1.1.5](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.5) — 2025-09-16 — This patch release enhances the Flag function to support vRiskScoreWeight which are weights to apply to each flag value.
 - [gsm.mapping v1.1.1](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.1) — 2025-09-16 — Patch release updating Issue Templates and Contributor Guidelines
 - [gsm.datasim v1.1.1](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.1) — 2025-09-16 — This release adds new contributor guidelines and standardized issue templates.
