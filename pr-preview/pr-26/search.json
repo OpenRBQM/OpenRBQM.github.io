@@ -284,21 +284,21 @@
     "href": "outreach.html#section",
     "title": "Outreach",
     "section": "2025",
-    "text": "2025\n\nOpenRBQM Extended: Endpoint Monitoring, Root-cause Analysis, and Workflows. Childress, S. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025. Slides. Paper\nRBQM Workshop - Building Open-Source Tools paired with Central Monitoring Best Practice. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025. Website\n{gsm.app}: Extensible Clinical Trial Monitoring Apps. Harmon, J. Wildfire J. Submitted for presentation at Shiny Conf, Virtual. April 2025. Abstract. Slides\nIntro to {gsm.aesimrep} (title TBD). Koneswarakantha, B. Submitted for presentation at SCDM EMEA, Brussels, Belgium. April 2025.\nCollaborative Industry Open Source Solutions for Clinical Trial Quality Management. Koneswarakantha, B. Submitted for presentation at Phuse CSS, Utrecht, the Netherlands. May 2025. Abstract. Slides.\nIntroducing {grail} an OpenRBQM R package for actioning RBQM Risk Signals. Maxwell, L. Submitted for presentation at UseR in Durham, NC. May 2025.\nTitle: Enhancing Risk Signal and Action Management with ML Prediction and AI-Driven Generation in Risk-Based Monitoring of Clinical Trial Data. Wang, Z. Submitted for presentation at JSM in Nashville, Tennessess. August 2025."
+    "text": "2025\n\nOpenRBQM Extended: Endpoint Monitoring, Root-cause Analysis, and Workflows. Childress, S. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025.\nRBQM Workshop - Building Open-Source Tools paired with Central Monitoring Best Practice. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025. Website\n{gsm.app}: Extensible Clinical Trial Monitoring Apps. Harmon, J. Wildfire J. Submitted for presentation at Shiny Conf, Virtual. April 2025.\nIntro to {gsm.aesimrep} (title TBD). Koneswarakantha, B. Submitted for presentation at SCDM EMEA, Brussels, Belgium. April 2025.\nCollaborative Industry Open Source Solutions for Clinical Trial Quality Management. Koneswarakantha, B. Submitted for presentation at Phuse CSS, Utrecht, the Netherlands. May 2025.\nIntroducing {grail} an OpenRBQM R package for actioning RBQM Risk Signals. Maxwell, L. Submitted for presentation at UseR in Durham, NC. May 2025.\nTitle: Enhancing Risk Signal and Action Management with ML Prediction and AI-Driven Generation in Risk-Based Monitoring of Clinical Trial Data. Wang, Z. Submitted for presentation at JSM in Nashville, Tennessee. August 2025."
   },
   {
     "objectID": "outreach.html#section-1",
     "href": "outreach.html#section-1",
     "title": "Outreach",
     "section": "2024",
-    "text": "2024\n\nGood Statistical Monitoring {gsm}: An R Package for Risk-Based Moniotring and Clinical Trial Analytics. Wildfire, J. Roumaya, M. Presented at Phuse Connect in Washington DC. March, 2024.\nLeveraging GitHub Actions and Continuous Integration in R Package Qualification. Roumaya, M. Stackhouse, M. Wildfire J. Presented at Phuse Connect in Washington DC. March, 2024.\nOpen-Source RBQM Software Development. Wildfire, J. Wu, G. Presented at BBSW, San Francisco, Ca. October 2024."
+    "text": "2024\n\nGood Statistical Monitoring {gsm}: An R Package for Risk-Based Monitoring and Clinical Trial Analytics. Wildfire, J. Roumaya, M. Presented at Phuse Connect in Washington DC. March, 2024.\nLeveraging GitHub Actions and Continuous Integration in R Package Qualification. Roumaya, M. Stackhouse, M. Wildfire J. Presented at Phuse Connect in Washington DC. March, 2024.\nOpen-Source RBQM Software Development. Wildfire, J. Wu, G. Presented at BBSW, San Francisco, Ca. October 2024."
   },
   {
     "objectID": "outreach.html#section-2",
     "href": "outreach.html#section-2",
     "title": "Outreach",
     "section": "2023",
-    "text": "2023\n\n30k Secrets to Pre-Competitive Collaboration: Accelerating Open-source in Clinical Trials. Benedict, J. Wildfire, J. Presented at Fierce Clinical Summin, Philadelphia, PA. Sept, 2023."
+    "text": "2023\n\n30k Secrets to Pre-Competitive Collaboration: Accelerating Open-source in Clinical Trials. Benedict, J. Wildfire, J. Presented at Fierce Clinical Summit, Philadelphia, PA. Sept, 2023."
   },
   {
     "objectID": "vignettes.html",
