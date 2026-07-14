@@ -23,7 +23,7 @@ vignette_markdown <- function(sections) {
     lines <- purrr::pmap_chr(arts, function(title, url, description, ...) {
       if (!is.na(description) && nzchar(description) &&
           !description %in% c("NA", "<>", ">") &&
-          !grepl("^<<.*>>$", trimws(description))) {
+          !grepl("<<.*>>", description)) {
         paste0("- [", title, "](", url, ") — ", description)
       } else {
         paste0("- [", title, "](", url, ")")

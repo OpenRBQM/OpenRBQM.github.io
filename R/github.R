@@ -53,7 +53,7 @@ list_dir <- function(org, repo, path, pattern, ref = NULL) {
   url <- paste0("https://api.github.com/repos/", org, "/", repo, "/contents/", path)
   if (!is.null(ref)) url <- paste0(url, "?ref=", ref)
   response <- gh_get(url)
-  if (response$status_code != 200) return(empty)
+  if (httr::status_code(response) != 200) return(empty)
   json <- jsonlite::fromJSON(httr::content(response, as = "text"))
   if (!is.data.frame(json) || !"name" %in% names(json)) return(empty)
   hit <- json[grepl(pattern, json$name), , drop = FALSE]
@@ -95,14 +95,14 @@ get_articles <- function(org, repo) {
 #' only a block-scalar marker (`>`, `|`, `>-`, `|+`, ...) whose body lives on
 #' following lines we don't read.
 get_meta <- function(lines, field) {
-  hit <- lines[grep(paste0("^", field, ": "), lines)[1]]
-  if (length(hit) == 0 || is.na(hit)) {
-    return(NA_character_)
-  }
-  val <- trimws(gsub('"', "", sub(paste0("^", field, ": "), "", hit)))
-  if (!nzchar(val) || grepl("^[>|][+-]?$", val)) {
-    return(NA_character_)
-  }
+  pattern <- paste0("^", field, ":\\s*")
+  hit <- lines[grep(pattern, lines)[1]]
+  if (length(hit) == 0 || is.na(hit)) return(NA_character_)
+  val <- trimws(sub(pattern, "", hit))
+  # Strip surrounding single or double quotes only (not embedded ones).
+  val <- gsub('^["\']|["\']$', "", val)
+  val <- trimws(val)
+  if (!nzchar(val) || grepl("^[>|][+-]?$", val)) return(NA_character_)
   val
 }
 

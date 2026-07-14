@@ -39,3 +39,24 @@ test_that("vignette_markdown skips sections with no articles", {
   expect_false(grepl("## empty", md))
   expect_true(grepl("## gsm.core", md))
 })
+
+test_that("vignette_markdown omits <<...>> placeholder descriptions", {
+  sections <- list(
+    list(repo = "gsm.utils", articles = data.frame(
+      title = "Setup",
+      url = "https://x/articles/Setup.html",
+      description = "<<Fill in Example description here>>",
+      stringsAsFactors = FALSE
+    )),
+    list(repo = "gsm.core", articles = data.frame(
+      title = "Intro",
+      url = "https://x/articles/Intro.html",
+      description = "Some text with <<placeholder>> embedded",
+      stringsAsFactors = FALSE
+    ))
+  )
+  md <- vignette_markdown(sections)
+  expect_false(grepl("<<", md))
+  expect_true(grepl("\\[Setup\\]", md))
+  expect_true(grepl("\\[Intro\\]", md))
+})

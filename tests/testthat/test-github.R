@@ -16,6 +16,15 @@ test_that("get_meta returns NA for empty values and block-scalar markers", {
   expect_true(is.na(get_meta("description: >-", "description")))
 })
 
+test_that("get_meta handles no space after colon (title:\"X\")", {
+  expect_equal(get_meta('title:"Data Model"', "title"), "Data Model")
+  expect_equal(get_meta("title:X", "title"), "X")
+})
+
+test_that("get_meta strips surrounding single quotes", {
+  expect_equal(get_meta("title: 'My Title'", "title"), "My Title")
+})
+
 test_that("norm_home adds a trailing slash only when needed", {
   expect_equal(norm_home("https://x.io/pkg"), "https://x.io/pkg/")
   expect_equal(norm_home("https://x.io/pkg/"), "https://x.io/pkg/")

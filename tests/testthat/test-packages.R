@@ -23,6 +23,12 @@ test_that("render_cards omits the Website link when homepage is blank", {
   expect_false(grepl("Website", md))
 })
 
+test_that("render_cards omits the Website link when homepage is NA", {
+  df <- fixture()[1, ]
+  df$homepage <- NA_character_
+  expect_false(grepl("Website", render_cards(df)))
+})
+
 test_that("render_cards returns empty string for an empty data frame", {
   expect_equal(render_cards(fixture()[0, ]), "")
 })
