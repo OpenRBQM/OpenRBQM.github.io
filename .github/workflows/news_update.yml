@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '0 8 * * 1'  # Mondays 08:00 UTC
+    - cron: '0 8 1 * *'  # 1st of each month, 08:00 UTC
   workflow_dispatch:
 
 name: Check for new package releases
