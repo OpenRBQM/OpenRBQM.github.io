@@ -130,6 +130,11 @@ update_news <- function(path = "news.qmd") {
     }, error = function(e) NULL)
   }))
 
+  if (is.null(repo_lookup) || nrow(repo_lookup) == 0) {
+    message("Could not retrieve any repositories (API outage or rate limit).")
+    return(0L)
+  }
+
   all_releases <- do.call(rbind, lapply(all_pkgs, function(pkg) {
     row <- repo_lookup[tolower(repo_lookup$name) == tolower(pkg), ]
     if (nrow(row) == 0) return(NULL)

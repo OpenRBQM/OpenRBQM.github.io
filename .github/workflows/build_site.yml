@@ -140,7 +140,7 @@ jobs:
 
       - name: Delete preview folder
         run: |
-          PR="${{ github.event.pull_request.number || inputs.pr-number }}"
+          PR="${{ github.event.pull_request.number || inputs['pr-number'] }}"
           if [ -d "pr-preview/pr-${PR}" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
