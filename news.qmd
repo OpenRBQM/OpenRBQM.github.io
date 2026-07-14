@@ -8,15 +8,15 @@ description: "Release notes for OpenRBQM packages."
 - [qcthat v1.1.3](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.3) — 2026-06-17 — This patch release streamlines and hones the GitHub Action installed via `Action_qcthat()`.
 - [gsm.kri v1.5.2](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.5.2) — 2026-06-10 — This patch release fixes report display issues on the pkgdown site and renders missing examples.
 - [gsm.utils v0.4.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.4.0) — 2026-05-28 — This release standardizes actions and related functionality, and solidifies this package:
-- [gsm.core v1.2.1](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.2.1) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.
-- [gsm.mapping v1.1.4](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.4) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.
-- [gsm.kri v1.5.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.5.1) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.
-- [gsm.reporting v1.1.5](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.5) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.
-- [gsm.qtl v1.2.2](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.2.2) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.
+- [gsm.core v1.2.1](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.2.1) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.utils`
+- [gsm.mapping v1.1.4](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.4) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.utils`
+- [gsm.kri v1.5.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.5.1) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.utils`
+- [gsm.reporting v1.1.5](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.5) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.utils`
+- [gsm.qtl v1.2.2](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.2.2) — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in `gsm.utils`
 - [gsm.qtl v1.2.1](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.2.1) — 2026-05-07 — Adds early return for zero-row df to prevent crash in `eligibility_listing()`
 - [gsm.kri v1.5.0](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.5.0) — 2026-04-17 — This minor release includes new workflows/tests and CI automation, plus performance-focused improvements to the qcthat testing infrastructure.
 - [gsm.reporting v1.1.4](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.4) — 2026-04-17 — This patch release primarily focuses on tightening quality control (new qualitative tests + qcthat automation) and aligning docs/dependencies with the RC versions of upstream `gsm.*` packages.
-- [gsm.qtl v1.2.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.2.0) — 2026-04-17 — Fixed issue [#90](https://github.com/Gilead-BioStats/gsm.
+- [gsm.qtl v1.2.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.2.0) — 2026-04-17 — Fixed issue [#90](https://github.com/Gilead-BioStats/gsm.qtl/issues/90): Updated `eligibility_groupBar()`, `discontinuation_groupBar()`, and `reasons_groupBar()` to accept separate `dfNum`/`dfDenom` inputs, correcting count alignment for discontinued and ineligible participants.
 - [gsm.core v1.2.0](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.2.0) — 2026-04-15 — This minor release expands the qualification / workflow test suite, refreshes packaged example datasets, and updates release/CI/docs scaffolding.
 - [gsm.mapping v1.1.3](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.3) — 2026-04-15 — This minor update includes new/updated domain mapping specs, improved mapping documentation, and expanded qualification/unit testing and CI workflows.
 - [workr v1.0.0](https://github.com/Gilead-BioStats/workr/releases/tag/v1.0.0) — 2026-04-09 — {workr} provides a minimal framework for describing and executing step-by-step R data pipelines using YAML-defined workflows.
@@ -25,43 +25,43 @@ description: "Release notes for OpenRBQM packages."
 
 - [qcthat v1.1.2](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.2) — 2026-03-20 — This patch release focuses on introducing the world to qcthat.
 - [gh.dash v1.0.0](https://github.com/Gilead-BioStats/gh.dash/releases/tag/v1.0.0) — 2026-03-17 — Initial release of {gh.dash}, an R package that generates an HTML dashboard for tracking the development status of a portfolio of GitHub repositories.
-- [gsm.core v1.1.8](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.8) — 2026-03-06 — This patch release adds the `db_lock_dt` to `Raw_STUDY` in the `lSource` dataset, implementing updates from gsm.datasim v1.1.3 and gsm.mapping v1.1.
+- [gsm.core v1.1.8](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.8) — 2026-03-06 — This patch release adds the `db_lock_dt` to `Raw_STUDY` in the `lSource` dataset, implementing updates from gsm.datasim v1.1.3 and gsm.mapping v1.1.2
 - [gsm.datasim v1.1.3](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.3) — 2026-03-06 — This patch release makes the follwoing updates:
-- [qcthat v1.1.1](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.1) — 2026-03-06 — This patch release contains improvements and bug fixes discovered while applying the experimental AI agent features released in qcthat v1.1.0. These changes are tracked in #241.
+- [qcthat v1.1.1](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.1) — 2026-03-06 — This patch release contains improvements and bug fixes discovered while applying the experimental AI agent features released in qcthat v1.1.0.
 - [qcthat v1.1.0](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.0) — 2026-02-24 — New features and tools to help you track user acceptance testing, and to help you use AI agents to get started with `qcthat`.
 - [gsm.mapping v1.1.2](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.2) — 2026-01-30 — This patch release adds `db_lock_dt` to spec of `STUDY.yaml` and makes wording/phrasing changes for `EXCLUSION.yaml`.
 - [gsm.kri v1.4.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.4.1) — 2026-01-30 — This patch release addresses the following issues:
 - [gsm.qtl v1.1.1](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.1.1) — 2026-01-30 — Updated `critera_groupBar()` and `reasons_groupBar()` address small bugs that were affecting barchart's tooltip text.
-- [gsm.utils v0.3.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.3.0) — 2026-01-30 — This update of the gsm.
+- [gsm.utils v0.3.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.3.0) — 2026-01-30 — This update of the gsm.utils package introduces the following features:
 - [gsm.kri v1.4.0](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.4.0) — 2026-01-12 — This minor release updates the comprehensive site risk score (SRS) functionality in gsm.kri v1.4.0, including calculation methods, cross-study visualization capabilities, and extensive test coverage.
-- [gsm.core v1.1.7](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.7) — 2026-01-09 — This patch release adds the IE domain to the `lSource` .
+- [gsm.core v1.1.7](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.7) — 2026-01-09 — This patch release adds the IE domain to the `lSource` .rda object used across example reports and workflows in other `gsm` ecosystem packages, introducing study-level QTL metrics and associated reporting datasets, as well as minor documentation updates and standardization of the github actions used in CI/CD.
 - [gsm.qtl v1.1.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.1.0) — 2026-01-09 — Updated eligibility_groupBar() to support counts and percentage bar charts
 
 ## Releases Q4 2025
 
 - [qcthat v1.0.0](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.0.0) — 2025-12-17 — You can now use this package to implement a QC framework for any R package associated with a GitHub repository.
 - [gsm.utils v0.2.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.2.0) — 2025-12-17 — This is a major update of the gsm.utils package.
-- [gsm.viz v2.3.0](https://github.com/Gilead-BioStats/gsm.viz/releases/tag/v2.3.0) — 2025-12-15 — v2.3.0 adds support to the group overview table module for the new site risk score calculation that applies weights to each metric and flag.  View a full list of resolved issues [here](https://github.
+- [gsm.viz v2.3.0](https://github.com/Gilead-BioStats/gsm.viz/releases/tag/v2.3.0) — 2025-12-15 — v2.3.0 adds support to the group overview table module for the new site risk score calculation that applies weights to each metric and flag.
 - [qcthat v0.2.0](https://github.com/Gilead-BioStats/qcthat/releases/tag/v0.2.0) — 2025-11-05 — This is a complete rewrite of the package to implement a framework that links GitHub issues to evidence that those issues have been implemented.
 - [gsm.core v1.1.6](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.6) — 2025-11-04 — This patch release adds Site Risk Score metric to `reportingResults` and updates documentation.
 - [gsm.kri v1.3.2](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.3.2) — 2025-11-04 — This patch release addresses a bug that was impacting the country-level KRI report.
-- [gsm.datasim v1.1.2](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.2) — 2025-10-03 — v1.1.2 resolves a bug involving duplicate records in the randomization domain and also reduces the rate of study discontinuation and anti-cancer therapy to avoid excessive risk signals in `{gsm.
-- [gsm.qtl v1.0.1](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.0.1) — 2025-10-01 — Catch dev up to main before pushing qual report by @zdz2101 in https://github.com/Gilead-BioStats/gsm.
+- [gsm.datasim v1.1.2](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.2) — 2025-10-03 — v1.1.2 resolves a bug involving duplicate records in the randomization domain and also reduces the rate of study discontinuation and anti-cancer therapy to avoid excessive risk signals in `{gsm.endpoints}`.
+- [gsm.qtl v1.0.1](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.0.1) — 2025-10-01 — Catch dev up to main before pushing qual report by @zdz2101 in https://github.com/Gilead-BioStats/gsm.qtl/pull/55
 
 ## Releases Q3 2025
 
-- [gsm.app v2.6.1](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.6.1) — 2025-09-24 — This release provides usability upgrades for the Domain Details tab. It also adds new contributor guidelines and standardized issue templates.
-- [gsm.app v2.6.0](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.6.0) — 2025-09-24 — This release provides usability upgrades for the Domain Details tab. It also adds new contributor guidelines and standardized issue templates.
+- [gsm.app v2.6.1](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.6.1) — 2025-09-24 — This release provides usability upgrades for the Domain Details tab.
+- [gsm.app v2.6.0](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.6.0) — 2025-09-24 — This release provides usability upgrades for the Domain Details tab.
 - [gsm.kri v1.3.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.3.1) — 2025-09-23 — This patch release addresses a bug related to the `gsm.viz` implementation of site risk score.
 - [gsm.kri v1.3.0](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.3.0) — 2025-09-18 — This release adds a new Site Risk Score metric that calculates weighted site-level risk across multiple KRIs.
 - [gsm.reporting v1.1.3](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.3) — 2025-09-18 — Patch release to update issue templates and contributor guidelines and resolve a small [bug](https://github.com/Gilead-BioStats/gsm.reporting/issues/25).
 - [gsm.qtl v1.0.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.0.0) — 2025-09-18 — We are excited to announce the first major production ready release of the `gsm.qtl` package.
 - [gsm.qc v1.1.1](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.1.1) — 2025-09-18 — This patch release adds new contributor guidelines and standardized issue templates and a new test for site risk score.
-- [gsm.utils v0.1.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.1.0) — 2025-09-18 — Initial release of `gsm.
+- [gsm.utils v0.1.0](https://github.com/Gilead-BioStats/gsm.utils/releases/tag/v0.1.0) — 2025-09-18 — Initial release of `gsm.utils` includes helper functions for creating new pacakges compatible with the `gsm` framework including default issue templates and...
 - [gsm.core v1.1.5](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.5) — 2025-09-16 — This patch release enhances the Flag function to support vRiskScoreWeight which are weights to apply to each flag value.
 - [gsm.mapping v1.1.1](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.1) — 2025-09-16 — Patch release updating Issue Templates and Contributor Guidelines
 - [gsm.datasim v1.1.1](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.1) — 2025-09-16 — This release adds new contributor guidelines and standardized issue templates.
-- [gsm.app v2.5.3](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.5.3) — 2025-08-20 — This is a patch release to implement the qualification infrastructure. Most of the changes are invisible infrastructure changes.
+- [gsm.app v2.5.3](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.5.3) — 2025-08-20 — This is a patch release to implement the qualification infrastructure.
 - [gsm.kri v1.2.2](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.2.2) — 2025-07-28 — This patch release fixes a bug in `Report_KRI.Rmd` that produced an error in LaTeX compilation of the report output.
 - [gsm.core v1.1.4](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.4) — 2025-07-25 — This patch release enhances the `RunQuery` function's type handling and schema application capabilities.
 - [gsm.ae v0.1.0](https://github.com/OpenRBQM/gsm.ae/releases/tag/v0.1.0) — 2025-07-09 — This initial release provides a dashboard that summarizes trends in Site- and Country-level adverse event and severe adverse event data.
@@ -69,45 +69,45 @@ description: "Release notes for OpenRBQM packages."
 
 ## Releases Q2 2025
 
-- [gsm.qtl v0.1.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v0.1.0) — 2025-06-27 — The Good Statistical Monitoring or 'gsm' suite of R packages provides a framework for statistical data monitoring. 'gsm.
+- [gsm.qtl v0.1.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v0.1.0) — 2025-06-27 — The Good Statistical Monitoring or 'gsm' suite of R packages provides a framework for statistical data monitoring.
 - [gsm.kri v1.2.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.2.1) — 2025-06-25 — This patch release addresses changes to an `.rda` object updated in `gsm.core` v1.1.3.
 - [gsm.datasim v1.1.0](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.0) — 2025-06-25 — New Mapping Workflows Support:**
 - [gsm.reporting v1.1.2](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.2) — 2025-06-24 — This patch release addresses changes to an `.rda` object updated in `gsm.core` v1.1.3.
-- [gsm.core v1.1.3](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.3) — 2025-06-23 — This patch addresses a bug in the lSource .
-- [gsm.core v1.1.2](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.2) — 2025-06-19 — The patch releases a new `lSource` .
+- [gsm.core v1.1.3](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.3) — 2025-06-23 — This patch addresses a bug in the lSource .rda object found in the STUDCOMP domain, and introduces `%>%` as a reexport from magrittr
+- [gsm.core v1.1.2](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.2) — 2025-06-19 — The patch releases a new `lSource` .rda object used across example reports and workflows in other `gsm` ecosystem packages, as well as fixes a bug so that missing dates are handled appropriately upon ingestion.
 - [gsm.mapping v1.1.0](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.0) — 2025-06-19 — New Mapping Workflows:**
 - [gsm.kri v1.2.0](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.2.0) — 2025-06-19 — This minor release introduces new chart configuration functionality, refactors widget generation to support additional settings and unified output labels, and adds a new flag‐change report.
 - [gsm.reporting v1.1.1](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.1) — 2025-06-19 — This patch release adds a section about incorporating historical data into the reporting data model, and updates tests to comply with new gsm.core sample data.
-- [gsm.qc v1.1.0](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.1.0) — 2025-06-19 — This minor release of `gsm.qc` version 1.1.
+- [gsm.qc v1.1.0](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.1.0) — 2025-06-19 — This minor release of `gsm.qc` version 1.1.0 includes several enhancements:
 - [gsm.app v2.5.1](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.5.1) — 2025-06-12 — This patch release fixes bugs related to the presence of multiple "Group Levels" (eg, "Site" and "Country") in app data (#469).
-- [gsm.core v1.1.1](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.1) — 2025-06-05 — This patch release fixes a few CLI messages from RunStep(), adds new "timestamp" and "logical" `types` to mapping specs, updates the sample data, and addresses ...
+- [gsm.core v1.1.1](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.1) — 2025-06-05 — This patch release fixes a few CLI messages from RunStep(), adds new "timestamp" and "logical" `types` to mapping specs, updates the sample data, and addresses erroneous warning messages in the testing suite.
 - [gsm.kri v1.1.2](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.1.2) — 2025-05-30 — This patch release updates the following yaml files in `/2_metrics` to update default accrual thresholds
 - [gsm.reporting v1.1.0](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.0) — 2025-05-28 — This minor release adds the capability to calculate the change of user-specified metrics from the previous snapshot date.
-- [gsm.app v2.5.0](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.5.0) — 2025-05-23 — We now support multiple group levels! We also provided more options to allow app admins to optimize data fetches.
+- [gsm.app v2.5.0](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.5.0) — 2025-05-23 — We now support multiple group levels!
 - [gsm.mapping v1.0.2](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.0.2) — 2025-05-14 — This patch release moves version contraints to `Imports` and updates refs of packages listed in `Remotes` to `main`.
 - [gsm.kri v1.1.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.1.1) — 2025-05-14 — This patch release moves version contraints to `Imports` and updates refs of packages listed in `Remotes` to `main`.
 - [gsm.reporting v1.0.2](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.0.2) — 2025-05-14 — This patch release moves version contraints to `Imports` and updates refs of packages listed in `Remotes` to `main`.
-- [gsm.datasim v1.0.0](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.0.0) — 2025-04-16 — We are excited to announce the first major release of the `gsm.
-- [gsm.qc v1.0.1](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.0.1) — 2025-04-16 — This patch release updates the qualification tests to include PK Compliance KRIs and to use the new gsm.core package data from gsm.core v1.1.
-- [gsm.reporting v1.0.1](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.0.1) — 2025-04-15 — This patch release updates tests in order to align with the new package data from gsm.core v1.1.
+- [gsm.datasim v1.0.0](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.0.0) — 2025-04-16 — We are excited to announce the first major release of the `gsm.datasim` package,
+- [gsm.qc v1.0.1](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.0.1) — 2025-04-16 — This patch release updates the qualification tests to include PK Compliance KRIs and to use the new gsm.core package data from gsm.core v1.1.0
+- [gsm.reporting v1.0.1](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.0.1) — 2025-04-15 — This patch release updates tests in order to align with the new package data from gsm.core v1.1.0
 - [gsm.kri v1.1.0](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.1.0) — 2025-04-14 — This minor release adds a new KRI along with a few other small fixes.
 - [gsm.core v1.1.0](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.1.0) — 2025-04-11 — This minor release adds PK analysis functionality and updates package data to use `{gsm.datasim}`.
-- [gsm.mapping v1.0.1](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.0.1) — 2025-04-11 — This patch release adds a new mapping yaml for PK Compliance data and updates the mappings for `gsm.
+- [gsm.mapping v1.0.1](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.0.1) — 2025-04-11 — This patch release adds a new mapping yaml for PK Compliance data and updates the mappings for `gsm.endpoints`
 
 ## Releases Q1 2025
 
 - [gsm.app v2.4.0](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.4.0) — 2025-03-26 — We continue to evolve the app layout toward better usability!
-- [gsm.qc v1.0.0](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.0.0) — 2025-03-17 — We are excited to announce the first major release of the `gsm.
+- [gsm.qc v1.0.0](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v1.0.0) — 2025-03-17 — We are excited to announce the first major release of the `gsm.qc` package, which contains the testing suite
 - [gsm.core v1.0.0](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.0.0) — 2025-03-14 — We are excited to announce the first major release of the `gsm.core` package, which serves as the backbone of the GSM pipeline.
 - [gsm.mapping v1.0.0](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.0.0) — 2025-03-14 — We are excited to announce the first major release of the `gsm.mapping` package, which contains essential mapping-specific functions and workflows for the GSM (Good Statistical Modeling) pipeline.
 - [gsm.kri v1.0.0](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.0.0) — 2025-03-14 — We are happy to announce the first major release of the `gsm.kri` package, which houses the metric and module workflows, as well as all visualization functions and widgets for the GSM pipeline.
-- [gsm.reporting v1.0.0](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.0.0) — 2025-03-14 — We are pleased to introduce the first major release of the `gsm.
-- [gsm.viz v2.2.0](https://github.com/Gilead-BioStats/gsm.viz/releases/tag/v2.2.0) — 2025-03-06 — v2.2.0 is the first open-source release of this repo 🎉 The package has been renamed `gsm.viz` from `rbm-viz` to align with other packages in the [OpenRBQM universe](https://openrbqm.github.
+- [gsm.reporting v1.0.0](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.0.0) — 2025-03-14 — We are pleased to introduce the first major release of the `gsm.reporting` package, which powers the GSM reporting data model and orchestrates the workflows for generating reports within the GSM pipeline.
+- [gsm.viz v2.2.0](https://github.com/Gilead-BioStats/gsm.viz/releases/tag/v2.2.0) — 2025-03-06 — v2.2.0 is the first open-source release of this repo 🎉 The package has been renamed `gsm.viz` from `rbm-viz` to align with other packages in the [OpenRBQM universe](https://openrbqm.github.io/packages.html).
 - [gsm.viz v2.1.0](https://github.com/Gilead-BioStats/gsm.viz/releases/tag/v2.1.0) — 2025-03-04 — v2.1.0 extends the click event functionality with a new custom event named `riskSignalSelected`.
 - [gsm.qc v0.0.1](https://github.com/Gilead-BioStats/gsm.qc/releases/tag/v0.0.1) — 2025-02-26 — Initial release of qualification package for testing gsm packages.
 - [gsm.mapping v0.0.2](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v0.0.2) — 2025-02-05 — This second release ensures that only the mapping-related functions, workflows, widgets and documentation from `{gsm}` to `{gsm.mapping}`.
 - [gsm.kri v0.0.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v0.0.1) — 2025-02-05 — This initial release migrates the KRI-specific functions, workflows, widgets and documentation from {gsm} to {gsm.kri}.
-- [gsm.reporting v0.0.1](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v0.0.1) — 2025-02-05 — First release of `{gsm.
+- [gsm.reporting v0.0.1](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v0.0.1) — 2025-02-05 — First release of `{gsm.reporting}`, which migrates the functions, workflows, documentation and vignette to produce the reporting data model for gsm reports
 - [gsm.app v2.3.0](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.3.0) — 2025-01-29 — Apps now feature site-level domain details!
 - [gsm.mapping v0.0.1](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v0.0.1) — 2025-01-02 — Does a release need to be made to grab the package?
 
