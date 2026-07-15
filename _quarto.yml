@@ -30,7 +30,7 @@ website:
       - href: news.qmd
         text: News
       - href: help.qmd
-        text: Help
+        text: Getting Started
       - href: tech_team-meetings.qmd
         text: Tech Team Meetings
   page-footer:

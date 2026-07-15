@@ -56,10 +56,10 @@ Release notes for OpenRBQM packages, grouped by quarter.
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.card .h-100 .nav-card}
 ::: {.card-body}
-#### ❓ Help
+#### ❓ Getting Started
 Get started, find answers, and learn how to contribute.
 
-[Get help →](help.qmd)
+[Get started →](help.qmd)
 :::
 :::
 :::
