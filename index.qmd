@@ -45,7 +45,18 @@ Publications, presentations, and project updates.
 ::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
 ::: {.card .h-100 .nav-card}
 ::: {.card-body}
-#### 💬 Help
+#### 💬 News
+Release notes for OpenRBQM packages, grouped by quarter.
+
+[View →](news.qmd)
+:::
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6 .g-col-lg-4}
+::: {.card .h-100 .nav-card}
+::: {.card-body}
+#### ❓ Help
 Get started, find answers, and learn how to contribute.
 
 [Get help →](help.qmd)
