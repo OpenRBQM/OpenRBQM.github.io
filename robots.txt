@@ -1,1 +1,1 @@
-Sitemap: https://OpenRBQM.github.io/sitemap.xml
+Sitemap: https://openrbqm.github.io/sitemap.xml
