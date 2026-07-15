@@ -27,3 +27,7 @@ jobs:
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
+        env:
+          # Authenticate the R GitHub API calls so any cache miss re-renders at
+          # the 5,000/hr limit instead of the 60/hr anonymous limit.
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}

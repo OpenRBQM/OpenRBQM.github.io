@@ -1,8 +1,19 @@
 project:
   type: website
+
+# Cache computational output so the site builds even when the GitHub API is
+# unreachable or rate-limited. Re-runs only when a source .qmd changes.
+# Commit the generated _freeze/ directory so CI reuses the cached results.
+execute:
+  freeze: auto
+
 website:
   title: "OpenRBQM"
+  description: "Open-source software for risk-based quality management in clinical trials."
+  site-url: https://openrbqm.github.io
   repo-url: https://github.com/OpenRBQM/OpenRBQM.github.io
+  search: true
+  page-navigation: true
   navbar:
     tools:
       - icon: github
@@ -12,22 +23,30 @@ website:
         text: Home
       - href: packages.qmd
         text: Packages
-      - href: data.qmd
-        text: Data
+      - href: vignettes.qmd
+        text: Vignettes
+      - href: outreach.qmd
+        text: Outreach
       - href: news.qmd
         text: News
       - href: help.qmd
-        text: Help
+        text: Getting Started
       - href: tech_team-meetings.qmd
         text: Tech Team Meetings
-    # right:
-    #   - text: "{{< fa brands github >}}"
-    #   - href: https://github.com/openrbqm
+  page-footer:
+    left: "© 2024–2026 OpenRBQM · Released under the MIT License"
+    center: "A PHUSE pre-competitive collaboration on open-source RBQM software"
+    right:
+      - icon: github
+        href: https://github.com/OpenRBQM
+        aria-label: OpenRBQM on GitHub
 format:
   html:
-    theme: 
-      dark: darkly
-      light: flatly
+    theme:
+      dark: [darkly, theme-dark.scss]
+      light: [flatly, theme-light.scss]
     css: styles.css
     toc: true
     link-external-newwindow: true
+    open-graph: true
+    twitter-card: true

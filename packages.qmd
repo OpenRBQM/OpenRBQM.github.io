@@ -1,56 +1,82 @@
 ---
 title: "Packages"
+description: "Explore the OpenRBQM ecosystem of open-source R packages for RBQM."
 ---
 
-```{r load_packages}
+```{r setup}
 #| echo: FALSE
 #| include: FALSE
 
-# Load necessary libraries
-library(httr)
-library(jsonlite)
-library(dplyr)
-library(purrr)
-library(glue)
+# Reusable logic lives in R/ (see R/github.R, R/packages.R).
+invisible(lapply(list.files("R", pattern = "\\.R$", full.names = TRUE), source))
 ```
 
 # Overview
 
 The OpenRBQM framework is designed to provide a robust and flexible solution for risk-based quality management. It includes a variety of packages that help streamline processes and ensure compliance with industry standards.
 
-# Packages 
-```{r get_packages, echo=FALSE, results = "asis"}
-#| echo: false
-#| warnings: false 
+# The {gsm} Ecosystem
 
-# Function to get package names from a GitHub repository
-get_packages <- function(org) {
-    url <- paste0("https://api.github.com/orgs/", org, "/repos")
-    response <- GET(url)
-    content <- content(response, as = "text")
-    json <- fromJSON(content)
-    return(json)
-}
+The `{gsm.core}` package is a successor to `{gsm}`, which was **deprecated in March 2025**. The contents of `{gsm}` were split into a family of focused packages, each owning one part of the risk-based monitoring workflow.
 
-# Repositories to pull packages from
-orgs <- c("openrbqm", "gilead-biostats")
+## Package lineage
 
-# Get packages from each repository
-packages <- orgs %>% map(get_packages) %>% bind_rows
-   
-packages %>% glue_data('- [{full_name}]({html_url}) {description}', close='\n')
+```{mermaid}
+flowchart TD
+    gsm["<b>gsm</b><br/><i>deprecated Mar 2025</i>"]:::deprecated
+    gsm --> core["<b>gsm.core</b><br/>analytics engine"]
+    gsm --> workr["<b>workr</b><br/>workflow runtime"]
+    gsm --> mapping["<b>gsm.mapping</b><br/>data transformation"]
+    gsm --> kri["<b>gsm.kri</b><br/>metrics &amp; visualization"]
+    gsm --> reporting["<b>gsm.reporting</b><br/>reporting data model"]
 
+    classDef deprecated fill:#dc3545,stroke:#a71d2a,color:#fff;
 ```
 
-# Articles
+## How the packages fit together
 
-## OpenRBQM
+Together the successor packages form a pipeline that turns raw clinical data into monitoring reports. `{workr}` executes the YAML-defined workflows that drive each step, and `{gsm.core}` provides the analytics used to construct and evaluate the metrics.
 
-- Intro to OpenRBQM
-- Data Model Overview
+```{mermaid}
+flowchart LR
+    raw[("Raw / source<br/>datasets")] --> mapping["gsm.mapping<br/><i>map to domains</i>"]
+    mapping --> kri["gsm.kri<br/><i>generate & visualize metrics</i>"]
+    kri --> reporting["gsm.reporting<br/><i>reporting data model</i>"]
+    reporting --> reports[["Reports"]]
 
-## gsm.core 
+    core["gsm.core<br/><i>analytics engine</i>"] -. "metric analytics" .-> kri
+    workr["workr<br/><i>workflow runtime</i>"] -. "executes workflows" .-> mapping
+    workr -.-> kri
+    workr -.-> reporting
 
-- 
+    classDef runtime fill:#0d6efd,stroke:#0a58ca,color:#fff;
+    class workr,core runtime;
+```
 
-# Examples
+## Package roles
+
+| Package | Role |
+|---|---|
+| **`{gsm.core}`** | Analytics functionality used to construct and evaluate metrics. |
+| **`{workr}`** | Workflow runtime that executes YAML-defined steps and workflows. |
+| **`{gsm.mapping}`** | Workflows that transform raw/source datasets into the appropriate domains. |
+| **`{gsm.kri}`** | Workflows to generate metrics, plus functionality to visualize and report on them. |
+| **`{gsm.reporting}`** | Workflows to build the reporting data model needed to generate reports. |
+
+# Packages
+```{r get_packages}
+#| echo: false
+#| results: asis
+#| warning: false
+
+# orgs, non_package_repos, and the curated package vectors come from R/config.R
+# (sourced above) so the Packages and Vignettes tabs stay in sync.
+packages <- get_package_table(orgs, non_package_repos)
+
+cat(render_section(packages, "Core Packages", core_pkgs))
+cat(render_section(packages, "Extensions and Data", ext_pkgs))
+cat(render_section(packages, "Apps and Plugins", apps_pkgs))
+cat(render_section(packages, "Quality", qual_pkgs))
+cat(render_section(packages, "Additional Packages", additional_pkgs))
+cat(render_section(packages, "Deprecated", deprecated_pkgs))
+```

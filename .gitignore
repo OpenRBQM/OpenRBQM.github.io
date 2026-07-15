@@ -3,6 +3,7 @@
 .Rdata
 .httr-oauth
 .DS_Store
+.claude/settings.json
 
 # Ignore things during render.
 *.html

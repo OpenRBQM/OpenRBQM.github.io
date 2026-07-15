@@ -1,0 +1,77 @@
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Mondays 06:00 UTC
+  workflow_dispatch:
+
+name: Refresh package data cache
+
+# Re-fetches packages/vignettes/examples from GitHub, refreshes the committed
+# _freeze cache for the dynamic pages, and deploys. This is what keeps the
+# "dynamic" content current in production without hitting the API on every build.
+#
+# NOTE: we publish to gh-pages *directly here* because a push made with the
+# default GITHUB_TOKEN does not trigger other workflows.
+jobs:
+  refresh:
+    if: startsWith(github.repository, 'OpenRBQM/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Set up DESCRIPTION dependencies
+        uses: r-lib/actions/setup-r-dependencies@v2
+
+      - name: Stash and clear the dynamic-page cache
+        run: |
+          cp -r _freeze _freeze.bak 2>/dev/null || true
+          rm -rf _freeze/packages _freeze/vignettes
+
+      - name: Render & Publish
+        id: render
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Restore cache on render failure
+        if: failure()
+        run: |
+          rm -rf _freeze/packages _freeze/vignettes
+          cp -r _freeze.bak/packages _freeze/ 2>/dev/null || true
+          cp -r _freeze.bak/vignettes _freeze/ 2>/dev/null || true
+
+      - name: Open PR with refreshed cache
+        run: |
+          git add _freeze
+          if git diff --cached --quiet; then
+            echo "No cache changes."
+          else
+            branch="auto/refresh-cache-$(date +%Y%m%d%H%M%S)"
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git checkout -b "$branch"
+            git commit -m "chore: refresh package/vignette data cache"
+            git push origin "$branch"
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "chore: refresh package/vignette data cache" \
+              --body "Automated update: refreshed committed \`_freeze\` cache for dynamic package/vignette pages." \
+              --assignee nandriychuk
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
