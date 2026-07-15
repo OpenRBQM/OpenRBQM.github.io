@@ -9,15 +9,15 @@ name: Refresh package data cache
 # _freeze cache for the dynamic pages, and deploys. This is what keeps the
 # "dynamic" content current in production without hitting the API on every build.
 #
-# NOTE: we publish to gh-pages *directly here* rather than committing _freeze and
-# relying on build_site.yml — a push made with the default GITHUB_TOKEN does not
-# trigger other workflows, so build_site.yml would never run.
+# NOTE: we publish to gh-pages *directly here* because a push made with the
+# default GITHUB_TOKEN does not trigger other workflows.
 jobs:
   refresh:
     if: startsWith(github.repository, 'OpenRBQM/')
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -54,14 +54,24 @@ jobs:
           cp -r _freeze.bak/packages _freeze/ 2>/dev/null || true
           cp -r _freeze.bak/vignettes _freeze/ 2>/dev/null || true
 
-      - name: Commit refreshed cache to main
+      - name: Open PR with refreshed cache
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _freeze
           if git diff --cached --quiet; then
             echo "No cache changes."
           else
+            branch="auto/refresh-cache-$(date +%Y%m%d%H%M%S)"
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git checkout -b "$branch"
             git commit -m "chore: refresh package/vignette data cache"
-            git push
+            git push origin "$branch"
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "chore: refresh package/vignette data cache" \
+              --body "Automated update: refreshed committed \`_freeze\` cache for dynamic package/vignette pages." \
+              --assignee nandriychuk
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
