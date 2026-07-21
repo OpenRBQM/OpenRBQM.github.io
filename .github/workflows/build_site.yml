@@ -3,6 +3,7 @@ on:
     branches: [main]
     paths-ignore:
       - 'README.md'
+      - '_freeze/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
   workflow_dispatch:

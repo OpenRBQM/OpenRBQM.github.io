@@ -21,6 +21,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -55,23 +57,16 @@ jobs:
           cp -r _freeze.bak/vignettes _freeze/ 2>/dev/null || true
 
       - name: Open PR with refreshed cache
-        run: |
-          git add _freeze
-          if git diff --cached --quiet; then
-            echo "No cache changes."
-          else
-            branch="auto/refresh-cache-$(date +%Y%m%d%H%M%S)"
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git checkout -b "$branch"
-            git commit -m "chore: refresh package/vignette data cache"
-            git push origin "$branch"
-            gh pr create \
-              --base main \
-              --head "$branch" \
-              --title "chore: refresh package/vignette data cache" \
-              --body "Automated update: refreshed committed \`_freeze\` cache for dynamic package/vignette pages." \
-              --assignee nandriychuk
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          add-paths: |
+            _freeze
+          branch: auto/refresh-cache
+          branch-suffix: timestamp
+          commit-message: 'chore: refresh package/vignette data cache'
+          title: 'chore: refresh package/vignette data cache'
+          body: 'Automated update: refreshed committed `_freeze` cache for dynamic package/vignette pages.'
+          assignees: nandriychuk
+          delete-branch: true
+          committer: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
+          author: github-actions[bot] <github-actions[bot]@users.noreply.github.com>
