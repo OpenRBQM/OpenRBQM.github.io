@@ -1,0 +1,618 @@
+[
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "qcthat v1.1.3 — 2026-06-17 — This patch release streamlines and hones the GitHub Action installed via Action_qcthat().\ngsm.kri v1.5.2 — 2026-06-10 — This patch release fixes report display issues on the pkgdown site and renders missing examples.\ngsm.utils v0.4.0 — 2026-05-28 — This release standardizes actions and related functionality, and solidifies this package:\ngsm.core v1.2.1 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.mapping v1.1.4 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.kri v1.5.1 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.reporting v1.1.5 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.qtl v1.2.2 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.qtl v1.2.1 — 2026-05-07 — Adds early return for zero-row df to prevent crash in eligibility_listing()\ngsm.kri v1.5.0 — 2026-04-17 — This minor release includes new workflows/tests and CI automation, plus performance-focused improvements to the qcthat testing infrastructure.\ngsm.reporting v1.1.4 — 2026-04-17 — This patch release primarily focuses on tightening quality control (new qualitative tests + qcthat automation) and aligning docs/dependencies with the RC versions of upstream gsm.* packages.\ngsm.qtl v1.2.0 — 2026-04-17 — Fixed issue #90: Updated eligibility_groupBar(), discontinuation_groupBar(), and reasons_groupBar() to accept separate dfNum/dfDenom inputs, correcting count alignment for discontinued and ineligible participants.\ngsm.core v1.2.0 — 2026-04-15 — This minor release expands the qualification / workflow test suite, refreshes packaged example datasets, and updates release/CI/docs scaffolding.\ngsm.mapping v1.1.3 — 2026-04-15 — This minor update includes new/updated domain mapping specs, improved mapping documentation, and expanded qualification/unit testing and CI workflows.\nworkr v1.0.0 — 2026-04-09 — {workr} provides a minimal framework for describing and executing step-by-step R data pipelines using YAML-defined workflows."
+  },
+  {
+    "objectID": "news.html#releases-q2-2026",
+    "href": "news.html#releases-q2-2026",
+    "title": "News",
+    "section": "",
+    "text": "qcthat v1.1.3 — 2026-06-17 — This patch release streamlines and hones the GitHub Action installed via Action_qcthat().\ngsm.kri v1.5.2 — 2026-06-10 — This patch release fixes report display issues on the pkgdown site and renders missing examples.\ngsm.utils v0.4.0 — 2026-05-28 — This release standardizes actions and related functionality, and solidifies this package:\ngsm.core v1.2.1 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.mapping v1.1.4 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.kri v1.5.1 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.reporting v1.1.5 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.qtl v1.2.2 — 2026-05-15 — This patch release updates the GitHub action workflows to align with the new federated action framework in gsm.utils\ngsm.qtl v1.2.1 — 2026-05-07 — Adds early return for zero-row df to prevent crash in eligibility_listing()\ngsm.kri v1.5.0 — 2026-04-17 — This minor release includes new workflows/tests and CI automation, plus performance-focused improvements to the qcthat testing infrastructure.\ngsm.reporting v1.1.4 — 2026-04-17 — This patch release primarily focuses on tightening quality control (new qualitative tests + qcthat automation) and aligning docs/dependencies with the RC versions of upstream gsm.* packages.\ngsm.qtl v1.2.0 — 2026-04-17 — Fixed issue #90: Updated eligibility_groupBar(), discontinuation_groupBar(), and reasons_groupBar() to accept separate dfNum/dfDenom inputs, correcting count alignment for discontinued and ineligible participants.\ngsm.core v1.2.0 — 2026-04-15 — This minor release expands the qualification / workflow test suite, refreshes packaged example datasets, and updates release/CI/docs scaffolding.\ngsm.mapping v1.1.3 — 2026-04-15 — This minor update includes new/updated domain mapping specs, improved mapping documentation, and expanded qualification/unit testing and CI workflows.\nworkr v1.0.0 — 2026-04-09 — {workr} provides a minimal framework for describing and executing step-by-step R data pipelines using YAML-defined workflows."
+  },
+  {
+    "objectID": "news.html#releases-q1-2026",
+    "href": "news.html#releases-q1-2026",
+    "title": "News",
+    "section": "Releases Q1 2026",
+    "text": "Releases Q1 2026\n\nqcthat v1.1.2 — 2026-03-20 — This patch release focuses on introducing the world to qcthat.\ngh.dash v1.0.0 — 2026-03-17 — Initial release of {gh.dash}, an R package that generates an HTML dashboard for tracking the development status of a portfolio of GitHub repositories.\ngsm.core v1.1.8 — 2026-03-06 — This patch release adds the db_lock_dt to Raw_STUDY in the lSource dataset, implementing updates from gsm.datasim v1.1.3 and gsm.mapping v1.1.2\ngsm.datasim v1.1.3 — 2026-03-06 — This patch release makes the following updates:\nqcthat v1.1.1 — 2026-03-06 — This patch release contains improvements and bug fixes discovered while applying the experimental AI agent features released in qcthat v1.1.0.\nqcthat v1.1.0 — 2026-02-24 — New features and tools to help you track user acceptance testing, and to help you use AI agents to get started with qcthat.\ngsm.mapping v1.1.2 — 2026-01-30 — This patch release adds db_lock_dt to spec of STUDY.yaml and makes wording/phrasing changes for EXCLUSION.yaml.\ngsm.kri v1.4.1 — 2026-01-30 — This patch release addresses the following issues:\ngsm.qtl v1.1.1 — 2026-01-30 — Updated critera_groupBar() and reasons_groupBar() address small bugs that were affecting barchart’s tooltip text.\ngsm.utils v0.3.0 — 2026-01-30 — This update of the gsm.utils package introduces the following features:\ngsm.kri v1.4.0 — 2026-01-12 — This minor release updates the comprehensive site risk score (SRS) functionality in gsm.kri v1.4.0, including calculation methods, cross-study visualization capabilities, and extensive test coverage.\ngsm.core v1.1.7 — 2026-01-09 — This patch release adds the IE domain to the lSource .rda object used across example reports and workflows in other gsm ecosystem packages, introducing study-level QTL metrics and associated reporting datasets, as well as minor documentation updates and standardization of the github actions used in CI/CD.\ngsm.qtl v1.1.0 — 2026-01-09 — Updated eligibility_groupBar() to support counts and percentage bar charts"
+  },
+  {
+    "objectID": "news.html#releases-q4-2025",
+    "href": "news.html#releases-q4-2025",
+    "title": "News",
+    "section": "Releases Q4 2025",
+    "text": "Releases Q4 2025\n\nqcthat v1.0.0 — 2025-12-17 — You can now use this package to implement a QC framework for any R package associated with a GitHub repository.\ngsm.utils v0.2.0 — 2025-12-17 — This is a major update of the gsm.utils package.\ngsm.viz v2.3.0 — 2025-12-15 — v2.3.0 adds support to the group overview table module for the new site risk score calculation that applies weights to each metric and flag.\nqcthat v0.2.0 — 2025-11-05 — This is a complete rewrite of the package to implement a framework that links GitHub issues to evidence that those issues have been implemented.\ngsm.core v1.1.6 — 2025-11-04 — This patch release adds Site Risk Score metric to reportingResults and updates documentation.\ngsm.kri v1.3.2 — 2025-11-04 — This patch release addresses a bug that was impacting the country-level KRI report.\ngsm.datasim v1.1.2 — 2025-10-03 — v1.1.2 resolves a bug involving duplicate records in the randomization domain and also reduces the rate of study discontinuation and anti-cancer therapy to avoid excessive risk signals in {gsm.endpoints}.\ngsm.qtl v1.0.1 — 2025-10-01 — Catch dev up to main before pushing qual report by @zdz2101 in https://github.com/Gilead-BioStats/gsm.qtl/pull/55"
+  },
+  {
+    "objectID": "news.html#releases-q3-2025",
+    "href": "news.html#releases-q3-2025",
+    "title": "News",
+    "section": "Releases Q3 2025",
+    "text": "Releases Q3 2025\n\ngsm.app v2.6.1 — 2025-09-24 — This release provides usability upgrades for the Domain Details tab.\ngsm.app v2.6.0 — 2025-09-24 — This release provides usability upgrades for the Domain Details tab.\ngsm.kri v1.3.1 — 2025-09-23 — This patch release addresses a bug related to the gsm.viz implementation of site risk score.\ngsm.kri v1.3.0 — 2025-09-18 — This release adds a new Site Risk Score metric that calculates weighted site-level risk across multiple KRIs.\ngsm.reporting v1.1.3 — 2025-09-18 — Patch release to update issue templates and contributor guidelines and resolve a small bug.\ngsm.qtl v1.0.0 — 2025-09-18 — We are excited to announce the first major production ready release of the gsm.qtl package.\ngsm.qc v1.1.1 — 2025-09-18 — This patch release adds new contributor guidelines and standardized issue templates and a new test for site risk score.\ngsm.utils v0.1.0 — 2025-09-18 — Initial release of gsm.utils includes helper functions for creating new packages compatible with the gsm framework including default issue templates and…\ngsm.core v1.1.5 — 2025-09-16 — This patch release enhances the Flag function to support vRiskScoreWeight which are weights to apply to each flag value.\ngsm.mapping v1.1.1 — 2025-09-16 — Patch release updating Issue Templates and Contributor Guidelines\ngsm.datasim v1.1.1 — 2025-09-16 — This release adds new contributor guidelines and standardized issue templates.\ngsm.app v2.5.3 — 2025-08-20 — This is a patch release to implement the qualification infrastructure.\ngsm.kri v1.2.2 — 2025-07-28 — This patch release fixes a bug in Report_KRI.Rmd that produced an error in LaTeX compilation of the report output.\ngsm.core v1.1.4 — 2025-07-25 — This patch release enhances the RunQuery function’s type handling and schema application capabilities.\ngsm.ae v0.1.0 — 2025-07-09 — This initial release provides a dashboard that summarizes trends in Site- and Country-level adverse event and severe adverse event data.\ngsm.app v2.5.2 — 2025-07-07 — This is a patch bugfix release."
+  },
+  {
+    "objectID": "news.html#releases-q2-2025",
+    "href": "news.html#releases-q2-2025",
+    "title": "News",
+    "section": "Releases Q2 2025",
+    "text": "Releases Q2 2025\n\ngsm.qtl v0.1.0 — 2025-06-27 — The Good Statistical Monitoring or ‘gsm’ suite of R packages provides a framework for statistical data monitoring.\ngsm.kri v1.2.1 — 2025-06-25 — This patch release addresses changes to an .rda object updated in gsm.core v1.1.3.\ngsm.datasim v1.1.0 — 2025-06-25 — New Mapping Workflows Support:**\ngsm.reporting v1.1.2 — 2025-06-24 — This patch release addresses changes to an .rda object updated in gsm.core v1.1.3.\ngsm.core v1.1.3 — 2025-06-23 — This patch addresses a bug in the lSource .rda object found in the STUDCOMP domain, and introduces %&gt;% as a reexport from magrittr\ngsm.core v1.1.2 — 2025-06-19 — The patch releases a new lSource .rda object used across example reports and workflows in other gsm ecosystem packages, as well as fixes a bug so that missing dates are handled appropriately upon ingestion.\ngsm.mapping v1.1.0 — 2025-06-19 — New Mapping Workflows:**\ngsm.kri v1.2.0 — 2025-06-19 — This minor release introduces new chart configuration functionality, refactors widget generation to support additional settings and unified output labels, and adds a new flag‐change report.\ngsm.reporting v1.1.1 — 2025-06-19 — This patch release adds a section about incorporating historical data into the reporting data model, and updates tests to comply with new gsm.core sample data.\ngsm.qc v1.1.0 — 2025-06-19 — This minor release of gsm.qc version 1.1.0 includes several enhancements:\ngsm.app v2.5.1 — 2025-06-12 — This patch release fixes bugs related to the presence of multiple “Group Levels” (eg, “Site” and “Country”) in app data (#469).\ngsm.core v1.1.1 — 2025-06-05 — This patch release fixes a few CLI messages from RunStep(), adds new “timestamp” and “logical” types to mapping specs, updates the sample data, and addresses erroneous warning messages in the testing suite.\ngsm.kri v1.1.2 — 2025-05-30 — This patch release updates the following yaml files in /2_metrics to update default accrual thresholds\ngsm.reporting v1.1.0 — 2025-05-28 — This minor release adds the capability to calculate the change of user-specified metrics from the previous snapshot date.\ngsm.app v2.5.0 — 2025-05-23 — We now support multiple group levels!\ngsm.mapping v1.0.2 — 2025-05-14 — This patch release moves version contraints to Imports and updates refs of packages listed in Remotes to main.\ngsm.kri v1.1.1 — 2025-05-14 — This patch release moves version contraints to Imports and updates refs of packages listed in Remotes to main.\ngsm.reporting v1.0.2 — 2025-05-14 — This patch release moves version contraints to Imports and updates refs of packages listed in Remotes to main.\ngsm.datasim v1.0.0 — 2025-04-16 — We are excited to announce the first major release of the gsm.datasim package,\ngsm.qc v1.0.1 — 2025-04-16 — This patch release updates the qualification tests to include PK Compliance KRIs and to use the new gsm.core package data from gsm.core v1.1.0\ngsm.reporting v1.0.1 — 2025-04-15 — This patch release updates tests in order to align with the new package data from gsm.core v1.1.0\ngsm.kri v1.1.0 — 2025-04-14 — This minor release adds a new KRI along with a few other small fixes.\ngsm.core v1.1.0 — 2025-04-11 — This minor release adds PK analysis functionality and updates package data to use {gsm.datasim}.\ngsm.mapping v1.0.1 — 2025-04-11 — This patch release adds a new mapping yaml for PK Compliance data and updates the mappings for gsm.endpoints"
+  },
+  {
+    "objectID": "news.html#releases-q1-2025",
+    "href": "news.html#releases-q1-2025",
+    "title": "News",
+    "section": "Releases Q1 2025",
+    "text": "Releases Q1 2025\n\ngsm.app v2.4.0 — 2025-03-26 — We continue to evolve the app layout toward better usability!\ngsm.qc v1.0.0 — 2025-03-17 — We are excited to announce the first major release of the gsm.qc package, which contains the testing suite\ngsm.core v1.0.0 — 2025-03-14 — We are excited to announce the first major release of the gsm.core package, which serves as the backbone of the GSM pipeline.\ngsm.mapping v1.0.0 — 2025-03-14 — We are excited to announce the first major release of the gsm.mapping package, which contains essential mapping-specific functions and workflows for the GSM (Good Statistical Modeling) pipeline.\ngsm.kri v1.0.0 — 2025-03-14 — We are happy to announce the first major release of the gsm.kri package, which houses the metric and module workflows, as well as all visualization functions and widgets for the GSM pipeline.\ngsm.reporting v1.0.0 — 2025-03-14 — We are pleased to introduce the first major release of the gsm.reporting package, which powers the GSM reporting data model and orchestrates the workflows for generating reports within the GSM pipeline.\ngsm.viz v2.2.0 — 2025-03-06 — v2.2.0 is the first open-source release of this repo 🎉 The package has been renamed gsm.viz from rbm-viz to align with other packages in the OpenRBQM universe.\ngsm.viz v2.1.0 — 2025-03-04 — v2.1.0 extends the click event functionality with a new custom event named riskSignalSelected.\ngsm.qc v0.0.1 — 2025-02-26 — Initial release of qualification package for testing gsm packages.\ngsm.mapping v0.0.2 — 2025-02-05 — This second release ensures that only the mapping-related functions, workflows, widgets and documentation from {gsm} to {gsm.mapping}.\ngsm.kri v0.0.1 — 2025-02-05 — This initial release migrates the KRI-specific functions, workflows, widgets and documentation from {gsm} to {gsm.kri}.\ngsm.reporting v0.0.1 — 2025-02-05 — First release of {gsm.reporting}, which migrates the functions, workflows, documentation and vignette to produce the reporting data model for gsm reports\ngsm.app v2.3.0 — 2025-01-29 — Apps now feature site-level domain details!\ngsm.mapping v0.0.1 — 2025-01-02 — Does a release need to be made to grab the package?"
+  },
+  {
+    "objectID": "outreach.html",
+    "href": "outreach.html",
+    "title": "Outreach",
+    "section": "",
+    "text": "Good Statistical Monitoring: A Flexible Open-Source Tool to Detect Risks in Clinical Trials. - Wu, G., Childress, S., Wang, Z., Roumaya, M., Stern, C. M., Dickens, C., & Wildfire, J. (2024). Therapeutic Innovation & Regulatory Science, 1-7.\nAssessing the performance of methods for central statistical monitoring of a binary or continuous outcome in multi-center trials: A simulation study. Ge, L., Wang, Z., Liu, C. C., Childress, S., Wildfire, J., & Wu, G. (2024). Contemporary Clinical Trials, 107580."
+  },
+  {
+    "objectID": "outreach.html#section",
+    "href": "outreach.html#section",
+    "title": "Outreach",
+    "section": "2025",
+    "text": "2025\n\nOpenRBQM Extended: Endpoint Monitoring, Root-cause Analysis, and Workflows. Childress, S. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025.\nRBQM Workshop - Building Open-Source Tools paired with Central Monitoring Best Practice. Wildfire, J. Presented at Phuse US Connect, Orlando, Fla. March 2025. Website\n{gsm.app}: Extensible Clinical Trial Monitoring Apps. Harmon, J. Wildfire J. Submitted for presentation at Shiny Conf, Virtual. April 2025.\nIntro to {gsm.aesimrep} (title TBD). Koneswarakantha, B. Submitted for presentation at SCDM EMEA, Brussels, Belgium. April 2025.\nCollaborative Industry Open Source Solutions for Clinical Trial Quality Management. Koneswarakantha, B. Submitted for presentation at Phuse CSS, Utrecht, the Netherlands. May 2025.\nIntroducing {grail} an OpenRBQM R package for actioning RBQM Risk Signals. Maxwell, L. Submitted for presentation at UseR in Durham, NC. May 2025.\nTitle: Enhancing Risk Signal and Action Management with ML Prediction and AI-Driven Generation in Risk-Based Monitoring of Clinical Trial Data. Wang, Z. Submitted for presentation at JSM in Nashville, Tennessee. August 2025."
+  },
+  {
+    "objectID": "outreach.html#section-1",
+    "href": "outreach.html#section-1",
+    "title": "Outreach",
+    "section": "2024",
+    "text": "2024\n\nGood Statistical Monitoring {gsm}: An R Package for Risk-Based Monitoring and Clinical Trial Analytics. Wildfire, J. Roumaya, M. Presented at Phuse Connect in Washington DC. March, 2024.\nLeveraging GitHub Actions and Continuous Integration in R Package Qualification. Roumaya, M. Stackhouse, M. Wildfire J. Presented at Phuse Connect in Washington DC. March, 2024.\nOpen-Source RBQM Software Development. Wildfire, J. Wu, G. Presented at BBSW, San Francisco, Ca. October 2024."
+  },
+  {
+    "objectID": "outreach.html#section-2",
+    "href": "outreach.html#section-2",
+    "title": "Outreach",
+    "section": "2023",
+    "text": "2023\n\n30k Secrets to Pre-Competitive Collaboration: Accelerating Open-source in Clinical Trials. Benedict, J. Wildfire, J. Presented at Fierce Clinical Summit, Philadelphia, PA. Sept, 2023."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202409.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202409.html#anyone-new",
+    "title": "Tech Team Meeting: 2024-09",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202409.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202409.html#digit-preferences-module",
+    "title": "Tech Team Meeting: 2024-09",
+    "section": "Digit Preferences Module",
+    "text": "Digit Preferences Module\n\nGitHub Discussion\n{gsm.digitpref} repo\n(discuss)\n\nWho wants to contribute?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202409.html#csm-brainstorm",
+    "href": "slides/tech_team/tech_team-202409.html#csm-brainstorm",
+    "title": "Tech Team Meeting: 2024-09",
+    "section": "CSM Brainstorm",
+    "text": "CSM Brainstorm\n\nGitHub Discussion\n\nNew comment by Lawrence!\n\n(discuss clustering or push to October)"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202407.html#jon-harmon",
+    "href": "slides/tech_team/tech_team-202407.html#jon-harmon",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Jon Harmon",
+    "text": "Jon Harmon\n\nJoined Gilead (via Atorus Research) w/ open-source focus\nRuns the Data Science Learning Community / TidyTuesday\nCreated dozens of packages\n\n\n\nI have a lot of experience with:\n\nSoftware dev\n\nFormerly ran a product team at an educational startup\nLots of experience with Agile & OSS\nR packages = my happy place\n\nCommunity building\nEducational materials\n\nI’ll need help with:\n\nDeciding what to build\nUser feedback\nPrioritization"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202407.html#anyone-else",
+    "href": "slides/tech_team/tech_team-202407.html#anyone-else",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "Anyone else?",
+    "text": "Anyone else?\n\n\nCan everyone else do a quick intro for me?\n\nFocus on ideas and review, or writing code?\n\nPackage-creation experiences?\nOSS experience?\nGitHub?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202407.html#csm-brainstorm",
+    "href": "slides/tech_team/tech_team-202407.html#csm-brainstorm",
+    "title": "Tech Team Meeting: 2024-07",
+    "section": "CSM Brainstorm",
+    "text": "CSM Brainstorm\n\nWe need to pick the first CSM module for the team to work on. Please drop ideas/screenshots/links in this chat and we will review at our next team meeting and select our first project!\n\n\nGitHub\nAny other ideas?\nWhat problem should we solve first?\nRoles?\n\n\n\nGet everyone to join the org.\nJeremy, do you want to talk through your responses?\nAny other ideas?\nShould we start with this?\nWhat problem can we solve first?\n\nIs there a particular function that would be helpful?\n\nWhat role does everyone plan to take?\n\nI’ll set up repository and get basic package skeleton (including GHA) set up.\nIdeally I’d love for everyone to submit & reply to issues.\nI can create the whole thing if people want, but I’ll need reviews!"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202410.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202410.html#anyone-new",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202410.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202410.html#digit-preferences-module",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Digit Preferences Module",
+    "text": "Digit Preferences Module\n\n{gsm.digitpref} has 2 functions!\n\nsplitByPlace(): Split a vector into a table of place values\nstackedDigitChart(): Plot digit distribution by group\nNext: The bridge between those two.\nLater: Shiny module."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202410.html#clustering",
+    "href": "slides/tech_team/tech_team-202410.html#clustering",
+    "title": "Tech Team Meeting: 2024-10",
+    "section": "Clustering",
+    "text": "Clustering\nAny progress?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#anyone-new",
+    "href": "slides/tech_team/tech_team-template.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#gsm",
+    "href": "slides/tech_team/tech_team-template.html#gsm",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm",
+    "text": "gsm\nGilead-BioStats/gsm\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#openrbqm",
+    "href": "slides/tech_team/tech_team-template.html#openrbqm",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "openrbqm",
+    "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.app",
+    "href": "slides/tech_team/tech_team-template.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.digitpref",
+    "href": "slides/tech_team/tech_team-template.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.ae",
+    "href": "slides/tech_team/tech_team-template.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-template.html#gsm.query",
+    "href": "slides/tech_team/tech_team-template.html#gsm.query",
+    "title": "Tech Team Meeting: 2025-MM",
+    "section": "gsm.query",
+    "text": "gsm.query\nOpenRBQM/gsm.query\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202502.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm",
+    "href": "slides/tech_team/tech_team-202502.html#gsm",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm",
+    "text": "gsm\nGilead-BioStats/gsm\n\nSplitting into multiple packages.\nSee {openrbqm} on next slide."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#openrbqm",
+    "href": "slides/tech_team/tech_team-202502.html#openrbqm",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "openrbqm",
+    "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.simaerep",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.simaerep",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.simaerep",
+    "text": "gsm.simaerep\nIMPALA-Consortium/gsm.simaerep\n\nBjörn Koneswarakantha @ Roche"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.app",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nSample app\nSplitting plugins off into packages\n\nSee upcoming slides"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.digitpref",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.digitpref-cont",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.digitpref-cont",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.digitpref (cont)",
+    "text": "gsm.digitpref (cont)\nOpenRBQM/gsm.digitpref\n\nStatistical analysis coming soon via Łukasz Pietrych"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.ae",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nSplitting off Adverse Events module from {gsm.app}"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202502.html#gsm.query",
+    "href": "slides/tech_team/tech_team-202502.html#gsm.query",
+    "title": "Tech Team Meeting: 2025-02",
+    "section": "gsm.query",
+    "text": "gsm.query\nOpenRBQM/gsm.query\n\nPlaceholder for shiny modules/plugin for query data."
+  },
+  {
+    "objectID": "packages.html",
+    "href": "packages.html",
+    "title": "Packages",
+    "section": "",
+    "text": "The OpenRBQM framework is designed to provide a robust and flexible solution for risk-based quality management. It includes a variety of packages that help streamline processes and ensure compliance with industry standards."
+  },
+  {
+    "objectID": "packages.html#package-lineage",
+    "href": "packages.html#package-lineage",
+    "title": "Packages",
+    "section": "Package lineage",
+    "text": "Package lineage\n\n\n\n\n\nflowchart TD\n    gsm[\"&lt;b&gt;gsm&lt;/b&gt;&lt;br/&gt;&lt;i&gt;deprecated Mar 2025&lt;/i&gt;\"]:::deprecated\n    gsm --&gt; core[\"&lt;b&gt;gsm.core&lt;/b&gt;&lt;br/&gt;analytics engine\"]\n    gsm --&gt; workr[\"&lt;b&gt;workr&lt;/b&gt;&lt;br/&gt;workflow runtime\"]\n    gsm --&gt; mapping[\"&lt;b&gt;gsm.mapping&lt;/b&gt;&lt;br/&gt;data transformation\"]\n    gsm --&gt; kri[\"&lt;b&gt;gsm.kri&lt;/b&gt;&lt;br/&gt;metrics &amp; visualization\"]\n    gsm --&gt; reporting[\"&lt;b&gt;gsm.reporting&lt;/b&gt;&lt;br/&gt;reporting data model\"]\n\n    classDef deprecated fill:#dc3545,stroke:#a71d2a,color:#fff;"
+  },
+  {
+    "objectID": "packages.html#how-the-packages-fit-together",
+    "href": "packages.html#how-the-packages-fit-together",
+    "title": "Packages",
+    "section": "How the packages fit together",
+    "text": "How the packages fit together\nTogether the successor packages form a pipeline that turns raw clinical data into monitoring reports. {workr} executes the YAML-defined workflows that drive each step, and {gsm.core} provides the analytics used to construct and evaluate the metrics.\n\n\n\n\n\nflowchart LR\n    raw[(\"Raw / source&lt;br/&gt;datasets\")] --&gt; mapping[\"gsm.mapping&lt;br/&gt;&lt;i&gt;map to domains&lt;/i&gt;\"]\n    mapping --&gt; kri[\"gsm.kri&lt;br/&gt;&lt;i&gt;generate & visualize metrics&lt;/i&gt;\"]\n    kri --&gt; reporting[\"gsm.reporting&lt;br/&gt;&lt;i&gt;reporting data model&lt;/i&gt;\"]\n    reporting --&gt; reports[[\"Reports\"]]\n\n    core[\"gsm.core&lt;br/&gt;&lt;i&gt;analytics engine&lt;/i&gt;\"] -. \"metric analytics\" .-&gt; kri\n    workr[\"workr&lt;br/&gt;&lt;i&gt;workflow runtime&lt;/i&gt;\"] -. \"executes workflows\" .-&gt; mapping\n    workr -.-&gt; kri\n    workr -.-&gt; reporting\n\n    classDef runtime fill:#0d6efd,stroke:#0a58ca,color:#fff;\n    class workr,core runtime;"
+  },
+  {
+    "objectID": "packages.html#package-roles",
+    "href": "packages.html#package-roles",
+    "title": "Packages",
+    "section": "Package roles",
+    "text": "Package roles\n\n\n\n\n\n\n\nPackage\nRole\n\n\n\n\n{gsm.core}\nAnalytics functionality used to construct and evaluate metrics.\n\n\n{workr}\nWorkflow runtime that executes YAML-defined steps and workflows.\n\n\n{gsm.mapping}\nWorkflows that transform raw/source datasets into the appropriate domains.\n\n\n{gsm.kri}\nWorkflows to generate metrics, plus functionality to visualize and report on them.\n\n\n{gsm.reporting}\nWorkflows to build the reporting data model needed to generate reports."
+  },
+  {
+    "objectID": "packages.html#core-packages",
+    "href": "packages.html#core-packages",
+    "title": "Packages",
+    "section": "Core Packages",
+    "text": "Core Packages\n\n\n\n\ngsm.core\nThe Good Statistical Monitoring or ‘gsm’ suite of R packages provides a framework for statistical data monitoring. ‘gsm.core’ provides the analytics framework for constructing metrics, and the utility functions to run workflows.\nWebsite\n\n\n\n\n\n\nworkr\nSimple Workflows in R\nWebsite\n\n\n\n\n\n\ngsm.mapping\nData mapping framework for {gsm}\nWebsite\n\n\n\n\n\n\ngsm.kri\nProvides workflows to generate metrics and functionality to visualize and report on these metrics.\nWebsite\n\n\n\n\n\n\ngsm.reporting\nProvides workflows to generate the reporting data model needed to generate reports.\nWebsite"
+  },
+  {
+    "objectID": "packages.html#extensions-and-data",
+    "href": "packages.html#extensions-and-data",
+    "title": "Packages",
+    "section": "Extensions and Data",
+    "text": "Extensions and Data\n\n\n\n\ngsm.qtl\nNo Description Provided\nWebsite\n\n\n\n\n\n\ngsm.viz\nweb-based data viz for risk-based monitoring\nWebsite\n\n\n\n\n\n\nclindata\nSynthetic Data for testing and development\nWebsite\n\n\n\n\n\n\ngsm.datasim\nGenerates synthetic test data for the RBQM of Clinical Trials based on several parameters.\nWebsite"
+  },
+  {
+    "objectID": "packages.html#apps-and-plugins",
+    "href": "packages.html#apps-and-plugins",
+    "title": "Packages",
+    "section": "Apps and Plugins",
+    "text": "Apps and Plugins\n\n\n\n\ngsm.app\nNo Description Provided\nWebsite\n\n\n\n\n\n\ngsm.digitpref\nNo Description Provided\nWebsite\n\n\n\n\n\n\ngsm.ae\nAdverse Events Plugin\nWebsite\n\n\n\n\n\n\ngsm.query\nQuery Data Plugin\nWebsite\n\n\n\n\n\n\ngsm.pd\nProtocol Deviations gsm Plugin\nWebsite"
+  },
+  {
+    "objectID": "packages.html#quality",
+    "href": "packages.html#quality",
+    "title": "Packages",
+    "section": "Quality",
+    "text": "Quality\n\n\n\n\nqcthat\nA quality control framework for R packages used in Clinical Trials\nWebsite\n\n\n\n\n\n\ngsm.qc\nQuality Control Tests and documentation for the {gsm} suite of R packages\nWebsite\n\n\n\n\n\n\ngsm.utils\nTools to make an OpenRBQM developer’s life easier\nWebsite"
+  },
+  {
+    "objectID": "packages.html#additional-packages",
+    "href": "packages.html#additional-packages",
+    "title": "Packages",
+    "section": "Additional Packages",
+    "text": "Additional Packages\n\n\n\n\ngh.dash\nDashboards for tracking GitHub releases and milestones\nWebsite\n\n\n\n\n\n\nopen.gismo\nopen.gismo is an end-to-end platform for running workflows in R using the {workr} package on GitHub\nWebsite\n\n\n\n\n\n\ngsm.guide\nNo Description Provided\nWebsite"
+  },
+  {
+    "objectID": "packages.html#deprecated",
+    "href": "packages.html#deprecated",
+    "title": "Packages",
+    "section": "Deprecated",
+    "text": "Deprecated\n\n\n\n\ngsm\nGood Statistical Monitoring R Package\nWebsite"
+  },
+  {
+    "objectID": "help.html",
+    "href": "help.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Interested in using {gsm}? Key resources are provided in response to the FAQs below.\n\n\nSee the “Process Overview” section and then check out these articles:\n\nStep-by-Step Analysis Workflow Vignette walks users the step-by-step process for creating metrics (KRIs, QTLs, etc) in {gsm}.\nAdverse Event KRI Cookbook Example provides hands-on examples of how to customize KRI metrics related to Adverse events.\n\n\n\n\nThe {gsm} workflow process allows creation of reusable pipelines for study (or even cross-study) data snapshots including data mapping, calculation of multiple metrics and creation of reports. Runtime execution is provided by {workr}, while {gsm.core} provides the analytical functions used inside those workflows. See the articles below for details and examples.\n\nData Model Vignette explains the data pipeline used to calculate multiple metrics and generate study-level reports.\nAdverse Event Workflow Example demonstrates how to create a configurable workflow using YAML to define the analysis pipeline.\nReporting Workflow Example demonstrates a complete workflow from raw data to KRI reports using standard metrics.\n\n\n\n\nThe {gsm} framework is designed to be highly modular and customizable. The sections above show examples of customized metrics and workflows. It’s also straightforward to add entire custom modules that add new mappings, metrics and reports. See the vignettes below for details.\n\ngsm Extensions Vignette describes how to extend {gsm.core} by creating new ‘modules’, including metrics, reports and shiny apps that can be run using the standard gsm pipeline.\nStep-by-Step Guide to add a new KRI outlines the necessary analytics tasks required before a new Key Risk Indicator (KRI), Quality Tolerance Limit (QTL), or similar metric can be put into production.\n\n\n\n\nHere are links to sample reports that are available in the {gsm} family of packages. We’re working on adding more all the time and will continue adding examples to this list as they are released.\n\nSite KRI Report\nCountry KRI Report\nEligibility Report\nCross-Study Site Risk Score Report\nQTL Report\nGood Statistical Monitoring Shiny App"
+  },
+  {
+    "objectID": "help.html#how-do-i-calculate-a-metric",
+    "href": "help.html#how-do-i-calculate-a-metric",
+    "title": "Getting Started",
+    "section": "",
+    "text": "See the “Process Overview” section and then check out these articles:\n\nStep-by-Step Analysis Workflow Vignette walks users the step-by-step process for creating metrics (KRIs, QTLs, etc) in {gsm}.\nAdverse Event KRI Cookbook Example provides hands-on examples of how to customize KRI metrics related to Adverse events."
+  },
+  {
+    "objectID": "help.html#how-do-i-evaluate-a-study",
+    "href": "help.html#how-do-i-evaluate-a-study",
+    "title": "Getting Started",
+    "section": "",
+    "text": "The {gsm} workflow process allows creation of reusable pipelines for study (or even cross-study) data snapshots including data mapping, calculation of multiple metrics and creation of reports. Runtime execution is provided by {workr}, while {gsm.core} provides the analytical functions used inside those workflows. See the articles below for details and examples.\n\nData Model Vignette explains the data pipeline used to calculate multiple metrics and generate study-level reports.\nAdverse Event Workflow Example demonstrates how to create a configurable workflow using YAML to define the analysis pipeline.\nReporting Workflow Example demonstrates a complete workflow from raw data to KRI reports using standard metrics."
+  },
+  {
+    "objectID": "help.html#how-do-i-customize-my-study",
+    "href": "help.html#how-do-i-customize-my-study",
+    "title": "Getting Started",
+    "section": "",
+    "text": "The {gsm} framework is designed to be highly modular and customizable. The sections above show examples of customized metrics and workflows. It’s also straightforward to add entire custom modules that add new mappings, metrics and reports. See the vignettes below for details.\n\ngsm Extensions Vignette describes how to extend {gsm.core} by creating new ‘modules’, including metrics, reports and shiny apps that can be run using the standard gsm pipeline.\nStep-by-Step Guide to add a new KRI outlines the necessary analytics tasks required before a new Key Risk Indicator (KRI), Quality Tolerance Limit (QTL), or similar metric can be put into production."
+  },
+  {
+    "objectID": "help.html#what-reports-are-available-for-my-study",
+    "href": "help.html#what-reports-are-available-for-my-study",
+    "title": "Getting Started",
+    "section": "",
+    "text": "Here are links to sample reports that are available in the {gsm} family of packages. We’re working on adding more all the time and will continue adding examples to this list as they are released.\n\nSite KRI Report\nCountry KRI Report\nEligibility Report\nCross-Study Site Risk Score Report\nQTL Report\nGood Statistical Monitoring Shiny App"
+  },
+  {
+    "objectID": "vignettes.html",
+    "href": "vignettes.html",
+    "title": "Vignettes",
+    "section": "",
+    "text": "Vignettes and articles fetched from each OpenRBQM package, listed by package in the same order as the Packages tab."
+  },
+  {
+    "objectID": "vignettes.html#gsm.core",
+    "href": "vignettes.html#gsm.core",
+    "title": "Vignettes",
+    "section": "gsm.core",
+    "text": "gsm.core\n\nKRI Method — This vignette outlines the statistical methods used to evaluate Key Risk Indicators (KRIs) in {gsm}.\nStep-by-Step Analysis Workflow — This vignette walks users through the mechanics of the functions that produce all of the Analysis workflow output within the {gsm.core} package.\nData Model — A vignette detailing the data model used in the gsm pipeline.\ngsm Extensions — This vignette describes how to extend {gsm.core} by creating new ‘modules’, including metrics, reports and shiny apps that can be run using the standard gsm pipeline."
+  },
+  {
+    "objectID": "vignettes.html#workr",
+    "href": "vignettes.html#workr",
+    "title": "Vignettes",
+    "section": "workr",
+    "text": "workr\n\nOverview\nLoad and Save Hooks\nIncorporating admiral\nIncorporating cards\nPharamaverse Case Study\nIncorporating sdtm.oak\nIncorporating TFL libraries like gtsummary"
+  },
+  {
+    "objectID": "vignettes.html#gsm.mapping",
+    "href": "vignettes.html#gsm.mapping",
+    "title": "Vignettes",
+    "section": "gsm.mapping",
+    "text": "gsm.mapping\n\nRequesting New Domains or Variables — Detailed instructions for adding mapping specifications for a new domain or a new variable in an existing domain.\nMapping Specifications — A Vignette that details all mapping specifications for all domains in {gsm.mapping}"
+  },
+  {
+    "objectID": "vignettes.html#gsm.kri",
+    "href": "vignettes.html#gsm.kri",
+    "title": "Vignettes",
+    "section": "gsm.kri",
+    "text": "gsm.kri\n\nStep-by-Step Guide to add a new KRI — This vignette outlines the necessary analytics tasks required before a new Key Risk Indicator (KRI), Quality Tolerance Limit (QTL), or similar metric can be put into production.\nCalculating Site Risk Scores"
+  },
+  {
+    "objectID": "vignettes.html#gsm.reporting",
+    "href": "vignettes.html#gsm.reporting",
+    "title": "Vignettes",
+    "section": "gsm.reporting",
+    "text": "gsm.reporting\n\nStep-by-Step Reporting Workflow — This vignette walks users through the mechanics of the functions and workflows that produce the Reporting outputs in the {gsm} pipeline."
+  },
+  {
+    "objectID": "vignettes.html#gsm.qtl",
+    "href": "vignettes.html#gsm.qtl",
+    "title": "Vignettes",
+    "section": "gsm.qtl",
+    "text": "gsm.qtl\n\nIntroQTL\nQualification Report for {gsm.qtl} R Package — Report generated based on the qualification tests for gsm.qtl"
+  },
+  {
+    "objectID": "vignettes.html#gsm.datasim",
+    "href": "vignettes.html#gsm.datasim",
+    "title": "Vignettes",
+    "section": "gsm.datasim",
+    "text": "gsm.datasim\n\naddnewdomain\nUnderstanding the Domain Registry\nSetting up Clinical Studies with gsm.datasim"
+  },
+  {
+    "objectID": "vignettes.html#gsm.app",
+    "href": "vignettes.html#gsm.app",
+    "title": "Vignettes",
+    "section": "gsm.app",
+    "text": "gsm.app\n\nData Ingestion for GSM App\nData Preparation and App Deployment\nPlugins"
+  },
+  {
+    "objectID": "vignettes.html#qcthat",
+    "href": "vignettes.html#qcthat",
+    "title": "Vignettes",
+    "section": "qcthat",
+    "text": "qcthat\n\nBusiness process\nUser acceptance testing with ExpectUserAccepts\nSetup"
+  },
+  {
+    "objectID": "vignettes.html#gsm.utils",
+    "href": "vignettes.html#gsm.utils",
+    "title": "Vignettes",
+    "section": "gsm.utils",
+    "text": "gsm.utils\n\nAdding Examples and Other Assets to a pkgdown Site"
+  },
+  {
+    "objectID": "vignettes.html#gsm.kri-1",
+    "href": "vignettes.html#gsm.kri-1",
+    "title": "Vignettes",
+    "section": "gsm.kri",
+    "text": "gsm.kri\n\nCookbook - Adverse Event KRI Report\nCookbook - Adverse Event Workflow Examples\nCookbook - Reporting Workflow Examples\nCountry KRI Overview\nCross-Study KRI Report\nIneligible Participant Overview\nSite KRI Overview"
+  },
+  {
+    "objectID": "vignettes.html#gsm.qtl-1",
+    "href": "vignettes.html#gsm.qtl-1",
+    "title": "Vignettes",
+    "section": "gsm.qtl",
+    "text": "gsm.qtl\n\nQTL Overview"
+  },
+  {
+    "objectID": "vignettes.html#gsm.utils-1",
+    "href": "vignettes.html#gsm.utils-1",
+    "title": "Vignettes",
+    "section": "gsm.utils",
+    "text": "gsm.utils\n\n🌖 Goodnight Moon 🌔\nGoodbye World\nHello World"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202411.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202411.html#anyone-new",
+    "title": "Tech Team Meeting: 2024-11",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202411.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202411.html#digit-preferences-module",
+    "title": "Tech Team Meeting: 2024-11",
+    "section": "Digit Preferences Module",
+    "text": "Digit Preferences Module\n{gsm.digitpref}\n\nNo new functionality since last month.\nWelcome aboard, Lukasz!\nNext:\nShiny module\nStatistical tests"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202411.html#clustering",
+    "href": "slides/tech_team/tech_team-202411.html#clustering",
+    "title": "Tech Team Meeting: 2024-11",
+    "section": "Clustering",
+    "text": "Clustering\nAny progress?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202412.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202412.html#anyone-new",
+    "title": "Tech Team Meeting: 2024-12",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202412.html#gsm.app",
+    "href": "slides/tech_team/tech_team-202412.html#gsm.app",
+    "title": "Tech Team Meeting: 2024-12",
+    "section": "gsm.app",
+    "text": "gsm.app\nImplemented plugin prototype in {gsm.app}!\n\nSample app"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202412.html#digit-preferences-module",
+    "href": "slides/tech_team/tech_team-202412.html#digit-preferences-module",
+    "title": "Tech Team Meeting: 2024-12",
+    "section": "Digit Preferences Module",
+    "text": "Digit Preferences Module\n{gsm.digitpref}\n\nLukasz is working on Statistical tests:\n\n“I am still working with statistical part for digit preference, at this moment I have cod for calculating chi-square test by test and site (two categories).”\n“Probably, at the end of December I will be ready to share with you my results (and ready to upload my code on github).”\n\nI’ll work on the Shiny module this week!"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202412.html#clustering",
+    "href": "slides/tech_team/tech_team-202412.html#clustering",
+    "title": "Tech Team Meeting: 2024-12",
+    "section": "Clustering",
+    "text": "Clustering\nAny progress?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202504.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202504.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-04",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202504.html#gsm.core-etc",
+    "href": "slides/tech_team/tech_team-202504.html#gsm.core-etc",
+    "title": "Tech Team Meeting: 2025-04",
+    "section": "gsm.core etc",
+    "text": "gsm.core etc\nGilead-BioStats/gsm\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202504.html#openrbqm",
+    "href": "slides/tech_team/tech_team-202504.html#openrbqm",
+    "title": "Tech Team Meeting: 2025-04",
+    "section": "openrbqm",
+    "text": "openrbqm\nOpenRBQM/openrbqm\n\nWhat’s new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202504.html#gsm.app",
+    "href": "slides/tech_team/tech_team-202504.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-04",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\n\nRedesigned main UI.\nHardening plugin system."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202504.html#gsm.digitpref",
+    "href": "slides/tech_team/tech_team-202504.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-04",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref\n\nAnything new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202504.html#gsm.ae",
+    "href": "slides/tech_team/tech_team-202504.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-04",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nActively working on new design."
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202504.html#gsm.simaerep",
+    "href": "slides/tech_team/tech_team-202504.html#gsm.simaerep",
+    "title": "Tech Team Meeting: 2025-04",
+    "section": "gsm.simaerep",
+    "text": "gsm.simaerep\nIMPALA-Consortium/gsm.simaerep\n\nAnything new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202503.html#anyone-new",
+    "href": "slides/tech_team/tech_team-202503.html#anyone-new",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "Anyone new?",
+    "text": "Anyone new?"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202503.html#gsmverse",
+    "href": "slides/tech_team/tech_team-202503.html#gsmverse",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm(verse)",
+    "text": "gsm(verse)\nGilead-BioStats/gsm\n\nRelease to split packages coming soon!\nWorkshop at PHUSE US Connect 2025 Orlando March 18!"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202503.html#gsm.app",
+    "href": "slides/tech_team/tech_team-202503.html#gsm.app",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm.app",
+    "text": "gsm.app\nGilead-BioStats/gsm.app\nComing soon: - New vignette about fnFetchData(). - Slides for workshop"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202503.html#gsm.digitpref",
+    "href": "slides/tech_team/tech_team-202503.html#gsm.digitpref",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm.digitpref",
+    "text": "gsm.digitpref\nOpenRBQM/gsm.digitpref\n\nIn progress: Statistical part for digit preference"
+  },
+  {
+    "objectID": "slides/tech_team/tech_team-202503.html#gsm.ae",
+    "href": "slides/tech_team/tech_team-202503.html#gsm.ae",
+    "title": "Tech Team Meeting: 2025-03",
+    "section": "gsm.ae",
+    "text": "gsm.ae\nOpenRBQM/gsm.ae\n\nNow with issues!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OpenRBQM",
+    "section": "",
+    "text": "OpenRBQM: Pre-Competitive Collaboration on Open-Source Software for RBQM"
+  },
+  {
+    "objectID": "index.html#explore",
+    "href": "index.html#explore",
+    "title": "OpenRBQM",
+    "section": "Explore",
+    "text": "Explore\n\n\n\n\n📦 Packages\nThe OpenRBQM ecosystem of open-source R packages.\nExplore →\n\n\n\n\n\n\n🗂️ Vignettes\nPackage vignettes and documentation.\nView →\n\n\n\n\n\n\n📰 Outreach\nPublications, presentations, and project updates.\nRead →\n\n\n\n\n\n\n💬 News\nRelease notes for OpenRBQM packages, grouped by quarter.\nView →\n\n\n\n\n\n\n❓ Getting Started\nGet started, find answers, and learn how to contribute.\nGet started →\n\n\n\n\n\n\n👥 Tech Team Meetings\nSlides and notes from OpenRBQM tech team meetings.\nBrowse →"
+  },
+  {
+    "objectID": "index.html#problem-statement",
+    "href": "index.html#problem-statement",
+    "title": "OpenRBQM",
+    "section": "Problem Statement",
+    "text": "Problem Statement\nRisk-based quality management (RBQM) is a regulatory-recommended approach to detect and effectively manage risk in a clinical trial. While there is a significant body of literature describing RBQM implementation and best practices (1, 2), there are few publicly available open-source tools for RBQM available. Instead, commercial tools and custom company-specific RBQM implementations currently serve as the industry standard for RBQM implementation."
+  },
+  {
+    "objectID": "tech_team-meetings.html",
+    "href": "tech_team-meetings.html",
+    "title": "Tech Team Meetings",
+    "section": "",
+    "text": "2024-07\n2024-09\n2024-10\n2024-11\n2024-12\n2025-02\n2025-03\n2025-04"
+  }
+]
