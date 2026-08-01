@@ -3,6 +3,17 @@ title: "News"
 description: "Release notes for OpenRBQM packages."
 ---
 
+## Releases Q3 2026
+
+- [gsm.datasim v2.0.0](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v2.0.0) — 2026-07-17 — This major release introduces a composable study builder API, longitudinal multi-snapshot study support, workflow-driven data generation, a domain registry, and parquet export.
+- [gsm.qtl v1.3.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.3.0) — 2026-07-17 — QTL workflows now run on the new `workr` engine.
+- [gsm.reporting v1.1.6](https://github.com/Gilead-BioStats/gsm.reporting/releases/tag/v1.1.6) — 2026-07-17 — This release migrates workflow orchestration to the new `workr` package and improves how metric metadata flows through to reports.
+- [gsm.kri v1.6.0](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.6.0) — 2026-07-17 — This minor release introduces the Premature Deaths reporting module and adds cross-study sorting and filtering capabilities.
+- [gsm.mapping v1.1.5](https://github.com/Gilead-BioStats/gsm.mapping/releases/tag/v1.1.5) — 2026-07-17 — This release migrates query execution and workflow discovery to the new `workr` package and includes mapping and documentation improvements.
+- [workr v1.1.0](https://github.com/Gilead-BioStats/workr/releases/tag/v1.1.0) — 2026-07-17 — Improved project orchestration with phase-level configuration files,
+- [gsm.core v1.3.0](https://github.com/Gilead-BioStats/gsm.core/releases/tag/v1.3.0) — 2026-07-17 — This minor release moves the workflow runtime to the new `{workr}` package and adds the `deathcls` column to the Death domain in `lSource`.
+- [gsm.viz v2.4.0](https://github.com/Gilead-BioStats/gsm.viz/releases/tag/v2.4.0) — 2026-07-14 — A brand-new ggplot2-aligned declarative bar chart module (`bars`) that reproduces disparate bar chart implementations across the `gsm` ecosystem, including most functionality in the existing, KRI-specific `barChart` module (#502, #482).
+
 ## Releases Q2 2026
 
 - [qcthat v1.1.3](https://github.com/Gilead-BioStats/qcthat/releases/tag/v1.1.3) — 2026-06-17 — This patch release streamlines and hones the GitHub Action installed via `Action_qcthat()`.
