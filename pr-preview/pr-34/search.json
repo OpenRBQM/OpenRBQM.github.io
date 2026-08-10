@@ -249,7 +249,7 @@
     "href": "vignettes.html#gsm.datasim",
     "title": "Vignettes",
     "section": "gsm.datasim",
-    "text": "gsm.datasim\n\naddnewdomain\nUnderstanding the Domain Registry\nSetting up Clinical Studies with gsm.datasim"
+    "text": "gsm.datasim\n\nUnderstanding the Domain Registry\nSetting up Clinical Studies with gsm.datasim"
   },
   {
     "objectID": "vignettes.html#gsm.app",
@@ -273,11 +273,18 @@
     "text": "gsm.utils\n\nAdding Examples and Other Assets to a pkgdown Site"
   },
   {
+    "objectID": "vignettes.html#gsm.mapping-1",
+    "href": "vignettes.html#gsm.mapping-1",
+    "title": "Vignettes",
+    "section": "gsm.mapping",
+    "text": "gsm.mapping\n\nExample Mapping Workflow"
+  },
+  {
     "objectID": "vignettes.html#gsm.kri-1",
     "href": "vignettes.html#gsm.kri-1",
     "title": "Vignettes",
     "section": "gsm.kri",
-    "text": "gsm.kri\n\nCookbook - Adverse Event KRI Report\nCookbook - Adverse Event Workflow Examples\nCookbook - Reporting Workflow Examples\nCountry KRI Overview\nCross-Study KRI Report\nIneligible Participant Overview\nSite KRI Overview"
+    "text": "gsm.kri\n\nCookbook - Adverse Event KRI Report\nCookbook - Adverse Event Workflow Examples\nCookbook - Reporting Workflow Examples\nCountry KRI Overview\nCross-Study KRI Report\nIneligible Participant Overview\nPremature Deaths Report\nSite KRI Overview"
   },
   {
     "objectID": "vignettes.html#gsm.qtl-1",
@@ -285,6 +292,13 @@
     "title": "Vignettes",
     "section": "gsm.qtl",
     "text": "gsm.qtl\n\nQTL Overview"
+  },
+  {
+    "objectID": "vignettes.html#gsm.datasim-1",
+    "href": "vignettes.html#gsm.datasim-1",
+    "title": "Vignettes",
+    "section": "gsm.datasim",
+    "text": "gsm.datasim\n\ngsm.datasim Demo\nDomain Registry\nLongitudinal Data Generation\nGenerating Multiple Studies\nWorkflow-Driven Data Generation"
   },
   {
     "objectID": "vignettes.html#gsm.utils-1",
