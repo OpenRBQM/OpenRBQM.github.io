@@ -56,9 +56,17 @@ jobs:
           cp -r _freeze.bak/packages _freeze/ 2>/dev/null || true
           cp -r _freeze.bak/vignettes _freeze/ 2>/dev/null || true
 
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ secrets.CI_GH_APP_ID }}
+          private-key: ${{ secrets.CI_GH_APP_PRIVATE_KEY }}
+
       - name: Open PR with refreshed cache
         uses: peter-evans/create-pull-request@v7
         with:
+          token: ${{ steps.app-token.outputs.token }}
           add-paths: |
             _freeze
           branch: auto/refresh-cache
