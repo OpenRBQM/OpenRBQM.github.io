@@ -37,6 +37,9 @@ quarter_label <- function(d) {
   paste0("Q", ceiling(as.integer(format(d, "%m")) / 3), " ", format(d, "%Y"))
 }
 
+#' Drop the org from a GitHub URL so releases stay identifiable across org moves.
+strip_org <- function(u) sub("^https://github\\.com/[^/]+/", "", u)
+
 #' Insert a data frame of new releases into existing news.qmd lines.
 #' new_rels must have columns: pkg, tag, url, date (Date), desc (character).
 #' Processes oldest-to-newest so each insertion lands in the correct position.
@@ -149,7 +152,7 @@ update_news <- function(path = "news.qmd") {
   existing    <- readLines(path)
   listed_urls <- unique(unlist(regmatches(existing,
     gregexpr("https://github\\.com/[^)]+/releases/tag/[^)]+", existing))))
-  new_rels    <- all_releases[!all_releases$url %in% listed_urls, ]
+  new_rels    <- all_releases[!strip_org(all_releases$url) %in% strip_org(listed_urls), ]
 
   if (nrow(new_rels) == 0) {
     message("No new releases.")
