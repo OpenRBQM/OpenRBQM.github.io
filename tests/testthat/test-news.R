@@ -52,6 +52,41 @@ test_that("extract_release_desc returns short text unchanged when under 160 char
   expect_equal(extract_release_desc(short), short)
 })
 
+# ── strip_org ──────────────────────────────────────────────────────────────────
+
+test_that("strip_org removes the org segment from a release URL", {
+  expect_equal(
+    strip_org("https://github.com/Gilead-Public/gsm.kri/releases/tag/v1.5.2"),
+    "gsm.kri/releases/tag/v1.5.2"
+  )
+})
+
+test_that("strip_org makes the same release match across an org migration", {
+  expect_equal(
+    strip_org("https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.5.2"),
+    strip_org("https://github.com/Gilead-Public/gsm.kri/releases/tag/v1.5.2")
+  )
+})
+
+test_that("strip_org keeps different packages and tags distinct", {
+  expect_false(
+    strip_org("https://github.com/Gilead-Public/gsm.kri/releases/tag/v1.5.2") ==
+    strip_org("https://github.com/Gilead-Public/gsm.core/releases/tag/v1.5.2")
+  )
+  expect_false(
+    strip_org("https://github.com/Gilead-Public/gsm.kri/releases/tag/v1.5.2") ==
+    strip_org("https://github.com/Gilead-Public/gsm.kri/releases/tag/v1.6.0")
+  )
+})
+
+test_that("strip_org is vectorised", {
+  expect_equal(
+    strip_org(c("https://github.com/A/p/releases/tag/v1",
+                "https://github.com/B/p/releases/tag/v1")),
+    c("p/releases/tag/v1", "p/releases/tag/v1")
+  )
+})
+
 # ── insert_releases ────────────────────────────────────────────────────────────
 
 make_rel <- function(pkg, tag, url, date, desc = NA_character_) {
