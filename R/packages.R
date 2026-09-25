@@ -6,9 +6,13 @@ library(purrr)
 library(glue)
 
 #' Fetch and clean the package table for the given orgs.
-#' Drops `exclude`d repos and fills missing descriptions.
-get_package_table <- function(orgs, exclude = character()) {
+#' Drops `exclude`d repos, applies `overrides` (named by repo name, case-insensitive)
+#' for repos missing a GitHub description, then fills any still-missing with a placeholder.
+get_package_table <- function(orgs, exclude = character(), overrides = character()) {
   packages <- orgs %>% purrr::map(get_repos) %>% dplyr::bind_rows()
+  match_idx <- match(tolower(packages$name), tolower(names(overrides)))
+  has_override <- is.na(packages$description) & !is.na(match_idx)
+  packages$description[has_override] <- overrides[match_idx[has_override]]
   packages$description[is.na(packages$description)] <- "No Description Provided"
   packages %>% dplyr::filter(!tolower(name) %in% tolower(exclude))
 }
