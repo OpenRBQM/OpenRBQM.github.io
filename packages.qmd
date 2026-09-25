@@ -71,7 +71,7 @@ flowchart LR
 
 # orgs, non_package_repos, and the curated package vectors come from R/config.R
 # (sourced above) so the Packages and Vignettes tabs stay in sync.
-packages <- get_package_table(orgs, non_package_repos)
+packages <- get_package_table(orgs, non_package_repos, description_overrides)
 
 cat(render_section(packages, "Core Packages", core_pkgs))
 cat(render_section(packages, "Extensions and Data", ext_pkgs))

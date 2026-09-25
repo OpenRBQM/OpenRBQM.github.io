@@ -16,7 +16,7 @@ gh_get <- function(url) {
   }
 }
 
-#' All public repositories for a GitHub org, as a data frame.
+#' All public, non-fork repositories for a GitHub org, as a data frame.
 #' Fails loudly with the API's message on a non-200 / unexpected response
 #' (e.g. rate limiting) instead of letting a bogus frame crash downstream.
 get_repos <- function(org) {
@@ -28,6 +28,7 @@ get_repos <- function(org) {
     stop(sprintf("GitHub API request for org '%s' failed (status %s): %s",
                  org, httr::status_code(response), msg), call. = FALSE)
   }
+  if ("fork" %in% names(parsed)) parsed <- parsed[!parsed$fork, ]
   parsed
 }
 
