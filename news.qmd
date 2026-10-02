@@ -5,6 +5,8 @@ description: "Release notes for OpenRBQM packages."
 
 ## Releases Q3 2026
 
+- [gsm.qtl v1.4.0](https://github.com/Gilead-Public/gsm.qtl/releases/tag/v1.4.0) — 2026-09-09 — The six QTL barchart functions (`eligibility_groupBar()`, `eligibility_sourceBar()`,
+- [gh.dash v1.1.0](https://github.com/Gilead-BioStats/gh.dash/releases/tag/v1.1.0) — 2026-08-14 — This release adds a new Quality tab, improves repository summary reporting, and updates the reusable workflow authentication model to support GitHub App tokens.
 - [gsm.viz v2.4.1](https://github.com/Gilead-Public/gsm.viz/releases/tag/v2.4.1) — 2026-08-07 — This release dynamically disables bar labels to prevent overlap in the categorical axis direction, in addition to the preexisting overlap prevention in the numerical axis direction.
 - [gsm.datasim v2.0.0](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v2.0.0) — 2026-07-17 — This major release introduces a composable study builder API, longitudinal multi-snapshot study support, workflow-driven data generation, a domain registry, and parquet export.
 - [gsm.qtl v1.3.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v1.3.0) — 2026-07-17 — QTL workflows now run on the new `workr` engine.
@@ -17,6 +19,7 @@ description: "Release notes for OpenRBQM packages."
 
 ## Releases Q2 2026
 
+- [gsm.studykri v0.3.1](https://github.com/IMPALA-Consortium/gsm.studykri/releases/tag/v0.3.1) — 2026-04-01 — Analyze_StudyKRI_PredictBoundsRef() now gracefully handles heterogeneous KRI availability across reference studies.
 - [qcthat v1.1.3](https://github.com/Gilead-Public/qcthat/releases/tag/v1.1.3) — 2026-06-17 — This patch release streamlines and hones the GitHub Action installed via `Action_qcthat()`.
 - [gsm.utils v0.4.0](https://github.com/Gilead-Public/gsm.utils/releases/tag/v0.4.0) — 2026-05-28 — This release standardizes actions and related functionality, and solidifies this package:
 - [workr v1.0.0](https://github.com/Gilead-Public/workr/releases/tag/v1.0.0) — 2026-04-09 — {workr} provides a minimal framework for describing and executing step-by-step R data pipelines using YAML-defined workflows.
@@ -38,6 +41,9 @@ description: "Release notes for OpenRBQM packages."
 
 ## Releases Q1 2026
 
+- [gsm.studykri v0.3.0](https://github.com/IMPALA-Consortium/gsm.studykri/releases/tag/v0.3.0) — 2026-03-03 — Established compatibility with snowflake backend by:
+- [gsm.simaerep v0.3.1](https://github.com/IMPALA-Consortium/gsm.simaerep/releases/tag/v0.3.1) — 2026-02-15 — remove Widget_BarChartSimaerep() in favour of gsm.kri::Widget_BarChart https://github.com/IMPALA-Consortium/gsm.simaerep/issues/31
+- [gsm.studykri v0.2.0](https://github.com/IMPALA-Consortium/gsm.studykri/releases/tag/v0.2.0) — 2026-01-23 — Added 10 additional KRI workflows (kri0005-kri0014) covering lab abnormalities, discontinuations, queries, data quality, screening failures, and I/E violations
 - [qcthat v1.1.2](https://github.com/Gilead-Public/qcthat/releases/tag/v1.1.2) — 2026-03-20 — This patch release focuses on introducing the world to qcthat.
 - [qcthat v1.1.1](https://github.com/Gilead-Public/qcthat/releases/tag/v1.1.1) — 2026-03-06 — This patch release contains improvements and bug fixes discovered while applying the experimental AI agent features released in qcthat v1.1.0.
 - [qcthat v1.1.0](https://github.com/Gilead-Public/qcthat/releases/tag/v1.1.0) — 2026-02-24 — New features and tools to help you track user acceptance testing, and to help you use AI agents to get started with `qcthat`.
@@ -58,6 +64,8 @@ description: "Release notes for OpenRBQM packages."
 
 ## Releases Q4 2025
 
+- [gsm.simaerep v0.3.0](https://github.com/IMPALA-Consortium/gsm.simaerep/releases/tag/v0.3.0) — 2025-12-12 — Widget_Simaerep() https://github.com/IMPALA-Consortium/gsm.simaerep/issues/15
+- [gsm.simaerep v0.2.0](https://github.com/IMPALA-Consortium/gsm.simaerep/releases/tag/v0.2.0) — 2025-11-04 — adapt to simaerep 1.0 https://github.com/IMPALA-Consortium/gsm.simaerep/issues/23
 - [gsm.utils v0.2.0](https://github.com/Gilead-Public/gsm.utils/releases/tag/v0.2.0) — 2025-12-17 — This is a major update of the gsm.utils package.
 - [qcthat v1.0.0](https://github.com/Gilead-Public/qcthat/releases/tag/v1.0.0) — 2025-12-17 — You can now use this package to implement a QC framework for any R package associated with a GitHub repository.
 - [gsm.viz v2.3.0](https://github.com/Gilead-Public/gsm.viz/releases/tag/v2.3.0) — 2025-12-15 — v2.3.0 adds support to the group overview table module for the new site risk score calculation that applies weights to each metric and flag.
@@ -93,6 +101,8 @@ description: "Release notes for OpenRBQM packages."
 
 ## Releases Q2 2025
 
+- [gsm.simaerep v0.1.1](https://github.com/IMPALA-Consortium/gsm.simaerep/releases/tag/v0.1.1) — 2025-06-19 — fix sample report https://github.com/IMPALA-Consortium/gsm.simaerep/issues/20
+- [gsm.simaerep v0.1.0](https://github.com/IMPALA-Consortium/gsm.simaerep/releases/tag/v0.1.0) — 2025-06-18 — add expected AE counts to Widget_Scatterplot https://github.com/IMPALA-Consortium/gsm.simaerep/issues/14
 - [gsm.qtl v0.1.0](https://github.com/Gilead-BioStats/gsm.qtl/releases/tag/v0.1.0) — 2025-06-27 — The Good Statistical Monitoring or 'gsm' suite of R packages provides a framework for statistical data monitoring.
 - [gsm.kri v1.2.1](https://github.com/Gilead-BioStats/gsm.kri/releases/tag/v1.2.1) — 2025-06-25 — This patch release addresses changes to an `.rda` object updated in `gsm.core` v1.1.3.
 - [gsm.datasim v1.1.0](https://github.com/Gilead-BioStats/gsm.datasim/releases/tag/v1.1.0) — 2025-06-25 — New Mapping Workflows Support:**
@@ -120,6 +130,8 @@ description: "Release notes for OpenRBQM packages."
 
 ## Releases Q1 2025
 
+- [gsm.simaerep v0.0.2](https://github.com/IMPALA-Consortium/gsm.simaerep/releases/tag/v0.0.2) — 2025-03-21 — switch to gsm.core, gsm.mapping, gsm.kri, gsm.reporting
+- [gsm.simaerep v0.0.1](https://github.com/IMPALA-Consortium/gsm.simaerep/releases/tag/v0.0.1) — 2025-01-20
 - [gsm.viz v2.2.0](https://github.com/Gilead-Public/gsm.viz/releases/tag/v2.2.0) — 2025-03-06 — v2.2.0 is the first open-source release of this repo 🎉 The package has been renamed `gsm.viz` from `rbm-viz` to align with other packages in the [OpenRBQM universe](https://openrbqm.github.io/packages.html).
 - [gsm.viz v2.1.0](https://github.com/Gilead-Public/gsm.viz/releases/tag/v2.1.0) — 2025-03-04 — v2.1.0 extends the click event functionality with a new custom event named `riskSignalSelected`.
 - [gsm.app v2.4.0](https://github.com/Gilead-BioStats/gsm.app/releases/tag/v2.4.0) — 2025-03-26 — We continue to evolve the app layout toward better usability!
