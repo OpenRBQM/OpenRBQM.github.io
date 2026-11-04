@@ -3,6 +3,12 @@ title: "News"
 description: "Release notes for OpenRBQM packages."
 ---
 
+## Releases Q4 2026
+
+- [gsm.utils v0.4.1](https://github.com/Gilead-Public/gsm.utils/releases/tag/v0.4.1) — 2026-10-30 — This patch release introduces helpers for adding additional files to package websites.
+- [qcthat v1.2.0](https://github.com/Gilead-Public/qcthat/releases/tag/v1.2.0) — 2026-10-26 — This minor release focuses primarily on GitHub Actions, with one new feature and completion of a previous feature.
+- [workr v1.1.1](https://github.com/Gilead-Public/workr/releases/tag/v1.1.1) — 2026-10-20 — Added a qualification test suite (`tests/testthat/test-qual_T*.R`) for the
+
 ## Releases Q3 2026
 
 - [gsm.qtl v1.4.0](https://github.com/Gilead-Public/gsm.qtl/releases/tag/v1.4.0) — 2026-09-09 — The six QTL barchart functions (`eligibility_groupBar()`, `eligibility_sourceBar()`,
